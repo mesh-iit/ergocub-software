@@ -19,7 +19,7 @@ YARP_LOG_COMPONENT(COUPLINGXCUBHANDMK5, "yarp.device.couplingXCubHandMk5")
 double CouplingXCubHandMk5::evaluateCoupledJoint(const double& q1, const std::string& finger_name)
 {
     /**
-     * Coupling law taken from from https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling
+     * Coupling law taken from from https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling
      */
     auto params = mFingerParameters.at(finger_name);
     double q1_rad = q1 * M_PI / 180.0;
@@ -47,7 +47,7 @@ double CouplingXCubHandMk5::evaluateCoupledJoint(const double& q1, const std::st
 double CouplingXCubHandMk5::evaluateCoupledJointJacobian(const double& q1, const std::string& finger_name)
 {
     /**
-     * Coupling law jacobian taken from from https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling
+     * Coupling law jacobian taken from from https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling
      */
     auto params = mFingerParameters.at(finger_name);
     double q1_rad = q1 * M_PI / 180.0;

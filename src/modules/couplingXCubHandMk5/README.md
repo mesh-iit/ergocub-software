@@ -2,7 +2,7 @@
 ## couplingXCubHandMk5
 
 
-This is the device for [YARP](https://www.yarp.it/) for handling the coupling of the [hands mk5](https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling/)
+This is the device for [YARP](https://www.yarp.it/) for handling the coupling of the [hands mk5](https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling/)
 
 ## Device documentation
 

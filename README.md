@@ -3,7 +3,7 @@ Main collector of ergoCub specific SW
 
 > [!important]
 > Since:
-> - https://github.com/icub-tech-iit/ergocub-software/pull/356
+> - https://github.com/mesh-iit/ergocub-software/pull/356
 > 
 > the naming convention for the URDF models has changed.
 > 
@@ -76,14 +76,14 @@ For using the models stored in this repository in `gz-sim`, it is needed a world
 ## URDF generation
 
 This repository hosts the configuration files for generating ergoCub urdf. To generate the URDF, you need to have access to the `cad-mechanics` repo (that is currently private, if you need access ask it to the ergocub-software mantainer) and install the following repos and software:
-* You need to install the version of Creo required by [`cad-mechanics`](https://github.com/icub-tech-iit/cad-mechanics/).
-* You need to install the repos that contain the CAD models, i.e. cad-libraries (see https://github.com/icub-tech-iit/cad-libraries/wiki/Configure-PTC-Creo-with-cad-libraries) and cad-mechanics https://github.com/icub-tech-iit/cad-mechanics/.
-* You need to install creo2urdf following the README in https://github.com/icub-tech-iit/creo2urdf, either from source or using the binary available for each release.
+* You need to install the version of Creo required by [`cad-mechanics`](https://github.com/mesh-iit/cad-mechanics/).
+* You need to install the repos that contain the CAD models, i.e. cad-libraries (see https://github.com/mesh-iit/cad-libraries/wiki/Configure-PTC-Creo-with-cad-libraries) and cad-mechanics https://github.com/mesh-iit/cad-mechanics/.
+* You need to install creo2urdf following the README in https://github.com/mesh-iit/creo2urdf, either from source or using the binary available for each release.
 
 >[!NOTE]
-> For generating ergoCub URDF `creo2urdf` [v0.5.14](https://github.com/icub-tech-iit/creo2urdf/releases/tag/v0.5.14) or greater is needed
+> For generating ergoCub URDF `creo2urdf` [v0.5.14](https://github.com/mesh-iit/creo2urdf/releases/tag/v0.5.14) or greater is needed
 
-The CAD files used to generate the URDF models have been prepare according to the procedure described in https://github.com/icub-tech-iit/cad-libraries/wiki/Prepare-PTC-Creo-Mechanism-for-URDF .
+The CAD files used to generate the URDF models have been prepare according to the procedure described in https://github.com/mesh-iit/cad-libraries/wiki/Prepare-PTC-Creo-Mechanism-for-URDF .
 
 You can find there the relative documentation on how write those configuration files, and more details in the README of the following folders:
 * [`urdf/creo2urdf/data/ergocubSN000`](./urdf/creo2urdf/data/ergocubSN000)

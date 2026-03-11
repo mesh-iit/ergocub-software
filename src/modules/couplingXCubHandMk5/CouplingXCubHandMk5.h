@@ -24,7 +24,7 @@
 YARP_DECLARE_LOG_COMPONENT(COUPLINGXCUBHANDMK5)
 
 /**
- * Parameters from https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling
+ * Parameters from https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling
  */
 struct FingerParameters
 {
@@ -74,7 +74,7 @@ private:
 
     /*
      * This method implements the law q2 = q2(q1) from
-     * https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling,
+     * https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling,
      * i.e., the absolute angle of the distal joint q2 with respect to the palm.
      *
      * The inputs q1 and the return value of the function are in degrees.
@@ -83,7 +83,7 @@ private:
 
     /*
      * This method implements the law \frac{\partial{q2}}{\partial{q1}} from
-     * https://icub-tech-iit.github.io/documentation/hands/hands_mk5_coupling,
+     * https://mesh-iit.github.io/documentation/hands/hands_mk5_coupling,
      * i.e., the jacobian of the absolute angle of the distal joint q2 measured from the palm,
      * with respect to the proximal joint q1.
      *
