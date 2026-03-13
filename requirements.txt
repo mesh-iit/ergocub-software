@@ -1,0 +1,3 @@
+zensical
+mkdocs-autorefs
+pymdown-extensions
