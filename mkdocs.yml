@@ -9,10 +9,59 @@ repo_url: https://github.com/mesh-iit/ergocub-software/
 edit_uri: 'edit/master/doc/mkdocs/docs'
 docs_dir: 'doc/mkdocs/docs'
 
+theme:
+  name: material
+  favicon: assets/head-solid.png  # PNG for browser tab
+  icon:
+    logo: material/robot          # Vector icon for header/nav
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tooltips
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: lucide/sun-moon
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: lucide/moon-star
+        name: Switch to system preference
+
 markdown_extensions:
-  - attr_list
   - admonition
-  - pymdownx.arithmatex
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -23,78 +72,29 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.keys
   - pymdownx.magiclink:
-      user: robotology
-      repo: assistive-rehab
+      user: mesh-iit
+      repo: ergocub-software
       repo_url_shortener: true
       repo_url_shorthand: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
-  - markdown.extensions.toc:
-      permalink: true
 
 plugins:
-  - mkdocs-video:
-      is_video: True
-      video_muted: True
-      video_controls: True
-      css_style:
-        width: "100%"
-
-theme:
-  name: material
-  features:
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.tooltips
-    - tabs
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.tracking
-    - navigation.sections
-    - navigation.top
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-
-  favicon: assets/head-solid.png
-  palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
-  icon:
-    logo: material/robot
-
-  font:
-    text: Roboto
-    code: Roboto Mono
+  - search
+  - autorefs:
+      resolve_closest: true
 
 
 
 nav:
     - Home: 'index.md'
+    - Quickstart Guide: 'quickstart_guide.md'
     - Documentation: https://mesh-iit.github.io/ergocub-software/doc/doxygen/doc/html/index.html
     - Modules:
         - Getting started: 'modules_intro.md'

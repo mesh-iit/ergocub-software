@@ -39,3 +39,8 @@ build*/
 # Visual studio
 .vs/*
 CMakeSettings.json
+
+# Documentation build artifacts
+site/
+.cache/
+.venv/

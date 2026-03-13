@@ -1,8 +1,8 @@
 # Changelog
 
-> [!warning]
-> This file documents notable changes to this project done before December 2024. 
-For changes after that date, please refer to the release notes of each release at https://github.com/icub-tech-iit/ergocub-software/releases.
+!!! warning
+    This file documents notable changes to this project done before December 2024. 
+    For changes after that date, please refer to the release notes of each release at https://github.com/icub-tech-iit/ergocub-software/releases.
 
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

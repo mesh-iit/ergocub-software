@@ -47,7 +47,7 @@ Copy the `.csv` datasets created with `joint-open-loop-move` in the `data` folde
    - sometimes (very often) the final command 'export' doesn't produce a complete pdf file. re-run this line by selecting it until the pdf looks fine
 5. check the plots: if the fingers are not moving, then the PID gains are most likely not up to the task; e.g., see [here](https://github.com/mesh-iit/ergocub-design-lowerarm/issues/245#issuecomment-2095469706).
 
-> [!tip]
-> Alternatively, the `tune_controller.m` script is a proven tool for estimating the response of a generic joint and tuning the controller.
-> 
-> See for example the work done for [iCubGrenoble01](https://github.com/robotology/mesh-support/issues/2160). 
+!!! tip
+    Alternatively, the `tune_controller.m` script is a proven tool for estimating the response of a generic joint and tuning the controller.
+    
+    See for example the work done for [iCubGrenoble01](https://github.com/robotology/mesh-support/issues/2160). 
