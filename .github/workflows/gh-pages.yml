@@ -12,18 +12,14 @@ jobs:
   docs:
     name: "Deploy"
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./doc
 
     steps:
       - uses: actions/checkout@main
       - name: Dependencies
         run: |
           sudo apt update
-          sudo apt install -y xsltproc doxygen doxygen-doc texlive ghostscript graphviz python3-wheel python3-setuptools
-          pip3 install --upgrade Jinja2
-          pip3 install --user --break-system-packages mkdocs-autorefs zensical pymdown-extensions
-          pip3 install --upgrade pygments
+          sudo apt install -y python3-wheel python3-setuptools
+          pip install --break-system-packages --user mkdocs-autorefs zensical
           echo "${HOME}/.local/bin" >> ${GITHUB_PATH}
 
       - name: Configure Git
@@ -33,33 +29,19 @@ jobs:
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Get YARP XSL interpreter
+      - name: Build Zensical
         run: |
-          cd ${GITHUB_WORKSPACE}
-          git clone --depth 1 --branch master https://github.com/robotology/yarp.git
-          echo "YARP_SOURCE_DIR=${GITHUB_WORKSPACE}/yarp" >> ${GITHUB_ENV}
-
-      - name: Build Doxygen
-        run: |
-          cd doxygen
-          ./doc-compile.sh
-        working-directory: ${{ env.working-directory }}
-
-      - name: Build Documentation
-        run: |
-          cd mkdocs
-          ./site-compile.sh
-        working-directory: ${{ env.working-directory }}
+          zensical build --clean
 
       - name: Create and prepare gh-pages anew
         run: |
           git checkout --orphan gh-pages
-          rm -R `ls -A | grep -v -E "^(.git|doc)$"`
-          mv doc/mkdocs/site/* ./
+          rm -R `ls -A | grep -v -E "^(.git|site)$"`
+          mv site/* ./
 
       - name: Commit and push
         if: github.event_name == 'push'
         run: |
           git add .
-          git commit -m "Publish site"
+          git commit -m "publish site"
           git push --force --set-upstream origin gh-pages       
