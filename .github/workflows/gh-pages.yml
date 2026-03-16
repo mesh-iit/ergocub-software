@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v4
       - name: Dependencies
         run: |
           sudo apt update
@@ -43,6 +43,11 @@ jobs:
       - name: Build Zensical
         run: |
           zensical build --clean
+
+      - name: Stage Doxygen into site
+        run: |
+          mkdir -p site/doc/doxygen
+          cp -a doc/doxygen/doc site/doc/doxygen/
 
       - name: Create and prepare gh-pages anew
         run: |
