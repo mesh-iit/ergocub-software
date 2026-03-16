@@ -1,0 +1,3255 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="All the software running on ergoCub">
+      
+      
+        <meta name="author" content="iCub-Tech">
+      
+      
+        <link rel="canonical" href="https://mesh-iit.github.io/ergocub-software/quickstart_guide/">
+      
+      
+        <link rel="prev" href="./..">
+      
+      
+        <link rel="next" href="https://mesh-iit.github.io/ergocub-software/doc/doxygen/doc/html/index.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/head-solid.png">
+      <meta name="generator" content="zensical-0.0.27">
+    
+    
+      
+        <title>ergoCub-S/N:003 - Quickstart Guide - ergoCub Software</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.50057488.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ergocub-sn003-quickstart-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="ergoCub Software" class="md-header__button md-logo" aria-label="ergoCub Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ergoCub Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ergoCub-S/N:003 - Quickstart Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon-star" viewBox="0 0 24 24"><path d="M18 5h4M20 3v4M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/mesh-iit/ergocub-software/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mesh-iit/ergocub-software
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
+        
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Quickstart Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://mesh-iit.github.io/ergocub-software/doc/doxygen/doc/html/index.html" class="md-tabs__link">
+        
+  
+  Documentation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../modules_intro/" class="md-tabs__link">
+          
+  
+  Modules
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../CHANGELOG/" class="md-tabs__link">
+        
+  
+  CHANGELOG
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="ergoCub Software" class="md-nav__button md-logo" aria-label="ergoCub Software" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+
+    </a>
+    ergoCub Software
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mesh-iit/ergocub-software/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mesh-iit/ergocub-software
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-body-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Body Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-transmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Transmission
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motors-and-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motors and Sensors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motors and Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neck-subsystem-mk3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neck Subsystem (MK3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrist-subsystem-mk21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrist Subsystem (MK2.1)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wrist Subsystem (MK2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinematic-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinematic Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hand-subsystem-mk53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hand Subsystem (MK5.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensory-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensory Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensory Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forcetorque-ft-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force/Torque (F/T) Sensors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-temperature-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motor Temperature Sensors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motor Temperature Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inertial-measurement-units-imus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inertial Measurement Units (IMUs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-sensors-head-mounted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Sensors (Head-Mounted)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-and-battery-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Distribution and Battery System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Distribution and Battery System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#battery-management-system-bms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Management System (BMS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Battery Management System (BMS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#charging-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Charging Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibration-types-used-on-ergocub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration Types used on ergoCub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration Types used on ergoCub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-12-analog-sensor-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 12: Analog Sensor Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-10-hard-limit-calibration-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 10: Hard Limit Calibration (Most Common)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-14-analog-sensor-plus-hardware-limit-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 14: Analog Sensor Plus Hardware Limit Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Head Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#torso-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Torso Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#left-arm-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Left Arm Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-arm-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right Arm Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#left-leg-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Left Leg Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-leg-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right Leg Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-systems-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating Systems Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating Systems Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Topology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Topology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-nvidia-jetson-xavier-agx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head (NVIDIA Jetson Xavier AGX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-com-express-type-10-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso (COM Express Type 10 Module)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-interfaces-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Interfaces and Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Interfaces and Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Architecture Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-ethernet-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Ethernet Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-network-1001024-motor-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Network (10.0.1.0/24) - Motor Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-network-1002024-server-and-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Network (10.0.2.0/24) - Server and Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-communication-high-level-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Communication (High-Level Overview)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-eth-cabled-and-wifi-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swap ETH cabled and WiFi Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-passwordless-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSH passwordless login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating System Choices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating System Choices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-ubuntu-nvidia-jetpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head: Ubuntu + NVIDIA Jetpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-ubuntu-server-with-real-time-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso: Ubuntu Server with Real-Time Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firmware-updates-and-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmware Updates and Reflashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware Updates and Reflashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedded-board-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embedded board Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-and-filesystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage and Filesystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-and-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software and Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software and Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-system-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core System Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-control-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motor Control Applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yarp-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yarp Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-a-tool-for-running-and-managing-multiple-programs-on-a-set-of-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is a tool for running and managing multiple programs on a set of machines.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is a tool for running and managing multiple programs on a set of machines.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensor-data-publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor Data Publishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firmware-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmware Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting the robot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting the robot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-command-line-startup-ergocub-torso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: Command Line Startup (ergocub-torso)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-graphical-application-launcher-ergocub-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: Graphical Application Launcher (ergocub-laptop)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-system-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional System Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional System Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-yarprobotinterface-with-one-or-more-parts-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start yarprobotinterface with one or more parts disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telemetry-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telemetry System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolving-hw-fault-on-a-joint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolving HW Fault on a Joint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faulting-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faulting the Robot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-that-the-walking-module-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking That the Walking Module is Running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recover-the-robot-from-undesired-condition-while-walking-module-has-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recover the Robot from Undesired Condition While Walking Module Has Started
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-pack-hot-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Pack Hot Swap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://mesh-iit.github.io/ergocub-software/doc/doxygen/doc/html/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modules
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modules
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ergocubemotions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ergoCubEmotions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CHANGELOG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-body-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Body Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mechanical-transmission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mechanical Transmission
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motors-and-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motors and Sensors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motors and Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#neck-subsystem-mk3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Neck Subsystem (MK3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrist-subsystem-mk21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wrist Subsystem (MK2.1)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wrist Subsystem (MK2.1)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kinematic-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kinematic Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hand-subsystem-mk53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hand Subsystem (MK5.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensory-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensory Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensory Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forcetorque-ft-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Force/Torque (F/T) Sensors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-temperature-sensors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motor Temperature Sensors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motor Temperature Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inertial-measurement-units-imus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inertial Measurement Units (IMUs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-sensors-head-mounted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Sensors (Head-Mounted)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-distribution-and-battery-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Distribution and Battery System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Distribution and Battery System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#battery-management-system-bms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Management System (BMS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Battery Management System (BMS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#charging-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Charging Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibration-types-used-on-ergocub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration Types used on ergoCub
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration Types used on ergoCub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-12-analog-sensor-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 12: Analog Sensor Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-10-hard-limit-calibration-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 10: Hard Limit Calibration (Most Common)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-14-analog-sensor-plus-hardware-limit-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type 14: Analog Sensor Plus Hardware Limit Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#head-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Head Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#torso-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Torso Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#left-arm-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Left Arm Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-arm-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right Arm Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#left-leg-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Left Leg Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-leg-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Right Leg Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-systems-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating Systems Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating Systems Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Topology
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Topology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-nvidia-jetson-xavier-agx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head (NVIDIA Jetson Xavier AGX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-com-express-type-10-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso (COM Express Type 10 Module)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-interfaces-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Interfaces and Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Interfaces and Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Architecture Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-ethernet-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Ethernet Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-network-1001024-motor-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internal Network (10.0.1.0/24) - Motor Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-network-1002024-server-and-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Network (10.0.2.0/24) - Server and Internet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-communication-high-level-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Communication (High-Level Overview)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swap-eth-cabled-and-wifi-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Swap ETH cabled and WiFi Network
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssh-passwordless-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSH passwordless login
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-system-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating System Choices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating System Choices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-ubuntu-nvidia-jetpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head: Ubuntu + NVIDIA Jetpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-ubuntu-server-with-real-time-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso: Ubuntu Server with Real-Time Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firmware-updates-and-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmware Updates and Reflashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware Updates and Reflashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-head-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-head Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ergocub-torso-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ergocub-torso Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#embedded-board-reflashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Embedded board Reflashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-and-filesystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Storage and Filesystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-and-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software and Applications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software and Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-system-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core System Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-control-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motor Control Applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yarp-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yarp Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-a-tool-for-running-and-managing-multiple-programs-on-a-set-of-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is a tool for running and managing multiple programs on a set of machines.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Is a tool for running and managing multiple programs on a set of machines.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensor-data-publishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor Data Publishing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firmware-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmware Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starting-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting the robot
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting the robot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-command-line-startup-ergocub-torso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 1: Command Line Startup (ergocub-torso)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-graphical-application-launcher-ergocub-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method 2: Graphical Application Launcher (ergocub-laptop)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-system-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional System Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional System Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-yarprobotinterface-with-one-or-more-parts-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start yarprobotinterface with one or more parts disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telemetry-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telemetry System
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resolving-hw-fault-on-a-joint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolving HW Fault on a Joint
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery Steps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recovery Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faulting-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faulting the Robot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-that-the-walking-module-is-running" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checking That the Walking Module is Running
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recover-the-robot-from-undesired-condition-while-walking-module-has-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recover the Robot from Undesired Condition While Walking Module Has Started
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-pack-hot-swap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Pack Hot Swap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+    <a href="https://github.com/mesh-iit/ergocub-software//edit/master/doc/mkdocs/docs/quickstart_guide.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-pen" viewBox="0 0 24 24"><path d="M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34"/><path d="M14 2v5a1 1 0 0 0 1 1h5M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/mesh-iit/ergocub-software//raw/master/doc/mkdocs/docs/quickstart_guide.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-file-code-2" viewBox="0 0 24 24"><path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"/><path d="M14 2v5a1 1 0 0 0 1 1h5M5 16l-3 3 3 3M9 22l3-3-3-3"/></svg>
+    </a>
+  
+
+
+<h1 id="ergocub-sn003-quickstart-guide">ergoCub-S/N:003 - Quickstart Guide</h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>ergoCub</strong> is an open-source humanoid robot platform derived from the iCub architecture, specifically designed and enhanced for industrial applications, collaborative robotics, and advanced research. Unlike iCub which focuses on cognitive science and developmental robotics, ergoCub emphasizes robustness, modularity, and practical deployment in real-world environments.</p>
+<p>It represents a fully-electrified humanoid with 45 degrees of freedom distributed across the head, torso, and limbs. The robot leverages a distributed embedded control architecture with multiple Ethernet-connected boards for real-time motor control, comprehensive proprioceptive and exteroceptive sensing, and a robust YARP (Yet Another Robot Platform) middleware stack for software architecture.</p>
+<p>This document provides a detailed technical description for robotics engineers deploying ergoCub003. It covers hardware architecture, electromechanical design specifics (particularly the neck, wrist, and hand subsystems), sensorimotor configuration, embedded board organization, and the dual-computer operating system architecture.</p>
+<hr />
+<h2 id="hardware-overview">Hardware Overview</h2>
+<p>ergoCub-S/N:003 is a full-body humanoid platform with a modular electromechanical design optimized for force control and physical interaction. The platform comprises six primary articulated subsystems plus an integrated sensing suite.
+More information about the hardware and robot logic can be found at: <a href="https://github.com/mesh-iit/electronics-wiring-public/tree/master/ergocub1/ergocub1.4/pdf">https://github.com/mesh-iit/electronics-wiring-public/tree/master/ergocub1/ergocub1.4/pdf</a> .</p>
+<h3 id="main-body-structure">Main Body Structure</h3>
+<ul>
+<li><strong>Head</strong>: 4-DOF neck articulation with camera pan-tilt control, mounted on a redesigned Neck <a href="https://mesh-iit.github.io/documentation/necks/neck_mk3/">MK3 mechanism</a></li>
+<li><strong>Torso</strong>: 3-DOF waist (roll-pitch-yaw) providing trunk flexibility</li>
+<li><strong>Left Arm</strong>: 13-DOF limb including 3-DOF spherical wrist (<a href="https://mesh-iit.github.io/documentation/wrists/wrist_mk2/">MK2.1 design</a>) and 12-DOF hand (<a href="https://mesh-iit.github.io/documentation/hands/hands_mk5/">MK5.3</a> with precision finger actuation)</li>
+<li><strong>Right Arm</strong>: 13-DOF limb mirroring left arm configuration</li>
+<li><strong>Left Leg</strong>: 6-DOF lower limb for locomotion (hip, knee, ankle)</li>
+<li><strong>Right Leg</strong>: 6-DOF lower limb for locomotion (hip, knee, ankle)</li>
+</ul>
+<h3 id="mechanical-transmission">Mechanical Transmission</h3>
+<p>All actuators employ <strong>direct-drive or geared motor systems</strong> with integrated encoders for joint state feedback. The design emphasis is on transparent force control and impedance modulation, achieved through:
+- Low-inertia actuators selected for each joint functional role
+- Hard endpoint stops for collision safety
+- Distributed force/torque sensing at critical manipulation and locomotion points
+- Elastic joint limits on critical hand and wrist joints</p>
+<hr />
+<h2 id="motors-and-sensors">Motors and Sensors</h2>
+<h3 id="neck-subsystem-mk3">Neck Subsystem (MK3)</h3>
+<p>The <strong>Neck MK3</strong> mechanism is a modern tendonless design with a serial kinematic configuration. It features three primary rotation axes ordered bottom-to-top as:
+1. <strong>Pitch</strong> (forward/backward head inclination)
+2. <strong>Roll</strong> (side-to-side head tilt)
+3. <strong>Yaw</strong> (head rotation about vertical axis)</p>
+<p>This ordering provides intuitive control of gaze direction and head orientation, with the yaw axis topmost for minimal inertia effects on the pitch and roll servos.
+For more information about the Neck MK3, check the <a href="https://mesh-iit.github.io/documentation/necks/neck_mk3/">documentation</a>.</p>
+<h3 id="wrist-subsystem-mk21">Wrist Subsystem (MK2.1)</h3>
+<p>The forearm-to-hand connection in ergoCub employs the <strong>Wrist MK2.1 mechanism</strong>, a spherical joint design enabling three degrees of rotational freedom in a compact, backdrivable structure. The wrist translates three motor commands into coordinated roll-pitch-yaw motions of the hand with respect to the forearm.</p>
+<h4 id="kinematic-structure">Kinematic Structure</h4>
+<p>The Wrist MK2 consists of three rotational joints in series, producing a spherical wrist with workspace oriented around the hand palm:</p>
+<table>
+<thead>
+<tr>
+<th>Joint</th>
+<th>Mechanical Role</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrist Yaw</strong> (W1)</td>
+<td>Primary azimuth</td>
+<td>Rotation about forearm longitudinal axis; defines hand twist</td>
+</tr>
+<tr>
+<td><strong>Wrist Roll</strong> (W2)</td>
+<td>Intermediate rotation</td>
+<td>Coordinated with yaw for intuitive hand orientation</td>
+</tr>
+<tr>
+<td><strong>Wrist Pitch</strong> (W3)</td>
+<td>Vertical orientation</td>
+<td>Flexion/extension of hand about lateral axis</td>
+</tr>
+</tbody>
+</table>
+<p>For more information about the Wrist MK2.1, check the <a href="https://mesh-iit.github.io/documentation/wrists/wrist_mk2/">documentation</a>.</p>
+<h3 id="hand-subsystem-mk53">Hand Subsystem (MK5.3)</h3>
+<p>The ergoCub hands represent a sophisticated dexterous manipulation platform with 6 degrees of freedom per hand distributed across the five digits. The current ergoCub-S/N:003 systems are equipped with <strong>Hand MK5.3</strong>, which features expanded joint ranges compared to earlier MK5 variants.</p>
+<p>For more information about the Hand MK5.3, check the <a href="https://mesh-iit.github.io/documentation/hands/hands_mk5/#mk53">documentation</a>.</p>
+<hr />
+<h2 id="sensory-systems">Sensory Systems</h2>
+<h3 id="forcetorque-ft-sensors">Force/Torque (F/T) Sensors</h3>
+<p>For more detailed information, check the <a href="https://mesh-iit.github.io/documentation/ft_sensors/">documentation</a>.
+Additional information about the F/T sensor client interface is available at: <a href="https://mesh-iit.github.io/documentation/robot_sensors/yarp_nws_convention/?h=IMU#force-torque-sensors">https://mesh-iit.github.io/documentation/robot_sensors/yarp_nws_convention/?h=IMU#force-torque-sensors</a>.</p>
+<p><strong>Purpose</strong>: Monitor contact forces and joint torques for force control and manipulation.</p>
+<p><strong>Design Philosophy</strong>: ergoCub uses 6-axis F/T sensors strategically placed at manipulation and locomotion points to enable <strong>force-controlled interactions</strong> with the environment. This is a key distinction from iCub, where F/T feedback is primarily used for passive impedance estimation.</p>
+<p><strong>Note</strong>: ergoCub's F/T sensors are inherently <strong>low-noise</strong> designs, making them suitable for closed-loop force control (unlike velocity or acceleration estimation). They provide 6-axis force/torque measurement. They should be prioritized in any safety-critical interaction framework.</p>
+<ul>
+<li><strong>Right/Left Arm</strong>: </li>
+<li>Mounted on EB1 and EB2 (shoulder region)</li>
+<li>
+<p>Scope: Arm contact force monitoring, manipulation force feedback</p>
+</li>
+<li>
+<p><strong>Left/Right Leg</strong>:</p>
+</li>
+<li>Mounted on EB8 and EB6 (Hip region)</li>
+<li>Mounted on EB9 and EB7 (Ankle region)</li>
+<li>Scope: Gait analysis, balance control, floor contact detection</li>
+</ul>
+<h3 id="motor-temperature-sensors">Motor Temperature Sensors</h3>
+<p>For more detailed information, check the <a href="https://mesh-iit.github.io/documentation/temperature_sensors/">documentation</a>.</p>
+<p><strong>Purpose</strong>: Monitor motor winding temperatures to prevent overheating and enable thermal-aware control strategies.</p>
+<p><strong>Sensor Architecture</strong>:
+- <strong>Physical Sensor</strong>: PT100 or PT1000 resistance temperature detectors (RTDs) embedded in motor windings
+- <strong>Temperature Detection Board (TDB)</strong>: Converts RTD resistance measurements to digital values via I2C protocol</p>
+<p>For all joints the limits set are:
+- Hardware Limit: 110°C
+- Warning Limit: 90°C</p>
+<p><strong>Reading Motor Temperature Data</strong>:
+1. <strong>Custom Monitoring Module</strong>: Recommended approach for thermal-aware control; see <a href="https://github.com/robotology/robots-configuration/tree/master/ergoCubSN003/extra/motorStatePublisher">motorStatePublisher</a> reference implementation</p>
+<p><strong>Safety Notes</strong>:
+- Temperature-constrained motors have different current limits (see commented values in motor control files)
+- Ankle roll motor is particularly sensitive to overheating; guidance is available in configuration files
+- Automatic HW Fault triggers after 10 seconds above hardware limit; does not provide graceful derating</p>
+<hr />
+<h4 id="inertial-measurement-units-imus">Inertial Measurement Units (IMUs)</h4>
+<p>For more detailed information, check the <a href="https://mesh-iit.github.io/documentation/ft_sensors/ft_onboard_imu/">documentation</a>.
+Specific information about related kinematics is available at: <a href="https://mesh-iit.github.io/documentation/icub_kinematics/icub-forward-kinematics/icub-forward-kinematics-imu/">https://mesh-iit.github.io/documentation/icub_kinematics/icub-forward-kinematics/icub-forward-kinematics-imu/</a>. Additional details about the IMU client interface are at: <a href="https://mesh-iit.github.io/documentation/robot_sensors/yarp_nws_convention/?h=IMU#imu-client-device">https://mesh-iit.github.io/documentation/robot_sensors/yarp_nws_convention/?h=IMU#imu-client-device</a></p>
+<p><strong>Purpose</strong>: Provide orientation and acceleration feedback for proprioception, balance estimation, and external contact detection.</p>
+<p><strong>Head IMU</strong> (mounted on EB20, BNO055 6-axis sensor):
+- <strong>Measurement</strong>: 3-axis acceleration + 3-axis angular velocity + integrated orientation (quaternion)
+- <strong>Applications</strong>:
+  - Visual gaze stabilization (eye reflex coordination)
+  - Head collision detection (rapid acceleration spikes)
+  - Orientation feedback for camera calibration
+  - Integration with head F/T for impact force estimation</p>
+<p><strong>Waist IMU</strong> (mounted on torso structure, XSense MTi-600 9-axis sensor):
+- <strong>Measurement</strong>: 3-axis acceleration + 3-axis angular velocity + 3-axis magnetic field
+- <strong>Applications</strong>:
+  - Whole-body Center-of-Mass (CoM) estimation when fused with leg F/T sensors
+  - Torso sway detection during manipulation
+  - Ground truth orientation for balance feedback
+  - Integration with leg force sensors for dynamic walking control</p>
+<hr />
+<h4 id="external-sensors-head-mounted">External Sensors (Head-Mounted)</h4>
+<p>The ergoCub head integrates two primary exteroceptive sensors for scene understanding, navigation, and manipulation. Both sensors are mounted on the head and benefit from the Neck MK3's broad pitch range for environmental scanning:</p>
+<ul>
+<li>
+<p><strong>RealSense D450 RGB-D Camera</strong></p>
+</li>
+<li>
+<p><strong>RPLidar S2 2D Laser Scanner</strong></p>
+</li>
+</ul>
+<p>In order to <strong>enable the LiDAR data streaming on a ROS topic</strong> you need to add a <code>_nws_ros2</code> wrapper in the configuration files as follows:</p>
+<ol>
+<li>add the file <code>{robot-configuration-file}/wrappers/sensors/rplidar_wrapper_ros2.xml</code></li>
+</ol>
+<p>the file should have the following content:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+<span class="cp">&lt;!DOCTYPE robot PUBLIC &quot;-//YARP//DTD yarprobotinterface 3.0//EN&quot; &quot;http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd&quot;&gt;</span>
+
+<span class="nt">&lt;device</span><span class="w"> </span><span class="na">xmlns:xi=</span><span class="s">&quot;http://www.w3.org/2001/XInclude&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;lidarWrapR&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;rangefinder2D_nws_ros2&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;period&quot;</span><span class="nt">&gt;</span><span class="w"> </span>0.1<span class="w"> </span><span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;node_name&quot;</span><span class="nt">&gt;</span><span class="w"> </span>rangefinder_ros2_node<span class="w"> </span><span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;topic_name&quot;</span><span class="nt">&gt;</span><span class="w"> </span>/scan<span class="w"> </span><span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;frame_id&quot;</span><span class="nt">&gt;</span><span class="w">  </span>lasersensor<span class="w"> </span><span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">phase=</span><span class="s">&quot;startup&quot;</span><span class="w"> </span><span class="na">level=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;attach&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;paramlist</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;networks&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;elem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;the_device&quot;</span><span class="nt">&gt;</span><span class="w"> </span>rpLidarS2<span class="w"> </span><span class="nt">&lt;/elem&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/paramlist&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/action&gt;</span>
+<span class="w">    </span><span class="nt">&lt;action</span><span class="w"> </span><span class="na">phase=</span><span class="s">&quot;shutdown&quot;</span><span class="w"> </span><span class="na">level=</span><span class="s">&quot;15&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;detach&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/device&gt;</span>
+</code></pre></div>
+<ol>
+<li>once that is done the configuration file needs to be added to the main configuration file for the lidar, similarly to how done here:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- LIDAR --&gt;</span>
+<span class="nt">&lt;xi:include</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;hardware/sensors/rplidar.xml&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;xi:include</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;wrappers/sensors/rplidar_wrapper_ros2.xml&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+</code></pre></div>
+<p>Regarding the first xml file shown, it basically uses the <code>rangefinder2D_nws_ros2</code> device to configure a <code>ROS</code> topic called <code>/scan</code> that streams the data taken from the virtualized lidar device configured in the file <code>hardware/sensors/rplidar.xml</code>, that in this case is named <code>rpLidarS2</code>.</p>
+<ol>
+<li>Applications for these sensors can be launched using yarpmanager.</li>
+</ol>
+<hr />
+<h2 id="power-distribution-and-battery-system">Power Distribution and Battery System</h2>
+<p>ergoCub-S/N:003 is designed for <strong>autonomous operation</strong> with an integrated battery pack and Battery Management System (BMS), distinguishing it from tethered or grid-powered research platforms.</p>
+<p>This section provides general information about the power supply and battery system. More detailed information can be found at:</p>
+<ul>
+<li>BAT board: <a href="https://mesh-iit.github.io/documentation/battery_boards/bat_board/bat_board/">https://mesh-iit.github.io/documentation/battery_boards/bat_board/bat_board/</a></li>
+<li>BMS board: <a href="https://mesh-iit.github.io/documentation/battery_boards/bms_board/bms_board/">https://mesh-iit.github.io/documentation/battery_boards/bms_board/bms_board/</a></li>
+<li>ErgoCub battery pack: <a href="https://mesh-iit.github.io/documentation/ergocub_battery_pack/ergocub_battery_pack/">https://mesh-iit.github.io/documentation/ergocub_battery_pack/ergocub_battery_pack/</a></li>
+</ul>
+<h3 id="battery-management-system-bms">Battery Management System (BMS)</h3>
+<p>The battery pack integrates a <strong>dedicated BMS controller</strong> (model: BMS_IIT1A-11S-50APK_PCA) which is <strong>physically inseparable</strong> from the pack.</p>
+<h4 id="charging-procedure">Charging Procedure</h4>
+<p>ergoCub-S/N:003 is charged using a <strong>dedicated charging station</strong> with automated charge profiling:</p>
+<ol>
+<li><strong>Insertion</strong>: Place battery pack into designated charging slot</li>
+<li><strong>Initialization</strong>: Charger performs self-test and BMS communication validation</li>
+<li><strong>Charging Phase</strong>: Multi-stage (CC/CV) charging profile automatically selected based on battery state</li>
+<li><strong>Completion</strong>: Charger terminates automatically when battery reaches full charge (41.5-42.0 V nominal)</li>
+<li><strong>Removal</strong>: Battery may be removed once charging LED indicates completion</li>
+</ol>
+<hr />
+<h2 id="calibration-system">Calibration System</h2>
+<p>All motors on ergoCub-S/N:003 require calibration after startup or power-down.  For more detailed information about the calibration types available, check: <a href="https://mesh-iit.github.io/documentation/robot_calibration_types/standard_calibration_types">https://mesh-iit.github.io/documentation/robot_calibration_types/standard_calibration_types</a>
+It is important to keep the calibration order to avoid self collisions. If a joint could not calibrate, please pay attention to the collisions and if necessary press the fault button.</p>
+<h3 id="calibration-types-used-on-ergocub">Calibration Types used on ergoCub</h3>
+<h4 id="type-12-analog-sensor-calibration">Type 12: Analog Sensor Calibration</h4>
+<ul>
+<li>Uses absolute position encoder for joint position</li>
+<li>Used on: wrist, head, finger abduction</li>
+</ul>
+<h4 id="type-10-hard-limit-calibration-most-common">Type 10: Hard Limit Calibration (Most Common)</h4>
+<ul>
+<li>Uses hardware hard stops for calibration</li>
+<li>Position reference from relative encoder count</li>
+<li>Used on: Most arm, leg, and torso joints</li>
+</ul>
+<h4 id="type-14-analog-sensor-plus-hardware-limit-calibration">Type 14: Analog Sensor Plus Hardware Limit Calibration</h4>
+<ul>
+<li>Uses absolute position encoder for joint position  </li>
+<li>Uses the incremental encoder at the motor</li>
+<li>Used on: Hand Open-Close manipulation joints</li>
+</ul>
+<h4 id="head-calibration">Head Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Head (HeadV3_Calibrator)</li>
+<li><strong>Total Joints</strong>: 4</li>
+<li><strong>Calibration Order</strong>: Sequential (1) → (2) → (0) → (3)</li>
+</ul>
+<h4 id="torso-calibration">Torso Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Torso (Torso_Calibrator)</li>
+<li><strong>Total Joints</strong>: 3</li>
+<li><strong>Calibration Order</strong>: Parallel (0, 1, 2)</li>
+</ul>
+<h4 id="left-arm-calibration">Left Arm Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Left Arm (Left_Arm_Calibrator)</li>
+<li><strong>Total Joints</strong>: 13</li>
+<li><strong>Calibration Order</strong>: (4 5 6) → (3) → (2) → (0) → (1) → (7 8) → (9) → (10 11 12)</li>
+</ul>
+<h4 id="right-arm-calibration">Right Arm Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Right Arm (Right_Arm_Calibrator)</li>
+<li><strong>Total Joints</strong>: 13</li>
+<li><strong>Similar structure to left arm with mirrored calibration</strong></li>
+</ul>
+<h4 id="left-leg-calibration">Left Leg Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Left Leg (Left_Leg_Calibrator)</li>
+<li><strong>Total Joints</strong>: 6</li>
+<li><strong>Calibration Order</strong>: (2) → (4) → (5) → (3) → (0) → (1)</li>
+</ul>
+<h4 id="right-leg-calibration">Right Leg Calibration</h4>
+<ul>
+<li><strong>Component</strong>: Right Leg (Right_Leg_Calibrator)</li>
+<li><strong>Total Joints</strong>: 6</li>
+<li><strong>Calibration Order</strong>: (4) → (5) → (2) → (3) → (0) → (1)</li>
+</ul>
+<hr />
+<h2 id="operating-systems-architecture">Operating Systems Architecture</h2>
+<p>ergoCub-S/N:003 employs a <strong>distributed dual-computer architecture</strong> reflecting differences between sensing/perception (head) and motor control (torso). This design philosophy enables:
+- Independent OS optimization for each control domain
+- Scalable sensor processing without impacting real-time motor control
+- Flexible deployment and updates without full system downtime</p>
+<h3 id="system-topology">System Topology</h3>
+<p>The ergoCub control architecture comprises two primary compute nodes networked via <strong>10 Gbps Ethernet</strong>.</p>
+<h4 id="ergocub-head-nvidia-jetson-xavier-agx">ergocub-head (NVIDIA Jetson Xavier AGX)</h4>
+<ul>
+<li><strong>Hardware</strong>: NVIDIA Jetson Xavier AGX module with integrated GPU</li>
+<li><strong>Role</strong>: Perception, vision processing, sensor data fusion</li>
+</ul>
+<h4 id="ergocub-torso-com-express-type-10-module">ergocub-torso (COM Express Type 10 Module)</h4>
+<ul>
+<li><strong>Hardware</strong>: Advantech COM Express Type 10 carrier board with industrial-grade embedded processor</li>
+<li><strong>Role</strong>: Real-time motor control, force/torque sensing, balance</li>
+</ul>
+<h3 id="network-interfaces-and-configuration">Network Interfaces and Configuration</h3>
+<p>ergoCub operates on a <strong>three-tier network architecture</strong> connecting the head, torso, motor control boards, and external infrastructure. Understanding and properly configuring these networks is critical for robot operation and debugging.</p>
+<p>More detailed information about setting up the robot network can be found at: <a href="https://mesh-iit.github.io/documentation/ergocub_operating_systems/network/">https://mesh-iit.github.io/documentation/ergocub_operating_systems/network/</a> and its specific subsections:</p>
+<ul>
+<li>ergoCub-head: <a href="https://mesh-iit.github.io/documentation/ergocub_operating_systems/ergocub_head/">https://mesh-iit.github.io/documentation/ergocub_operating_systems/ergocub_head/</a></li>
+<li>ergoCub-torso: <a href="https://mesh-iit.github.io/documentation/ergocub_operating_systems/ergocub_torso/install_from_scratch/">https://mesh-iit.github.io/documentation/ergocub_operating_systems/ergocub_torso/install_from_scratch/</a></li>
+</ul>
+<h4 id="network-architecture-overview">Network Architecture Overview</h4>
+<p>The ergoCub network is divided into three independent subnets:</p>
+<ol>
+<li><strong>Internal Network (10.0.1.0/24)</strong>: Segregated motor control network</li>
+<li>Connects ergocub-torso to all motor control boards (EB1-EB31)</li>
+<li>No external connectivity (isolated for reliability and real-time performance)</li>
+<li>
+<p>Static configuration managed by motor board firmware</p>
+</li>
+<li>
+<p><strong>External Network (10.0.2.0/24)</strong>: Primary communication and internet access</p>
+</li>
+<li>Connects ergocub-torso and ergocub-head to the ergocub-server</li>
+<li>Supports internet connectivity via WiFi or wired uplink</li>
+<li>
+<p>Enables remote monitoring, software updates, and sensor streaming</p>
+</li>
+<li>
+<p><strong>Backup Network (10.0.0.0/24)</strong>: Direct troubleshooting and recovery</p>
+</li>
+<li>Direct Ethernet link between ergocub-torso and ergocub-head</li>
+<li>Used for emergency intervention when external network fails</li>
+<li>Enables direct debugging without server dependency</li>
+</ol>
+<h4 id="physical-ethernet-interfaces">Physical Ethernet Interfaces</h4>
+<p><strong>ergocub-torso</strong>:
+- <strong>eth0</strong>: Internal network interface (10.0.1.x subnet) — <strong>connected to motor boards via internal switch</strong>
+- <strong>eth1</strong>: Backup network interface (10.0.0.x subnet) — <strong>direct Ethernet cable to ergocub-head</strong>
+- <strong>WiFi (wlan0)</strong>: External network interface (10.0.2.x subnet) — <strong>wireless link to ergocub-server</strong></p>
+<p><strong>ergocub-head</strong>:
+- <strong>eth0 + eth1 (bridged)</strong>: Backup network interface (10.0.0.x subnet) — <strong>receives connectivity from ergocub-torso</strong>
+- <strong>WiFi (wlan0)</strong>: External network interface (10.0.2.x subnet) — <strong>wireless link to ergocub-server</strong></p>
+<h4 id="internal-network-1001024-motor-control">Internal Network (10.0.1.0/24) - Motor Control</h4>
+<p><strong>Purpose</strong>: Direct Ethernet communication with embedded motor control boards (EB1-EB31)</p>
+<p><strong>Fixed Configuration</strong> (firmware-determined, not user-configurable):</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subnet</strong></td>
+<td>10.0.1.0/24</td>
+</tr>
+<tr>
+<td><strong>ergocub-torso IP</strong></td>
+<td>10.0.1.104 (static)</td>
+</tr>
+<tr>
+<td><strong>Netmask</strong></td>
+<td>255.255.255.0</td>
+</tr>
+<tr>
+<td><strong>Default Gateway</strong></td>
+<td>None (isolated network)</td>
+</tr>
+<tr>
+<td><strong>Board IP Range</strong></td>
+<td>10.0.1.1 - 10.0.1.31 (EB1-EB31 mapped 1:1)</td>
+</tr>
+<tr>
+<td><strong>Update Rate</strong></td>
+<td>Continuous (1 KHz motor control loop)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Troubleshooting</strong>:
+- If eth0 has no IP address, the internal Ethernet interface may be down
+- Check physical Ethernet cable connection to internal motor board switch
+- Verify motor board firmware is up-to-date (boards auto-configure 10.0.1.x addresses)
+- If specific boards are unreachable, check individual board power and CAN bus connections</p>
+<h4 id="external-network-1002024-server-and-internet">External Network (10.0.2.0/24) - Server and Internet</h4>
+<p><strong>Purpose</strong>: Connect ergocub-head and ergocub-torso to ergocub-server and internet infrastructure</p>
+<p><strong>Default Configuration</strong> (recommended static setup):</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>ergocub-torso</th>
+<th>ergocub-head</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subnet</strong></td>
+<td>10.0.2.0/24</td>
+<td>10.0.2.0/24</td>
+</tr>
+<tr>
+<td><strong>IPv4 Address</strong></td>
+<td>10.0.2.2 (static)</td>
+<td>10.0.2.3 (static)</td>
+</tr>
+<tr>
+<td><strong>Netmask</strong></td>
+<td>255.255.255.0</td>
+<td>255.255.255.0</td>
+</tr>
+<tr>
+<td><strong>Default Gateway</strong></td>
+<td>10.0.2.1</td>
+<td>10.0.2.1</td>
+</tr>
+<tr>
+<td><strong>DNS Server(s)</strong></td>
+<td>10.0.2.1, 8.8.8.8</td>
+<td>10.0.2.1, 8.8.8.8</td>
+</tr>
+<tr>
+<td><strong>Interface</strong></td>
+<td>WiFi (wlan0)</td>
+<td>WiFi (wlan0)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="network-communication-high-level-overview">Network Communication (High-Level Overview)</h3>
+<p>The two computers communicate over the robot's <strong>internal Ethernet backbone</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Primary Interface</strong></td>
+<td>WiFi on external network (10.0.2.0/24) for ROS2 and YARP</td>
+</tr>
+<tr>
+<td><strong>Motor Control</strong></td>
+<td>Internal network eth0 (10.0.1.0/24) for EB board communication</td>
+</tr>
+<tr>
+<td><strong>Emergency Fallback</strong></td>
+<td>Backup network eth1 (10.0.0.0/24) for direct troubleshooting</td>
+</tr>
+<tr>
+<td><strong>Typical Bandwidth</strong></td>
+<td>~50-100 Mbps sustained on external network (depending on vision FPS)</td>
+</tr>
+<tr>
+<td><strong>Control Latency</strong></td>
+<td>&lt;20 ms typical (motor command → response via internal network)</td>
+</tr>
+<tr>
+<td><strong>NTP Sync</strong></td>
+<td>Coordinated via ergocub-server (10.0.2.1) at 1-5 second intervals</td>
+</tr>
+</tbody>
+</table>
+<h3 id="swap-eth-cabled-and-wifi-network">Swap ETH cabled and WiFi Network</h3>
+<p>In order to enabling the WiFi network on <code>ergocub</code> you first need to check that the WiFi network interface is activated on <code>ergocub-head</code> and you can follow 2 different ways:</p>
+<ul>
+<li>an easy way is to just connect the <code>ergocub-head</code> board to an available WiFi network using the following commands:</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>ergocub-head<span class="w"> </span>-X
+sudo<span class="w"> </span>mntui
+</code></pre></div>
+at this point from the UI that gets opened you just need to select the desired network and activate it</p>
+<ul>
+<li>the other option is to create a new static IP network (in this case it is recommended to use an IP address that is different from the one of the cabled network, i.e. 10.0.1/24). Similarly to what done in the first option you need to access the network UI:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>ergocub-head<span class="w"> </span>-X
+sudo<span class="w"> </span>mntui
+</code></pre></div>
+<p>Once here, you need to use the edit option and create the desired network.</p>
+<p>After doing that you can edit the following files depending on the desired network you wish to attach to:</p>
+<ul>
+<li>update the <code>/etc/hosts</code> file with either wireless or ETH IP for the <code>ergocub-torso</code>, <code>ergocub-head</code> and <code>ergocub-laptop</code></li>
+<li>update the <a href="https://www.yarp.it/latest/group__yarp.html#yarp_conf">yarp conf</a> on the same machines, i.e. <code>ergocub-torso</code>, <code>ergocub-head</code> and <code>ergocub-laptop</code></li>
+</ul>
+<p>It is important to notice that the network interface mounted on <code>ergocub-head</code> board does not support wpa and wpa2 enterprise security. </p>
+<h3 id="ssh-passwordless-login">SSH passwordless login</h3>
+<p>This configuration is mandatory for the correct startup of <code>yarpdev</code> managed by the <code>yarpmanager</code>.
+To complete its configuration just few steps are needed as follows:</p>
+<ol>
+<li><code>ssh-keygen</code> Note: This is used just the first time; there is no need to use it again since the key is already generated</li>
+<li><code>ssh-copy-id ergocub@ergocub-torso</code> (as an alternative also <strong>ergocub@ip-address-ergocub-torso</strong>)</li>
+<li><code>ssh-copy-id ergocub@ergocub-head</code> (as an alternative also <strong>ergocub@ip-address-ergocub-head</strong>)</li>
+<li><code>ssh-copy-id ergocub@ergocub-laptop</code> (as an alternative also <strong>ergocub@ip-address-ergocub-laptop</strong>)</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This configuration is necessary only on the node where yarpmanager will be executed.
+In most use cases <code>yarpmanager</code> application are run on all nodes, thus we complete all the steps above.</p>
+</div>
+<h3 id="operating-system-choices">Operating System Choices</h3>
+<h4 id="ergocub-head-ubuntu-nvidia-jetpack">ergocub-head: Ubuntu + NVIDIA Jetpack</h4>
+<p><strong>OS Configuration</strong>:
+- <strong>Base OS</strong>: Ubuntu 22.04
+- <strong>Jetpack Version</strong>: NVIDIA Jetpack 6.x (CUDA 12.x available)
+- <strong>CUDA Support</strong>: Full CUDA Toolkit with cuDNN, cuBLAS for GPU-accelerated vision
+- <strong>Middleware</strong>: ROS2 Humble/Iron with geometry_msgs, sensor_msgs, vision_msgs packages</p>
+<p><strong>Post-Flashing Requirements</strong>:
+1. Install CUDA libraries and development tools
+2. Install librealsense SDK for RealSense camera support
+3. Install jtop for monitoring (GPU memory, thermal limits)
+4. Setup ergoCub OLED display driver and initialization scripts
+5. Configure camera calibration files and auto-exposure parameters</p>
+<p><strong>Typical Software Stack</strong>:
+- OpenCV 4.x for image processing
+- Depth registration and point cloud generation (librealsense or OpenCV)
+- YOLO/TensorRT for real-time object detection
+- ROS2 nodes for sensor publishing (camera_info, depth_to_laserscan bridge)</p>
+<h4 id="ergocub-torso-ubuntu-server-with-real-time-extensions">ergocub-torso: Ubuntu Server with Real-Time Extensions</h4>
+<p><strong>OS Configuration</strong>:
+- <strong>Base OS</strong>: Ubuntu 24.04 LTS Server
+- <strong>Kernel</strong>: Linux kernel with real-time patches (PREEMPT_RT) for deterministic control
+- <strong>Network Time Protocol</strong>: NTP synchronization via local network (10.0.2.1) or ntp.ubuntu.com
+- <strong>Middleware</strong>: YARP with optimized Ethernet communication drivers</p>
+<p><strong>Manual Installation Process</strong>:
+1. Install Ubuntu 24.04 Server from bootable media
+2. Configure static IP address for robot network integration
+3. Configure NTP for time synchronization (editing <code>/etc/default/ntpdate</code>)
+4. Install YARP and robotology-superbuild dependency stack
+5. Deploy motor control firmware to embedded boards (EB1-EB31)
+6. Validate Ethernet connectivity to all boards</p>
+<p><strong>System Hardening</strong>:
+- Disable unnecessary services (DHCP client, IPv6, unused protocols)
+- Configure read-only filesystem for permanent configurations
+- Enable watchdog timers for safety (automatic restart on control loop timeout)
+- Configure UPS/battery integration for graceful shutdown on power loss</p>
+<h3 id="firmware-updates-and-reflashing">Firmware Updates and Reflashing</h3>
+<h4 id="ergocub-head-reflashing">ergocub-head Reflashing</h4>
+<ol>
+<li>Obtain NVIDIA Jetpack image (.tar or .img file)</li>
+<li>Use NVIDIA SDK Manager or <code>dd</code> utility to write to eMMC</li>
+<li>Boot into recovery mode (FORCE_RECOVERY button)</li>
+<li>Flash and wait for Jetpack installation (~30-40 minutes)</li>
+<li>Post-flash: install CUDA, librealsense, jtop, ergoCub display driver</li>
+</ol>
+<h4 id="ergocub-torso-reflashing">ergocub-torso Reflashing</h4>
+<ol>
+<li>Boot Ubuntu 24.04 Server installer from USB</li>
+<li>Partition disk with /boot, /, and optional /var partitions</li>
+<li>Post-install: configure NTP, install YARP, deploy superbuild</li>
+<li>Flash embedded board firmware via firmwareupdater.ini configuration</li>
+<li>Validate all EB (embedded board) Ethernet responses</li>
+</ol>
+<h4 id="embedded-board-reflashing">Embedded board Reflashing</h4>
+<p>it is possible to update the firmware of each embedded board following <a href="https://mesh-iit.github.io/documentation/icub_firmware/firmware/firmware/?h=firmware#firmwareupdater">this documentation</a>.</p>
+<h3 id="storage-and-filesystem">Storage and Filesystem</h3>
+<table>
+<thead>
+<tr>
+<th>Drive</th>
+<th>OS</th>
+<th>Capacity</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ergocub-head</strong></td>
+<td>eMMC</td>
+<td>32 GB</td>
+<td>System + vision datasets</td>
+</tr>
+<tr>
+<td><strong>ergocub-torso</strong></td>
+<td>SSD or eMMC</td>
+<td>256 GB+</td>
+<td>System + motor logs + calibration data</td>
+</tr>
+</tbody>
+</table>
+<p>Both systems maintain local sensor logs in <code>/var/log/robot/</code> for troubleshooting and system diagnostics.</p>
+<hr />
+<h2 id="software-and-applications">Software and Applications</h2>
+<p>The ergoCub runs on YARP middleware with a comprehensive software stack for robot interface, control, and monitoring. Applications can be launched via YARP robot interface or yarpmanager.</p>
+<h3 id="core-system-interface">Core System Interface</h3>
+<p><strong>yarprobotinterface</strong>
+- Primary interface for hardware initialization and configuration
+- Loads all device drivers and wrappers
+- Main configuration: <code>ergocub_all.xml</code>
+- Per-component configurations: <code>head.xml</code>, <code>torso.xml</code>, <code>left_arm.xml</code>, etc.
+- Manages startup/shutdown sequences with priority levels
+- Handles calibration triggers and data streams</p>
+<hr />
+<h3 id="motor-control-applications">Motor Control Applications</h3>
+<p><strong>yarpmotorgui</strong> (Motor Control GUI)
+- Interactive graphical interface for joint control
+- Real-time position, velocity, and torque visualization
+- Available body parts: head, torso, left_arm, right_arm, left_leg, right_leg
+- Usage: <code>yarpmotorgui --robot ergocub --parts "(head torso left_arm right_arm left_leg right_leg)"</code>
+- Features:
+  - Individual joint sliders for precise control
+  - Current monitoring
+  - Temperature readouts
+  - Emergency stop capabilities</p>
+<h3 id="yarp-manager"><a href="https://www.yarp.it/latest/group__yarpmanager.html">Yarp Manager</a></h3>
+<h2 id="is-a-tool-for-running-and-managing-multiple-programs-on-a-set-of-machines">Is a tool for running and managing multiple programs on a set of machines.</h2>
+<h3 id="sensor-data-publishing">Sensor Data Publishing</h3>
+<p><strong>motorTemperaturePublisher</strong> 
+- Publishes motor temperatures by body part (not available for head and lower arm)
+- Configuration per body part:
+  - <code>config_left_leg.ini</code>
+  - <code>config_right_leg.ini</code>
+  - <code>config_torso.ini</code>
+- Generates temperature plots via:
+  - <code>plotTemperatureLeftLeg.xml</code>
+  - <code>plotTemperatureRightLeg.xml</code>
+  - <code>plotTemperatureTorso.xml</code>
+- Use case: Thermal monitoring, motor health assessment</p>
+<hr />
+<h3 id="firmware-management">Firmware Management</h3>
+<p>More detailed information can be found at: <a href="https://mesh-iit.github.io/documentation/icub_firmware/firmware/firmware/">https://mesh-iit.github.io/documentation/icub_firmware/firmware/firmware/</a></p>
+<hr />
+<h3 id="starting-the-robot">Starting the robot</h3>
+<p>The ergoCub robot control system can be started through a sequence of commands executed on <code>ergocub-torso</code>, or alternatively through the graphical application launcher on <code>ergocub-laptop</code>.</p>
+<h4 id="method-1-command-line-startup-ergocub-torso">Method 1: Command Line Startup (ergocub-torso)</h4>
+<ol>
+<li>
+<p><strong>Connect to ergocub-torso via SSH</strong>:
+   <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>ergocub@ergocub-torso
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Navigate to robot configuration directory</strong> using the alias:
+   <div class="highlight"><pre><span></span><code>gotorobotsconfiguration
+</code></pre></div>
+   This alias brings you to the ergoCub configuration directory where all robot control files are located.</p>
+</li>
+<li>
+<p><strong>Initialize hardware and calibration</strong> by running:
+   <div class="highlight"><pre><span></span><code>yarprobotinterface
+</code></pre></div>
+   This command:</p>
+</li>
+<li>Performs hardware initialization</li>
+<li>Loads motor control drivers for all joints</li>
+<li>Executes calibration routines</li>
+<li>
+<p>Establishes YARP middleware connections</p>
+</li>
+<li>
+<p><strong>Open the motor control GUI</strong> by running from the same directory:
+   <div class="highlight"><pre><span></span><code>yarpmotorgui
+</code></pre></div>
+   This launches the interactive motor control interface displaying:</p>
+</li>
+<li>All robot body parts (head, torso, left_arm, right_arm, left_leg, right_leg)</li>
+<li>Individual joint controls with sliders for position adjustment</li>
+<li>Real-time feedback for position, velocity, and current</li>
+<li>The active control mode</li>
+</ol>
+<h4 id="method-2-graphical-application-launcher-ergocub-laptop">Method 2: Graphical Application Launcher (ergocub-laptop)</h4>
+<p>Alternatively, the same startup sequence can be executed automatically from <code>ergocub-laptop</code> using <strong>yarpmanager</strong>:</p>
+<ol>
+<li>Launch yarpmanager from ergocub-laptop</li>
+<li>Run 'yarpserver' and the 'yarprun' on the single node of the network</li>
+<li>Select the <strong>ergoCubStartup</strong> application</li>
+<li>Run the application to automatically execute:</li>
+<li>yarplogger initialization</li>
+<li>yarprobotinterface (hardware initialization &amp; calibration)</li>
+<li>yarpmotorgui (motor control interface)</li>
+</ol>
+<p>This graphical method provides an alternative to manual command-line startup and is useful for monitoring the startup process.</p>
+<hr />
+<h2 id="additional-system-information">Additional System Information</h2>
+<h3 id="start-yarprobotinterface-with-one-or-more-parts-disabled">Start yarprobotinterface with one or more parts disabled</h3>
+<p>Here you can find the detailed documentation: <a href="https://www.yarp.it/git-master/group__yarp__robotinterface__xml__config__files.html">https://www.yarp.it/git-master/group__yarp__robotinterface__xml__config__files.html</a></p>
+<h3 id="telemetry-system">Telemetry System</h3>
+<p><a href="https://robotology.github.io/robometry/classrobometry_1_1TelemetryDeviceDumper.html">https://robotology.github.io/robometry/classrobometry_1_1TelemetryDeviceDumper.html</a></p>
+<ul>
+<li><code>telemetryDeviceExternal.xml</code> - External telemetry streaming</li>
+<li>Enables remote monitoring of robot state</li>
+<li>Exports file .mat for a data analysis</li>
+</ul>
+<hr />
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>This section addresses the most common operational issues and recovery procedures for ergoCub.</p>
+<h3 id="resolving-hw-fault-on-a-joint">Resolving HW Fault on a Joint</h3>
+<p><strong>Symptoms</strong>: A specific joint stops responding or displays a hardware fault warning in yarpmotorgui.</p>
+<p><strong>Common Causes</strong>:
+- Motor overheating (temperature exceeded warning or hardware limit)
+- Calibration drift or loss of position reference
+- CAN bus communication error with embedded board
+- Mechanical jamming or collision</p>
+<h2 id="recovery-steps">Recovery Steps</h2>
+<ul>
+<li>Check the <code>yarprobotinterface</code> log using <code>yarplogger</code>. The log usually contains information about the cause of the fault.</li>
+<li>Verify the physical integrity of the joint and ensure that it can move freely without mechanical obstruction.</li>
+</ul>
+<p><strong>IMPORTANT:</strong><br />
+It is essential to identify and resolve the root cause of the fault before proceeding (for example, an overcurrent condition).</p>
+<ul>
+<li>
+<p>If the issue occurs <strong>after calibration</strong>, disable and then re-enable the joint using <code>yarpmotorgui</code>. In most cases this resolves the problem.</p>
+</li>
+<li>
+<p>If the issue occurs <strong>during or before calibration</strong>, try the following:</p>
+</li>
+<li>Shut down all applications.</li>
+<li>Power off the motors.</li>
+<li>
+<p>Restart the system and run the applications again.</p>
+</li>
+<li>
+<p>If you suspect <strong>CAN communication issues</strong>, check the CAN connection using <code>FirmwareUpdater</code>.</p>
+</li>
+</ul>
+<p>If the problem cannot be resolved, open a ticket and include the <strong>complete <code>yarprobotinterface</code> log</strong>.<br />
+Providing the full log helps us identify and diagnose the cause of the fault.</p>
+<hr />
+<h3 id="faulting-the-robot">Faulting the Robot</h3>
+<p><strong>Definition</strong>: Complete motor halt and system safety shutdown</p>
+<p><strong>When to Use</strong>:
+- Emergency situation requiring immediate cessation of all motion
+- Safety hazard detected in the environment
+- System malfunction or control loss</p>
+<p><strong>Implementation</strong>:
+- Emergency stop button available in <code>yarpmotorgui</code> interface
+- Command-line stop via YARP port addressing
+- Full power cycle as last resort</p>
+<hr />
+<h3 id="checking-that-the-walking-module-is-running">Checking That the Walking Module is Running</h3>
+<p><strong>Verification Steps</strong>:
+- Query YARP network ports for walking module presence
+- Monitor balance feedback from waist and leg F/T sensors
+- Verify leg joint commands are being received and tracked
+- Check locomotion feedback in system logs</p>
+<p><strong>Expected Behavior</strong>:
+- Coordinated hip, knee, and ankle joint trajectories
+- Consistent F/T sensor readings during stance phase
+- Smooth torso orientation maintained via waist IMU feedback</p>
+<hr />
+<h3 id="recover-the-robot-from-undesired-condition-while-walking-module-has-started">Recover the Robot from Undesired Condition While Walking Module Has Started</h3>
+<p><strong>Symptoms</strong>: Robot enters unstable state, loses balance, or exhibits unexpected movement during walking.</p>
+<p><strong>Emergency Recovery</strong>:
+- Activate emergency stop immediately
+- Wait for all joints to halt completely
+- Manually support robot if balance is compromised
+- Disable walking module via yarpmanager or command line
+- Restart walking module after system stabilization</p>
+<p><strong>Post-Recovery</strong>:
+- Verify leg joint calibration is intact
+- Check F/T sensor readings are within normal range
+- Review system logs for fault indicators
+- Re-initialize walking module with safe initial conditions</p>
+<hr />
+<h3 id="battery-pack-hot-swap">Battery Pack Hot Swap</h3>
+<p><strong>Procedure</strong>:
+1. Ensure robot is in safe stationary configuration
+2. Place ergoCub in secure support (wall mount or handling frame)
+3. Power down robot gracefully (request shutdown via BMS or emergency stop)
+4. Wait for all active indicators to extinguish (~30 seconds)
+5. Remove depleted battery pack from charging slot
+6. Insert fully charged battery pack into slot
+7. Verify battery indicator LED signals correct insertion
+8. Re-power robot and verify all systems initialize normally</p>
+<p><strong>Battery Status Monitoring</strong>:
+- Check battery voltage and charge state via BMS board readouts
+- Monitor battery temperature using integrated thermal sensors
+- Ensure charger confirms full charge before hot swap operation (LED indicator)</p>
+<p><strong>Safety Notes</strong>:
+- Never hot-swap while robot is powered on or calibrating
+- Ensure battery pack is fully inserted to establish power connections
+- Allow 5-minute stabilization period before resuming normal operation after swap
+- BMS will auto-disconnect if battery is removed improperly during operation</p>
+<hr />
+<p><em>Document Version: 1.0</em><br />
+<em>Last Updated: March 2026</em><br />
+<em>Robot Platform: ergoCub-S/N:003</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="./.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="https://mesh-iit.github.io/ergocub-software/doc/doxygen/doc/html/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Documentation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Documentation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      BSD 3-Clause License
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.action.edit","content.action.view","content.code.annotate","content.code.copy","content.code.select","content.tooltips","navigation.tabs","navigation.tabs.sticky","navigation.tracking","navigation.sections","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.top","navigation.footer","search.highlight","search.share","search.suggest","toc.follow"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5fd3284f.min.js"></script>
+      
+    
+  </body>
+</html>
