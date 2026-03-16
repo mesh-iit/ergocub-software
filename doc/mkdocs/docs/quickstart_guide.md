@@ -83,7 +83,7 @@ Additional information about the F/T sensor client interface is available at: ht
 
 **Purpose**: Monitor contact forces and joint torques for force control and manipulation.
 
-**Design Philosophy**: ergoCub uses 6-axis F/T sensors strategically placed at manipulation and locomotion points to enable **force-controlled interactions** with the environment. This is a key distinction from ergoCub, where F/T feedback is primarily used for passive impedance estimation.
+**Design Philosophy**: ergoCub uses 6-axis F/T sensors strategically placed at manipulation and locomotion points to enable **force-controlled interactions** with the environment. This is a key distinction from iCub, where F/T feedback is primarily used for passive impedance estimation.
 
 **Note**: ergoCub's F/T sensors are inherently **low-noise** designs, making them suitable for closed-loop force control (unlike velocity or acceleration estimation). They provide 6-axis force/torque measurement. They should be prioritized in any safety-critical interaction framework.
 
