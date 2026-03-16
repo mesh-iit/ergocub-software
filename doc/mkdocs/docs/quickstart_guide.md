@@ -157,7 +157,7 @@ The ergoCub head integrates two primary exteroceptive sensors for scene understa
 
 - **RPLidar S2 2D Laser Scanner**
 
-In order to **enable the LiDaR data streaming on a ROS topic** you need to add a `_nws_ros2` wrapper in the configuration files as follows:
+In order to **enable the LiDAR data streaming on a ROS topic** you need to add a `_nws_ros2` wrapper in the configuration files as follows:
 
 1. add the file `{robot-configuration-file}/wrappers/sensors/rplidar_wrapper_ros2.xml`
 
@@ -189,7 +189,7 @@ the file should have the following content:
 <xi:include href="wrappers/sensors/rplidar_wrapper_ros2.xml"/> 
 ```
 
-Regarding the first xml file show, it basically uses the `rangefinder2D_nws_ros2` device to configure a `ROS` topic called `/scan` that streams the data taken from the virtualized lidar device configured in the file `hardware/sensors/rplidar.xml`, that is this case is named `rpLidarS2`.
+Regarding the first xml file shown, it basically uses the `rangefinder2D_nws_ros2` device to configure a `ROS` topic called `/scan` that streams the data taken from the virtualized lidar device configured in the file `hardware/sensors/rplidar.xml`, that is this case is named `rpLidarS2`.
 
 3. Applications for these sensors can be launched using yarpmanager.
 
@@ -226,7 +226,7 @@ ergoCub-S/N:003 is charged using a **dedicated charging station** with automated
 ## Calibration System
 
 All motors on ergoCub-S/N:003 require calibration after startup or power-down.  For more detailed information about the calibration types available, check: https://mesh-iit.github.io/documentation/robot_calibration_types/standard_calibration_types
-It that is important to keep the calibration order to avoid self collisions. If a joint could not calibrate, please pay attention to the collisions and if necessary press the fault button.
+It is important to keep the calibration order to avoid self collisions. If a joint could not calibrate, please pay attention to the collisions and if necessary press the fault button.
 
 
 ### Calibration Types used on ergoCub
@@ -313,7 +313,7 @@ The ergoCub control architecture comprises two primary compute nodes networked v
 
 ### Network Interfaces and Configuration
 
-ergoCuboperates on a **three-tier network architecture** connecting the head, torso, motor control boards, and external infrastructure. Understanding and properly configuring these networks is critical for robot operation and debugging.
+ergoCub operates on a **three-tier network architecture** connecting the head, torso, motor control boards, and external infrastructure. Understanding and properly configuring these networks is critical for robot operation and debugging.
 
 More detailed information about setting up the robot network can be found at: https://mesh-iit.github.io/documentation/ergocub_operating_systems/network/ and its specific subsections:
 
@@ -404,7 +404,7 @@ The two computers communicate over the robot's **internal Ethernet backbone**:
 
 ### Swap ETH cabled and WiFi Network
 
-In order to enabling the WiFi network on `ergocub` you first need to check that the WiFi network interface is activated on `erogcub-head` and you can follow 2 different ways:
+In order to enabling the WiFi network on `ergocub` you first need to check that the WiFi network interface is activated on `ergocub-head` and you can follow 2 different ways:
 
 - an easy way is to just connect the `ergocub-head` board to an available WiFi network using the following commands:
 
@@ -423,7 +423,7 @@ sudo mntui
 
 Once here, you need to use the edit option and create the desired network.
 
-After doing that you can edit the following files depending on the desired netowrk you wish to attach to:
+After doing that you can edit the following files depending on the desired network you wish to attach to:
 
 - update the `/etc/hosts` file with either wireless or ETH IP for the `ergocub-torso`, `ergocub-head` and `ergocub-laptop`
 - update the [yarp conf](https://www.yarp.it/latest/group__yarp.html#yarp_conf) on the same machines, i.e. `ergocub-torso`, `ergocub-head` and `ergocub-laptop`
@@ -643,7 +643,7 @@ https://robotology.github.io/robometry/classrobometry_1_1TelemetryDeviceDumper.h
 
 - `telemetryDeviceExternal.xml` - External telemetry streaming
 - Enables remote monitoring of robot state
-- Exports file .mat for a data analisys
+- Exports file .mat for a data analysis
 
 ---
 
