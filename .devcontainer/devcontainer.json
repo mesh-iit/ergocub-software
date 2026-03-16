@@ -1,11 +1,8 @@
 {
   "name": "ergoCub Software Dev",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {},
-    "ghcr.io/devcontainers/features/git:latest": {}
+  "build": {
+    "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "pip install --break-system-packages -r requirements.txt",
   "customizations": {
     "vscode": {
       "extensions": [

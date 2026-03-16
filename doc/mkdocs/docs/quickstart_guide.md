@@ -85,15 +85,15 @@ Additional information about the F/T sensor client interface is available at: ht
 
 **Design Philosophy**: ergoCub uses 6-axis F/T sensors strategically placed at manipulation and locomotion points to enable **force-controlled interactions** with the environment. This is a key distinction from ergoCub, where F/T feedback is primarily used for passive impedance estimation.
 
-**Note**: ergoCub's F/T sensors are inherently **low-noise** designs, making them suitable for closed-loop force control (unlike velocity or acceleration estimation). They provides 6-axis force/torque measurement. They should be prioritized in any safety-critical interaction framework.
+**Note**: ergoCub's F/T sensors are inherently **low-noise** designs, making them suitable for closed-loop force control (unlike velocity or acceleration estimation). They provide 6-axis force/torque measurement. They should be prioritized in any safety-critical interaction framework.
 
 - **Right/Left Arm**: 
   - Mounted on EB1 and EB2 (shoulder region)
   - Scope: Arm contact force monitoring, manipulation force feedback
 
 - **Left/Right Leg**:
-  - Mounted on EB8 and EB6 (Hip regiorn)
-  - Mounted on EB9 and EB7 (Ankle regiorn)
+  - Mounted on EB8 and EB6 (Hip region)
+  - Mounted on EB9 and EB7 (Ankle region)
   - Scope: Gait analysis, balance control, floor contact detection
 
 
@@ -226,7 +226,7 @@ ergoCub-S/N:003 is charged using a **dedicated charging station** with automated
 ## Calibration System
 
 All motors on ergoCub-S/N:003 require calibration after startup or power-down.  For more detailed information about the calibration types available, check: https://mesh-iit.github.io/documentation/robot_calibration_types/standard_calibration_types
-Add here that is important to keep the calibration order to avoid self collisions. If a joint could not calibrate, please pay attention to the collitions and if necessary press the fault button.
+It that is important to keep the calibration order to avoid self collisions. If a joint could not calibrate, please pay attention to the collisions and if necessary press the fault button.
 
 
 ### Calibration Types used on ergoCub
@@ -551,14 +551,14 @@ The ergoCub runs on YARP middleware with a comprehensive software stack for robo
   - Emergency stop capabilities
 
 
-### [Missing yarp Manager](https://www.yarp.it/latest//group__yarpmanager.html)
-Is a tools for running and managing multiple programs on a set of machines. 
+### [Missing yarp Manager](https://www.yarp.it/latest/group__yarpmanager.html)
+Is a tool for running and managing multiple programs on a set of machines.
 ---
 
 ### Sensor Data Publishing
 
 **motorTemperaturePublisher** 
-- Publishes motor temperatures by body part (ton available for head and lower arm)
+- Publishes motor temperatures by body part (not available for head and lower arm)
 - Configuration per body part:
   - `config_left_leg.ini`
   - `config_right_leg.ini`
@@ -761,5 +761,5 @@ Providing the full log helps us identify and diagnose the cause of the fault.
 ---
 
 *Document Version: 1.0*  
-*Last Updated: February 2026*  
+*Last Updated: March 2026*  
 *Robot Platform: ergoCub-S/N:003*
