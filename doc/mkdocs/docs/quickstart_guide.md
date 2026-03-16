@@ -551,7 +551,7 @@ The ergoCub runs on YARP middleware with a comprehensive software stack for robo
   - Emergency stop capabilities
 
 
-### [Missing yarp Manager](https://www.yarp.it/latest/group__yarpmanager.html)
+### [Yarp Manager](https://www.yarp.it/latest/group__yarpmanager.html)
 Is a tool for running and managing multiple programs on a set of machines.
 ---
 
