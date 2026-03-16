@@ -189,7 +189,7 @@ the file should have the following content:
 <xi:include href="wrappers/sensors/rplidar_wrapper_ros2.xml"/> 
 ```
 
-Regarding the first xml file shown, it basically uses the `rangefinder2D_nws_ros2` device to configure a `ROS` topic called `/scan` that streams the data taken from the virtualized lidar device configured in the file `hardware/sensors/rplidar.xml`, that is this case is named `rpLidarS2`.
+Regarding the first xml file shown, it basically uses the `rangefinder2D_nws_ros2` device to configure a `ROS` topic called `/scan` that streams the data taken from the virtualized lidar device configured in the file `hardware/sensors/rplidar.xml`, that in this case is named `rpLidarS2`.
 
 3. Applications for these sensors can be launched using yarpmanager.
 
@@ -432,7 +432,7 @@ It is important to notice that the network interface mounted on `ergocub-head` b
 
 ### SSH passwordless login
 
-This configuration is mandatory for the correctly startup of `yarpdev` managed by the `yarpmanager`.
+This configuration is mandatory for the correct startup of `yarpdev` managed by the `yarpmanager`.
 To complete its configuration just few steps are needed as follows:
 
 1. `ssh-keygen` Note: This is used just the first time; there is no need to use it again since the key is already generated
@@ -501,7 +501,7 @@ To complete its configuration just few steps are needed as follows:
 5. Post-flash: install CUDA, librealsense, jtop, ergoCub display driver
 
 #### ergocub-torso Reflashing
-1. Boot Ubuntu 22.04 Server installer from USB
+1. Boot Ubuntu 24.04 Server installer from USB
 2. Partition disk with /boot, /, and optional /var partitions
 3. Post-install: configure NTP, install YARP, deploy superbuild
 4. Flash embedded board firmware via firmwareupdater.ini configuration
