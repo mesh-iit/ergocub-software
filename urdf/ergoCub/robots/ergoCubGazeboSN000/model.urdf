@@ -4,12 +4,12 @@
     <inertial>
       <mass value="2.823751482824641"/>
       <origin xyz="0.0024748962432214403 -1.050794470993344e-4 0.023450368787955644" rpy="0 -0 0"/>
-      <inertia ixx="0.005630606285299466" ixy="1.4369039688385168e-6" ixz="2.329934099458601e-5" iyy="0.004380033669258687" iyz="1.4098441290533537e-5" izz="0.003616681010808376"/>
+      <inertia ixx="0.005630606285299466" ixy="1.4369039688385168e-6" ixz="2.3299340994585983e-5" iyy="0.004380033669258687" iyz="1.4098441290533537e-5" izz="0.003616681010808376"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_root_link.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_root_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -18,7 +18,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_root_link.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_root_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -27,7 +27,7 @@
   </link>
   <joint name="l_hip_pitch" type="revolute">
     <origin xyz="0.02109999999999964 0.050500000000000836 1.942890293094024e-16" rpy="3.958535957527503e-15 3.810968172190701e-15 1.167434911886406e-16"/>
-    <axis xyz="-5.772831379991284e-17 -1 -1.3843833381666392e-17"/>
+    <axis xyz="-5.772831379991284e-17 -1 -1.384383338166718e-17"/>
     <parent link="root_link"/>
     <child link="l_hip_1"/>
     <limit lower="-0.767944870877505" upper="1.9198621771937625" effort="1e+9" velocity="1e+9"/>
@@ -42,7 +42,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -51,7 +51,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -60,7 +60,7 @@
   </link>
   <joint name="r_hip_pitch" type="revolute">
     <origin xyz="0.021099999999999643 -0.05049999999999917 -2.220446049250313e-16" rpy="3.986223624290839e-15 9.012328668422501e-14 4.978996250550603e-17"/>
-    <axis xyz="-1.0880513989386065e-16 -1 1.384383338166008e-17"/>
+    <axis xyz="-1.0880513989386065e-16 -1 1.3843833381659292e-17"/>
     <parent link="root_link"/>
     <child link="r_hip_1"/>
     <limit lower="-0.767944870877505" upper="1.9198621771937625" effort="1e+9" velocity="1e+9"/>
@@ -70,12 +70,12 @@
     <inertial>
       <mass value="2.2320852637398954"/>
       <origin xyz="-0.004032117730258793 -0.028249385885545365 -6.739019720393702e-4" rpy="0 -0 0"/>
-      <inertia ixx="0.00221225947743564" ixy="-6.126720536020865e-5" ixz="-1.5035655169601288e-5" iyy="0.002695545891317729" iyz="6.443355522460266e-6" izz="0.0024608876750051726"/>
+      <inertia ixx="0.00221225947743564" ixy="-6.12672053602087e-5" ixz="-1.5035655169601284e-5" iyy="0.002695545891317729" iyz="6.443355522460266e-6" izz="0.0024608876750051726"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -84,7 +84,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -103,12 +103,12 @@
     <inertial>
       <mass value="2.0645667"/>
       <origin xyz="-0.00963997362197503 6.168494736287859e-4 0.08244231288506354" rpy="0 -0 0"/>
-      <inertia ixx="0.007406085999999999" ixy="0" ixz="0" iyy="0.0059470732999999994" iyz="0" izz="0.0031780111"/>
+      <inertia ixx="0.007406085999999999" ixy="-1.6940658945086007e-21" ixz="-2.168404344971009e-19" iyy="0.0059470732999999994" iyz="0" izz="0.0031780111"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -117,7 +117,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -126,7 +126,7 @@
   </link>
   <joint name="torso_pitch" type="revolute">
     <origin xyz="-7.31996858122512e-17 -2.465190328815662e-32 0.11800000000000001" rpy="3.972379790909169e-15 -2.7755575615628914e-17 -5.766686906865033e-30"/>
-    <axis xyz="1.9259299443837326e-34 1 0"/>
+    <axis xyz="3.851859888763962e-34 1 0"/>
     <parent link="torso_1"/>
     <child link="torso_2"/>
     <limit lower="-0.3490658503988659" upper="1.1344640137963142" effort="1e+9" velocity="1e+9"/>
@@ -141,7 +141,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -150,97 +150,91 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_torso_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
       </material>
     </collision>
   </link>
-  <joint name="torso_yaw" type="revolute">
-    <origin xyz="7.750929403809172e-17 2.585744285754345e-16 0.06447000000000001" rpy="-3.965440897005259e-15 9.857150196616922e-31 -5.2041704279298444e-17"/>
-    <axis xyz="2.0848644290772277e-15 -2.1205546746284363e-15 -1"/>
+  <joint name="SIM_ECUB_1-1_TORSO_2--SIM_ECUB_1-1_CHEST" type="continuous">
+    <origin xyz="3.2264224928916605e-18 1.297606021580521e-16 3.795334199281987e-17" rpy="1.4239886692466165e-15 -6.938893903909127e-18 1.5707963267948966"/>
+    <axis xyz="-6.092934465537603e-15 -3.5088530983238434e-15 -1"/>
     <parent link="torso_2"/>
-    <child link="chest"/>
-    <limit lower="-0.7853981633974483" upper="0.7853981633974483" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
+    <child link="SIM_ECUB_1-1_CHEST"/>
   </joint>
-  <link name="chest">
+  <link name="SIM_ECUB_1-1_CHEST">
     <inertial>
       <mass value="8.065471632648594"/>
-      <origin xyz="-0.010721051678060345 -3.482064053382885e-4 0.07611063517438793" rpy="0 -0 0"/>
-      <inertia ixx="0.048454754024617776" ixy="1.7611941682820642e-4" ixz="-3.124089280569708e-4" iyy="0.044938830524554475" iyz="-1.2962048932614557e-4" izz="0.030687687298016447"/>
+      <origin xyz="-3.482064053378569e-4 0.01072105167806047 0.14058063517438787" rpy="0 -0 0"/>
+      <inertia ixx="0.04493883052455441" ixy="-1.7611941682820536e-4" ixz="-1.2962048932620195e-4" iyy="0.04845475402461774" iyz="3.124089280569474e-4" izz="0.03068768729801644"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_chest.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_chest.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 1 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_chest.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_chest.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="1 1 1 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </collision>
   </link>
-  <joint name="neck_pitch" type="revolute">
-    <origin xyz="0.004861512347971929 4.708746741468531e-16 0.22529999999999975" rpy="-2.6119678294737364e-15 -3.4056897699793993e-15 2.4309992584509393e-16"/>
-    <axis xyz="-1.630254985826183e-15 -1 -1.850775361344979e-15"/>
-    <parent link="chest"/>
-    <child link="neck_2"/>
-    <limit lower="-0.7853981633974483" upper="0.3839724354387525" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
+  <joint name="SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_HEAD_NECK_2" type="continuous">
+    <origin xyz="1.2708867293726507e-15 -0.004861512347971573 0.28976999999999997" rpy="-1.3208254231267427e-15 8.743006792683972e-16 1.634109514370152e-15"/>
+    <axis xyz="1 -3.0212645743512393e-15 -4.235220117208732e-15"/>
+    <parent link="SIM_ECUB_1-1_CHEST"/>
+    <child link="SIM_ECUB_1-1_HEAD_NECK_2"/>
   </joint>
-  <link name="neck_2">
+  <link name="SIM_ECUB_1-1_HEAD_NECK_2">
     <inertial>
       <mass value="0.12100314943032965"/>
-      <origin xyz="-0.006305773955890982 3.0141314376407138e-5 0.006373188453183354" rpy="0 -0 0"/>
-      <inertia ixx="4.5383766592166864e-5" ixy="-9.375752008423039e-8" ixz="8.622664755132213e-6" iyy="3.848306673536227e-5" iyz="4.870043501244136e-8" izz="3.7535538604448367e-5"/>
+      <origin xyz="3.0141314376676528e-5 0.006305773955890985 0.006373188453183132" rpy="0 -0 0"/>
+      <inertia ixx="3.848306673536264e-5" ixy="9.375752008419092e-8" ixz="4.870043501240908e-8" iyy="4.5383766592166017e-5" iyz="-8.62266475513224e-6" izz="3.7535538604448434e-5"/>
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <origin xyz="-1.2125518183288775e-15 0.004861512347971553 -0.2897700000000002" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="0.6 0.6 0.6 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <origin xyz="-1.2125518183288775e-15 0.004861512347971553 -0.2897700000000002" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="0.6 0.6 0.6 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </collision>
   </link>
-  <joint name="l_shoulder_pitch" type="revolute">
-    <origin xyz="-0.013518676842610168 0.06704761117227494 0.12351981080941762" rpy="0.25361232387325394 -0.052031605504494635 -0.27527873241387185"/>
-    <axis xyz="1.43982048506075e-16 1.0000000000000002 3.608224830031759e-16"/>
-    <parent link="chest"/>
+  <joint name="SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_L_SHOULDER_1" type="continuous">
+    <origin xyz="0.06704761117227556 0.01351867684261036 0.18798981080941732" rpy="0.25361232387325056 -0.05203160550449709 -1.8460750592087682"/>
+    <axis xyz="1.0928757898653885e-16 1 3.0531133177191805e-16"/>
+    <parent link="SIM_ECUB_1-1_CHEST"/>
     <child link="l_shoulder_1"/>
-    <limit lower="-2.9670597283903604" upper="0.6108652381980153" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
   </joint>
   <link name="l_shoulder_1">
     <inertial>
       <mass value="0.7913756606310043"/>
       <origin xyz="1.4824275422014796e-4 0.06782971819041986 5.036196460999898e-4" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="3.3881317890172014e-21" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -249,31 +243,29 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
       </material>
     </collision>
   </link>
-  <joint name="r_shoulder_pitch" type="revolute">
-    <origin xyz="-0.013518676842610305 -0.06704761117227447 0.1235198108094179" rpy="-0.25361232387326105 -0.052031605504494746 0.2752787324138701"/>
-    <axis xyz="-3.3306690738754696e-16 1 3.4416913763379853e-15"/>
-    <parent link="chest"/>
+  <joint name="SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_R_SHOULDER_1" type="continuous">
+    <origin xyz="-0.06704761117227384 0.013518676842610497 0.18798981080941812" rpy="-0.25361232387326527 -0.05203160550449503 -1.2955175943810264"/>
+    <axis xyz="6.574601973952099e-16 -1.0000000000000004 -3.3029134982598407e-15"/>
+    <parent link="SIM_ECUB_1-1_CHEST"/>
     <child link="r_shoulder_1"/>
-    <limit lower="-2.9670597283903604" upper="0.6108652381980153" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
   </joint>
   <link name="r_shoulder_1">
     <inertial>
       <mass value="0.7922822880502421"/>
       <origin xyz="1.7243569867328445e-4 -0.06784040318161474 4.7600094527533443e-4" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="1.6940658945086007e-21" ixz="-1.3234889800848443e-23" iyy="0.01" iyz="6.776263578034403e-21" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -282,7 +274,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -291,7 +283,7 @@
   </link>
   <joint name="r_shoulder_roll" type="revolute">
     <origin xyz="0.007499999999999941 -0.09330000000000022 -2.498001805406602e-16" rpy="-9.353628982466936e-15 8.923417560424696e-15 -4.884981308350685e-15"/>
-    <axis xyz="-1.0000000000000009 8.205242041369425e-16 1.734723475977312e-16"/>
+    <axis xyz="-1.0000000000000027 1.153591111524405e-15 1.9428902930949706e-16"/>
     <parent link="r_shoulder_1"/>
     <child link="r_shoulder_2"/>
     <limit lower="-0.2617993877991494" upper="2.6179938779914944" effort="1e+9" velocity="1e+9"/>
@@ -306,7 +298,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -315,7 +307,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -331,12 +323,12 @@
     <inertial>
       <mass value="0.271466272759966"/>
       <origin xyz="-8.31167799586717e-5 -3.0654831449927755e-5 -0.007966545320293866" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-1.0339757656912846e-25" ixz="-2.6469779601696886e-23" iyy="0.01" iyz="-1.3234889800848443e-23" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -345,7 +337,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_shoulder_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -354,7 +346,7 @@
   </link>
   <joint name="r_shoulder_yaw" type="revolute">
     <origin xyz="-1.1449174941446927e-16 1.1102230246251565e-16 -0.022500000000000228" rpy="-2.7755575615628914e-17 4.0939474033052647e-16 7.382983113757288e-15"/>
-    <axis xyz="-4.579669976578765e-16 5.551115123125817e-17 1"/>
+    <axis xyz="-4.371503159461546e-16 8.32667268468839e-17 1"/>
     <parent link="r_shoulder_3"/>
     <child link="r_upper_arm"/>
     <limit lower="-0.9075712110370514" upper="1.4311699866353502" effort="1e+9" velocity="1e+9"/>
@@ -369,7 +361,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upperarm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upperarm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -378,7 +370,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upperarm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upperarm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -387,7 +379,7 @@
   </link>
   <joint name="r_elbow" type="revolute">
     <origin xyz="0.009999999999999966 0.001500000000000501 -0.1237000000000001" rpy="-1.94289029309402e-16 -5.488665077990618e-15 -8.271161533457391e-15"/>
-    <axis xyz="2.4459601011270737e-16 -1.0000000000000027 1.2989609388114332e-14"/>
+    <axis xyz="3.5561831257529417e-16 -1.000000000000008 2.5951463200613154e-14"/>
     <parent link="r_upper_arm"/>
     <child link="r_forearm"/>
     <limit lower="-0.08726646259971647" upper="2.0943951023931953" effort="1e+9" velocity="1e+9"/>
@@ -397,12 +389,12 @@
     <inertial>
       <mass value="1.4760712424977045"/>
       <origin xyz="-0.01830687629472739 -0.002214887320910963 -0.08814943647449926" rpy="0 -0 0"/>
-      <inertia ixx="0.009999999999999998" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.009999999999999998" ixy="0" ixz="-4.336808689942018e-19" iyy="0.010000000000000004" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_forearm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -411,7 +403,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_forearm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -420,7 +412,7 @@
   </link>
   <joint name="r_wrist_yaw" type="revolute">
     <origin xyz="-0.014999999999999698 -0.001999999999996477 -0.1943500000000013" rpy="-1.9706458687096485e-15 -1.1712852909795402e-14 -2.942091015256656e-15"/>
-    <axis xyz="5.7037707890117685e-15 -1.2517764602648659e-14 1.0000000000000022"/>
+    <axis xyz="1.1289580381657174e-14 -2.514655150775995e-14 1.0000000000000067"/>
     <parent link="r_forearm"/>
     <child link="r_wrist_1"/>
     <limit lower="-1.6057029118347832" upper="1.6057029118347832" effort="1e+9" velocity="1e+9"/>
@@ -430,12 +422,12 @@
     <inertial>
       <mass value="0.05654246904305621"/>
       <origin xyz="4.0273630312637546e-4 -0.0010588455479770553 0.019140836855494725" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="5.293955920339377e-23" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -444,7 +436,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -453,7 +445,7 @@
   </link>
   <joint name="r_wrist_roll" type="revolute">
     <origin xyz="7.979727989493313e-17 1.1102230246251565e-16 1.6653345369377348e-16" rpy="2.4980018054066017e-16 -0 0"/>
-    <axis xyz="1.0000000000000004 -1.8735013540549512e-16 7.632783294297946e-17"/>
+    <axis xyz="1.0000000000000013 -2.42861286636753e-16 4.857225732735043e-17"/>
     <parent link="r_wrist_1"/>
     <child link="r_wrist_2"/>
     <limit lower="-0.3490658503988659" upper="0.5235987755982988" effort="1e+9" velocity="1e+9"/>
@@ -463,12 +455,12 @@
     <inertial>
       <mass value="0.00945549080108898"/>
       <origin xyz="-1.0459228840377365e-4 -0.002335664371021534 -0.00539408287879653" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-8.271806125530277e-25" iyy="0.01" iyz="-1.3234889800848443e-23" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -477,7 +469,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_wrist_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -486,7 +478,7 @@
   </link>
   <joint name="r_wrist_pitch" type="revolute">
     <origin xyz="1.734723475976807e-17 1.3877787807814457e-16 5.551115123125783e-17" rpy="4.440892098500625e-16 1.5265566588595902e-16 -4.440892098500624e-16"/>
-    <axis xyz="5.100087019371814e-16 -1 -5.273559366969494e-16"/>
+    <axis xyz="4.544975507059239e-16 -1 -1.1379786002407858e-15"/>
     <parent link="r_wrist_2"/>
     <child link="r_hand_palm"/>
     <limit lower="-0.3490658503988659" upper="0.3490658503988659" effort="1e+9" velocity="1e+9"/>
@@ -496,12 +488,12 @@
     <inertial>
       <mass value="0.18913536273910575"/>
       <origin xyz="-0.0038680152803707464 -0.002793078804786159 -0.059703296736688616" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-6.776263578034403e-21" iyy="0.01" iyz="-6.776263578034403e-21" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_palm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -510,7 +502,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_palm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -519,7 +511,7 @@
   </link>
   <joint name="r_index_add" type="revolute">
     <origin xyz="0.02246999999999979 0.001499999999999696 -0.0685899999999997" rpy="-1.7414265970691206e-16 0.2967059728390376 3.1415926535897687"/>
-    <axis xyz="-2.2710721778544278e-14 1.0000000000000058 -3.325533406549057e-15"/>
+    <axis xyz="-4.651242255183732e-14 1.0000000000000173 -6.08487548946725e-15"/>
     <parent link="r_hand_palm"/>
     <child link="r_hand_index_1"/>
     <limit lower="0" upper="0.2617993877991494" effort="1e+9" velocity="1e+9"/>
@@ -534,7 +526,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -543,7 +535,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -552,7 +544,7 @@
   </link>
   <joint name="r_middle_prox" type="revolute">
     <origin xyz="0.009599999999999907 0.0014999999999998626 -0.10299999999999981" rpy="-6.938893903907185e-16 -1.4224732503009818e-15 3.1415926535897696"/>
-    <axis xyz="-1.0000000000000067 2.2546201017270685e-14 -2.45636844198318e-15"/>
+    <axis xyz="-1.00000000000002 4.66935518028684e-14 -2.470246229791037e-15"/>
     <parent link="r_hand_palm"/>
     <child link="r_hand_middle_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -562,12 +554,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.4270330263416173e-4 0.0036427918385497915 -0.014331342456115448" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="4.1359030627651384e-25" ixz="0" iyy="0.01" iyz="-2.6469779601696886e-23" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -576,7 +568,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -585,7 +577,7 @@
   </link>
   <joint name="r_pinkie_prox" type="revolute">
     <origin xyz="-0.035982359431392906 0.002388316832598436 -0.092085650800586" rpy="-3.9006236367563565e-16 -0.08726646259971843 3.1154127148098545"/>
-    <axis xyz="-1.0000000000000073 2.687697787657948e-14 -2.761679773755077e-15"/>
+    <axis xyz="-1.0000000000000224 5.074677290602035e-14 -2.581268532253489e-15"/>
     <parent link="r_hand_palm"/>
     <child link="r_hand_pinkie_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -595,12 +587,12 @@
     <inertial>
       <mass value="0.0028362660726744793"/>
       <origin xyz="1.2063634498826747e-4 0.0037052493411751097 -0.011966012939334523" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-8.271806125530277e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -609,7 +601,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -618,7 +610,7 @@
   </link>
   <joint name="r_ring_prox" type="revolute">
     <origin xyz="-0.015417943069964656 0.0018498186386415594 -0.09790070019065361" rpy="-5.293703507026483e-16 -0.08726646259971864 3.1154127148098545"/>
-    <axis xyz="-1.0000000000000073 2.7031320490650422e-14 -2.5396351688300456e-15"/>
+    <axis xyz="-1.0000000000000222 5.091846275485106e-14 -2.345346139520643e-15"/>
     <parent link="r_hand_palm"/>
     <child link="r_hand_ring_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -628,12 +620,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.427033026341843e-4 0.0036427918385495417 -0.014331342456115392" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="2.0679515313825692e-25" ixz="-8.271806125530277e-25" iyy="0.01" iyz="-2.6469779601696886e-23" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -642,7 +634,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -651,7 +643,7 @@
   </link>
   <joint name="r_thumb_add" type="revolute">
     <origin xyz="0.023374863256390793 0.002999999999999642 -0.034523838473554724" rpy="-0.08853732964507366 -0.20917985641349868 0.4039688884568295"/>
-    <axis xyz="1.304512053934559e-15 4.801714581503802e-15 1.0000000000000062"/>
+    <axis xyz="3.3584246494910985e-15 1.0560996521746802e-14 1.0000000000000187"/>
     <parent link="r_hand_palm"/>
     <child link="r_hand_thumb_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -661,12 +653,12 @@
     <inertial>
       <mass value="0.03462045845446337"/>
       <origin xyz="0.020757772956207593 -0.0027452920756125265 -0.008805481064280751" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-8.470329472543003e-22" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -675,7 +667,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -684,7 +676,7 @@
   </link>
   <joint name="r_thumb_prox" type="revolute">
     <origin xyz="0.03454170985946042 -0.0031451595002222055 -0.026071297445771524" rpy="1.792908313125052 0.6514098895879231 -2.0871746782746698e-14"/>
-    <axis xyz="-3.549938121238938e-14 -1.840194663316197e-14 -1.0000000000000255"/>
+    <axis xyz="-7.101264021258658e-14 -3.7719827261639693e-14 -1.0000000000000764"/>
     <parent link="r_hand_thumb_1"/>
     <child link="r_hand_thumb_2"/>
     <limit lower="0" upper="1.4329153158873444" effort="1e+9" velocity="1e+9"/>
@@ -694,12 +686,12 @@
     <inertial>
       <mass value="0.002460815503119397"/>
       <origin xyz="0.009792540778642764 0.004339177588763232 2.6314391783846536e-4" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="1.3234889800848443e-23" ixz="0" iyy="0.01" iyz="4.1359030627651384e-25" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -708,7 +700,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -717,7 +709,7 @@
   </link>
   <joint name="r_thumb_dist" type="revolute">
     <origin xyz="0.01999999999999949 -0.0014999999999996405 1.6653345369377348e-15" rpy="1.970645868709554e-14 -3.4861002973229915e-14 -1.8374191057546798e-14"/>
-    <axis xyz="-5.290212712338784e-14 -2.997602166487913e-14 -1.0000000000000502"/>
+    <axis xyz="-1.5804024755539139e-13 -8.88733531212472e-14 -1.0000000000001505"/>
     <parent link="r_hand_thumb_2"/>
     <child link="r_hand_thumb_3"/>
     <limit lower="0" upper="0.9354964790689606" effort="1e+9" velocity="1e+9"/>
@@ -727,12 +719,12 @@
     <inertial>
       <mass value="0.008113360087098906"/>
       <origin xyz="0.006464314324573686 0.0018850204941183168 1.5337818251165425e-5" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-1.3234889800848443e-23" ixz="1.0339757656912846e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -741,7 +733,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_thumb_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -750,7 +742,7 @@
   </link>
   <joint name="r_ring_dist" type="revolute">
     <origin xyz="1.2576745200831851e-16 -0.00150000000000039 -0.029999999999999805" rpy="1.6653345369377133e-15 1.2351231148954867e-15 -2.381428387820927e-14"/>
-    <axis xyz="-1.0000000000000142 4.792260338559737e-14 -2.890049310977331e-15"/>
+    <axis xyz="-1.0000000000000426 9.566219344448145e-14 -2.647188024340446e-15"/>
     <parent link="r_hand_ring_1"/>
     <child link="r_hand_ring_2"/>
     <limit lower="0" upper="1.7313666179783749" effort="1e+9" velocity="1e+9"/>
@@ -760,12 +752,12 @@
     <inertial>
       <mass value="0.009195501571064702"/>
       <origin xyz="5.130491864639101e-5 0.0016698985086339158 -0.0035941785379030038" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="1.0339757656912846e-25" ixz="2.0679515313825692e-25" iyy="0.01" iyz="-6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -774,7 +766,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_ring_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -783,7 +775,7 @@
   </link>
   <joint name="r_pinkie_dist" type="revolute">
     <origin xyz="1.734723475976807e-17 -0.0015000000000000013 -0.0250000000000003" rpy="1.970645868709628e-15 8.396061623727746e-16 -2.3508972546437355e-14"/>
-    <axis xyz="-1.0000000000000142 4.6843605383539805e-14 1.91513471747844e-15"/>
+    <axis xyz="-1.0000000000000426 9.46109510180395e-14 2.164934898019344e-15"/>
     <parent link="r_hand_pinkie_1"/>
     <child link="r_hand_pinkie_2"/>
     <limit lower="0" upper="1.6283921921107094" effort="1e+9" velocity="1e+9"/>
@@ -793,12 +785,12 @@
     <inertial>
       <mass value="0.008579228113796779"/>
       <origin xyz="1.7241710545339017e-5 0.001784794637876147 -0.0056120522397568595" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="1.0339757656912846e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -807,7 +799,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_pinkie_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -816,7 +808,7 @@
   </link>
   <joint name="r_middle_dist" type="revolute">
     <origin xyz="5.551115123125783e-17 -0.0015000000000001956 -0.030000000000000138" rpy="-0.0018721213583985609 -2.831068712794149e-15 -2.1926904736346564e-14"/>
-    <axis xyz="-1.0000000000000127 4.8869412818017636e-14 7.711215903793126e-16"/>
+    <axis xyz="-1.000000000000038 9.694733146028018e-14 8.607486116259909e-16"/>
     <parent link="r_hand_middle_1"/>
     <child link="r_hand_middle_2"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -826,12 +818,12 @@
     <inertial>
       <mass value="0.00912524254834366"/>
       <origin xyz="5.1534800591147845e-5 0.0016000026032074455 -0.0035910400466514507" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="2.0679515313825692e-25" iyy="0.01" iyz="6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -840,7 +832,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_middle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -849,7 +841,7 @@
   </link>
   <joint name="r_index_prox" type="revolute">
     <origin xyz="-0.009192533317427837 2.7755575615628914e-16 -0.030713451316238705" rpy="-2.4424906541753144e-15 -2.5673907444456745e-16 -2.375877272697805e-14"/>
-    <axis xyz="-1.0000000000000127 4.871797409933279e-14 5.689893001203353e-16"/>
+    <axis xyz="-1.000000000000038 9.645756415821688e-14 3.8163916471455337e-16"/>
     <parent link="r_hand_index_1"/>
     <child link="r_hand_index_2"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -859,12 +851,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.4270330263423808e-4 0.0036427918385498197 -0.014331342456115392" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="2.0679515313825692e-25" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -873,7 +865,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -882,7 +874,7 @@
   </link>
   <joint name="r_index_dist" type="revolute">
     <origin xyz="9.71445146547012e-17 -0.001499999999999807 -0.03000000000000036" rpy="-2.4147350785596867e-15 6.661338147750939e-16 -2.3647750424515535e-14"/>
-    <axis xyz="-1.0000000000000127 4.898859096158517e-14 -3.955169525227743e-16"/>
+    <axis xyz="-1.000000000000038 9.6672669869238e-14 -5.134781488895157e-16"/>
     <parent link="r_hand_index_2"/>
     <child link="r_hand_index_3"/>
     <limit lower="0" upper="1.7313666179783749" effort="1e+9" velocity="1e+9"/>
@@ -892,12 +884,12 @@
     <inertial>
       <mass value="0.00912524254834366"/>
       <origin xyz="4.4791686506034933e-5 0.0016000026032074732 -0.0035910400466514507" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="2.0679515313825692e-25" iyy="0.01" iyz="6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -906,7 +898,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_r_hand_index_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -915,7 +907,7 @@
   </link>
   <joint name="l_shoulder_roll" type="revolute">
     <origin xyz="0.00500000000000006 0.09329999999999994 -1.942890293094024e-16" rpy="2.6756374893466266e-14 1.214306433183765e-15 -2.275957200481571e-15"/>
-    <axis xyz="1 3.78169717762985e-16 2.7478019859473113e-15"/>
+    <axis xyz="1 3.226585665316948e-16 2.775557561563002e-15"/>
     <parent link="l_shoulder_1"/>
     <child link="l_shoulder_2"/>
     <limit lower="-0.2617993877991494" upper="2.6179938779914944" effort="1e+9" velocity="1e+9"/>
@@ -925,12 +917,12 @@
     <inertial>
       <mass value="0.44093319265387243"/>
       <origin xyz="0.007519395712385758 1.8727197477702573e-4 -0.020486062588588566" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-1.3552527156068805e-20" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -939,7 +931,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -955,12 +947,12 @@
     <inertial>
       <mass value="0.271466272759966"/>
       <origin xyz="8.311677995862313e-5 3.065483169523153e-5 -0.007966545320293866" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-1.0339757656912846e-25" ixz="2.6469779601696886e-23" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -969,7 +961,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_shoulder_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -978,7 +970,7 @@
   </link>
   <joint name="l_shoulder_yaw" type="revolute">
     <origin xyz="-5.204170427930421e-17 -2.7755575615628914e-17 -0.02250000000000013" rpy="-3.0253577421035583e-15 -2.998989945268704e-14 6.106226635438379e-15"/>
-    <axis xyz="-3.00454106039183e-14 2.9143354396410367e-15 -0.9999999999999978"/>
+    <axis xyz="-6.00908212078363e-14 6.050715484207078e-15 -0.9999999999999933"/>
     <parent link="l_shoulder_3"/>
     <child link="l_upper_arm"/>
     <limit lower="-0.9075712110370514" upper="1.4311699866353502" effort="1e+9" velocity="1e+9"/>
@@ -993,7 +985,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upperarm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upperarm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1002,7 +994,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upperarm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upperarm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1011,7 +1003,7 @@
   </link>
   <joint name="l_elbow" type="revolute">
     <origin xyz="0.00999999999999625 -0.001499999999999807 -0.12369999999999952" rpy="-3.330669073875483e-15 -3.0357660829594124e-14 -8.160139230994945e-15"/>
-    <axis xyz="-8.847089727469744e-17 -0.9999999999999953 6.383782391594399e-15"/>
+    <axis xyz="-2.550043509679755e-16 -0.999999999999986 1.293409823688246e-14"/>
     <parent link="l_upper_arm"/>
     <child link="l_forearm"/>
     <limit lower="-0.08726646259971647" upper="2.0943951023931953" effort="1e+9" velocity="1e+9"/>
@@ -1021,12 +1013,12 @@
     <inertial>
       <mass value="1.4604487031386884"/>
       <origin xyz="-0.018553263328673478 0.0023119252259846124 -0.08919372240797706" rpy="0 -0 0"/>
-      <inertia ixx="0.009999999999999998" ixy="0" ixz="0" iyy="0.010000000000000002" iyz="0" izz="0.01"/>
+      <inertia ixx="0.009999999999999998" ixy="0" ixz="-4.336808689942018e-19" iyy="0.010000000000000002" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_forearm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1035,7 +1027,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_forearm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1044,7 +1036,7 @@
   </link>
   <joint name="l_wrist_yaw" type="revolute">
     <origin xyz="-0.0149999999999926 0.002000000000000779 -0.19435000000000124" rpy="-2.7755575615628963e-16 -7.633477183688342e-14 -1.665334536937739e-16"/>
-    <axis xyz="-2.994132719535971e-14 2.9420910152566727e-15 -0.9999999999999982"/>
+    <axis xyz="-6.005612673831686e-14 5.828670879282063e-15 -0.9999999999999947"/>
     <parent link="l_forearm"/>
     <child link="l_wrist_1"/>
     <limit lower="-1.6057029118347832" upper="1.6057029118347832" effort="1e+9" velocity="1e+9"/>
@@ -1054,12 +1046,12 @@
     <inertial>
       <mass value="0.05654246904305621"/>
       <origin xyz="-4.027363031263928e-4 0.0010588455479771386 0.01914083685549478" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-3.308722450212111e-24" ixz="5.293955920339377e-23" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1068,7 +1060,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1077,7 +1069,7 @@
   </link>
   <joint name="l_wrist_roll" type="revolute">
     <origin xyz="2.0816681711721685e-17 -8.326672684688674e-17 2.7755575615628914e-17" rpy="2.7755575615628914e-17 -2.1510571102112408e-16 5.551115123125784e-17"/>
-    <axis xyz="-0.9999999999999999 4.805184028455756e-16 1.3877787807814474e-16"/>
+    <axis xyz="-0.9999999999999997 6.47051856539349e-16 7.632783294297998e-17"/>
     <parent link="l_wrist_1"/>
     <child link="l_wrist_2"/>
     <limit lower="-0.3490658503988659" upper="0.5235987755982988" effort="1e+9" velocity="1e+9"/>
@@ -1092,7 +1084,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1101,7 +1093,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_wrist_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1110,7 +1102,7 @@
   </link>
   <joint name="l_wrist_pitch" type="revolute">
     <origin xyz="-2.0816681711721685e-17 -5.551115123125783e-17 1.1102230246251565e-16" rpy="4.440892098500627e-16 2.1510571102112408e-16 1.110223024625157e-16"/>
-    <axis xyz="-7.632783294297949e-17 -0.9999999999999999 -4.163336342344336e-16"/>
+    <axis xyz="-1.8735013540549497e-16 -0.9999999999999997 -1.0269562977782694e-15"/>
     <parent link="l_wrist_2"/>
     <child link="l_hand_palm"/>
     <limit lower="-0.3490658503988659" upper="0.3490658503988659" effort="1e+9" velocity="1e+9"/>
@@ -1120,12 +1112,12 @@
     <inertial>
       <mass value="0.19302450932779958"/>
       <origin xyz="-0.003464217984376114 0.0026603197751830787 -0.059158974986060986" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="2.117582368135751e-22" ixz="-6.776263578034403e-21" iyy="0.010000000000000002" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_palm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1134,7 +1126,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_palm.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_palm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1143,7 +1135,7 @@
   </link>
   <joint name="l_index_add" type="revolute">
     <origin xyz="0.02246999999952049 -0.0015499999975798762 -0.06858999999999962" rpy="-7.546181920632907e-16 -0.29670597283903566 1.0772314005831236e-10"/>
-    <axis xyz="-3.232245792329867e-15 -0.9999999999999998 1.5397182495276352e-15"/>
+    <axis xyz="-3.3702260559116687e-15 -0.9999999999999993 1.0014973022447945e-15"/>
     <parent link="l_hand_palm"/>
     <child link="l_hand_index_1"/>
     <limit lower="0" upper="0.2617993877991494" effort="1e+9" velocity="1e+9"/>
@@ -1153,12 +1145,12 @@
     <inertial>
       <mass value="0.01838914030860198"/>
       <origin xyz="0.008775205075343136 0.00426967029262032 -0.01775041318531878" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="4.235164736271502e-22" iyy="0.01" iyz="2.117582368135751e-22" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1167,7 +1159,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1176,7 +1168,7 @@
   </link>
   <joint name="l_middle_prox" type="revolute">
     <origin xyz="0.009599999999515368 -0.0014999999989660506 -0.10299999999999979" rpy="1.1102230246251568e-16 -2.1510571102112408e-16 1.077221645218174e-10"/>
-    <axis xyz="-0.9999999999999998 -1.0130785099575306e-15 -4.37150315993994e-16"/>
+    <axis xyz="-0.9999999999999993 -1.0685896612017132e-15 -4.78783679465276e-16"/>
     <parent link="l_hand_palm"/>
     <child link="l_hand_middle_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1186,12 +1178,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.427033026342936e-4 0.0036427918385498197 -0.014331342456115281" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="2.6469779601696886e-23" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1200,7 +1192,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1209,7 +1201,7 @@
   </link>
   <joint name="l_pinkie_prox" type="revolute">
     <origin xyz="-0.035982359431781824 -0.002388316836473614 -0.09208565080058614" rpy="-9.44508152043152e-15 0.08726646259971617 0.026179938887637495"/>
-    <axis xyz="-1.0000000000000002 -1.1843525269243981e-15 5.273559366969494e-16"/>
+    <axis xyz="-1.0000000000000004 -1.1774136330204909e-15 4.996003610813204e-16"/>
     <parent link="l_hand_palm"/>
     <child link="l_hand_pinkie_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1219,12 +1211,12 @@
     <inertial>
       <mass value="0.0028362660726744793"/>
       <origin xyz="1.2063634498835422e-4 0.0037052493411752763 -0.011966012939334523" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-2.0679515313825692e-25" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1233,7 +1225,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1242,7 +1234,7 @@
   </link>
   <joint name="l_ring_prox" type="revolute">
     <origin xyz="-0.015417943070411642 -0.0018498186403021477 -0.0979007001906542" rpy="-6.798229766918262e-15 0.087266462599716 0.026179938887637717"/>
-    <axis xyz="-1.0000000000000002 -1.0100531863796072e-15 6.800116025829084e-16"/>
+    <axis xyz="-1.0000000000000004 -1.055155996755004e-15 6.522560269672795e-16"/>
     <parent link="l_hand_palm"/>
     <child link="l_hand_ring_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1252,12 +1244,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.4270330263428668e-4 0.0036427918385497637 -0.014331342456115392" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-2.0679515313825692e-25" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1266,7 +1258,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1275,7 +1267,7 @@
   </link>
   <joint name="l_thumb_add" type="revolute">
     <origin xyz="0.02337486325606749 -0.0029999999974821834 -0.03452383847355431" rpy="0.08853732964507509 -0.20917985641349868 -0.40396888834912725"/>
-    <axis xyz="3.3306690738754696e-16 -6.245004513516506e-16 -0.9999999999999998"/>
+    <axis xyz="4.996003610813204e-16 -1.124100812432971e-15 -0.9999999999999993"/>
     <parent link="l_hand_palm"/>
     <child link="l_hand_thumb_1"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1285,12 +1277,12 @@
     <inertial>
       <mass value="0.03462045764846681"/>
       <origin xyz="0.020687932447892757 0.0032553486088066352 -0.008897083941363237" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="4.235164736271502e-22" ixz="-1.6940658945086007e-21" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1299,7 +1291,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1308,7 +1300,7 @@
   </link>
   <joint name="l_thumb_prox" type="revolute">
     <origin xyz="0.034541709859460576 0.0031451595002215116 -0.026071297445771913" rpy="1.348684340464749 0.6514098895879155 -3.490258659322171e-16"/>
-    <axis xyz="9.575673587391975e-16 -1.4988010832439613e-15 -1.0000000000000002"/>
+    <axis xyz="4.163336342344337e-16 -9.992007221626409e-16 -1.0000000000000004"/>
     <parent link="l_hand_thumb_1"/>
     <child link="l_hand_thumb_2"/>
     <limit lower="0" upper="1.4329153158873444" effort="1e+9" velocity="1e+9"/>
@@ -1318,12 +1310,12 @@
     <inertial>
       <mass value="0.002460815503119397"/>
       <origin xyz="0.009792540778642764 0.004339177588763232 2.6314391783827107e-4" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="1.3234889800848443e-23" ixz="-8.271806125530277e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1332,7 +1324,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1341,7 +1333,7 @@
   </link>
   <joint name="l_thumb_dist" type="revolute">
     <origin xyz="0.020000000000000018 -0.0015000000000000013 -1.6653345369377348e-16" rpy="-7.771561172376096e-16 -1.6653345369377348e-16 -4.549900306516367e-8"/>
-    <axis xyz="-1.4016565559607482e-15 4.996003048844505e-16 -1"/>
+    <axis xyz="-1.901256909464961e-15 1.1102229532740747e-15 -1"/>
     <parent link="l_hand_thumb_2"/>
     <child link="l_hand_thumb_3"/>
     <limit lower="0" upper="0.9354964790689606" effort="1e+9" velocity="1e+9"/>
@@ -1351,12 +1343,12 @@
     <inertial>
       <mass value="0.008113360087098906"/>
       <origin xyz="0.006464314238807112 0.0018850207882386005 1.5337818252247892e-5" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-1.3234889800848443e-23" ixz="-1.0339757656912846e-25" iyy="0.01" iyz="-5.169878828456423e-26" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1365,7 +1357,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_thumb_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1374,7 +1366,7 @@
   </link>
   <joint name="l_ring_dist" type="revolute">
     <origin xyz="-2.6020852139652106e-18 -0.0014999999999999458 -0.030000000000000027" rpy="3.3306690738754696e-16 7.632783294297951e-17 -1.1102230246251563e-16"/>
-    <axis xyz="-1.0000000000000002 -2.168404344970969e-17 1.2490009027033007e-15"/>
+    <axis xyz="-1.0000000000000007 -1.3270634591222456e-16 1.2351231148954863e-15"/>
     <parent link="l_hand_ring_1"/>
     <child link="l_hand_ring_2"/>
     <limit lower="0" upper="1.7313666179783749" effort="1e+9" velocity="1e+9"/>
@@ -1384,12 +1376,12 @@
     <inertial>
       <mass value="0.00912524254834366"/>
       <origin xyz="5.153480059114698e-5 0.0016000026032074732 -0.0035910400466515053" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="-6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1398,7 +1390,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_ring_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1407,7 +1399,7 @@
   </link>
   <joint name="l_pinkie_dist" type="revolute">
     <origin xyz="8.326672684688674e-17 -0.0015000000000000568 -0.025000000000000078" rpy="3.53975822615185e-5 1.1102230246251565e-16 -2.2204460492503126e-16"/>
-    <axis xyz="-1.0000000000000002 -2.6194156222657784e-15 3.3662023329484224e-16"/>
+    <axis xyz="-1.0000000000000007 -2.6471672680994334e-15 3.0885679776748995e-16"/>
     <parent link="l_hand_pinkie_1"/>
     <child link="l_hand_pinkie_2"/>
     <limit lower="0" upper="1.6283921921107094" effort="1e+9" velocity="1e+9"/>
@@ -1417,12 +1409,12 @@
     <inertial>
       <mass value="0.008579228113796779"/>
       <origin xyz="1.706606479628947e-5 0.0017854459516601917 -0.005612024111640246" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="-1.0339757656912846e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1431,7 +1423,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_pinkie_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1440,7 +1432,7 @@
   </link>
   <joint name="l_middle_dist" type="revolute">
     <origin xyz="-2.0816681711721685e-17 -0.0014999999999999736 -0.030000000000000138" rpy="-0.0018721213583980574 3.469446951953614e-17 5.551115123125784e-17"/>
-    <axis xyz="-0.9999999999999998 -2.3467059288222403e-15 6.408211626924537e-16"/>
+    <axis xyz="-0.9999999999999993 -2.3467707837629264e-15 5.921449210147216e-16"/>
     <parent link="l_hand_middle_1"/>
     <child link="l_hand_middle_2"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1450,12 +1442,12 @@
     <inertial>
       <mass value="0.00912524254834366"/>
       <origin xyz="5.1534800591151314e-5 0.0016000026032075565 -0.0035910400466513948" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-2.0679515313825692e-25" ixz="2.0679515313825692e-25" iyy="0.01" iyz="-6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1464,7 +1456,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_middle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1473,7 +1465,7 @@
   </link>
   <joint name="l_index_prox" type="revolute">
     <origin xyz="0.009192533317427712 -2.7755575615628914e-17 -0.030713451316238316" rpy="6.383782391594655e-16 -1.942890293094024e-16 1.110223024625157e-16"/>
-    <axis xyz="-0.9999999999999996 -2.0816681711721439e-16 3.99680288865056e-15"/>
+    <axis xyz="-0.9999999999999987 -3.1918911957972767e-16 4.024558464266183e-15"/>
     <parent link="l_hand_index_1"/>
     <child link="l_hand_index_2"/>
     <limit lower="0" upper="1.5707963267948966" effort="1e+9" velocity="1e+9"/>
@@ -1483,12 +1475,12 @@
     <inertial>
       <mass value="0.0034570297619471503"/>
       <origin xyz="1.427033026342589e-4 0.0036427918385496805 -0.014331342456115448" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="8.271806125530277e-25" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1497,7 +1489,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1506,7 +1498,7 @@
   </link>
   <joint name="l_index_dist" type="revolute">
     <origin xyz="4.163336342344337e-17 -0.0015000000000000013 -0.030000000000000082" rpy="-1.6320278461989814e-14 -1.1102230246251565e-16 1.110223024625157e-16"/>
-    <axis xyz="-0.9999999999999997 1.2698175844150033e-15 1.3045120539345794e-15"/>
+    <axis xyz="-0.999999999999999 1.1587952819524896e-15 1.3045120539345763e-15"/>
     <parent link="l_hand_index_2"/>
     <child link="l_hand_index_3"/>
     <limit lower="0" upper="1.7313666179783749" effort="1e+9" velocity="1e+9"/>
@@ -1516,12 +1508,12 @@
     <inertial>
       <mass value="0.00912524254834366"/>
       <origin xyz="5.8443050554399245e-5 0.001600002603207612 -0.0035910400466515053" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="1.0339757656912846e-25" ixz="0" iyy="0.01" iyz="-6.617444900424222e-24" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1530,64 +1522,60 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-0_l_hand_index_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </collision>
   </link>
-  <joint name="neck_roll" type="revolute">
-    <origin xyz="-1.734723475976807e-18 -5.574854631760443e-18 0.009499999999999786" rpy="3.823019065160302e-16 2.6484215369704225e-31 -2.0572736222904706e-18"/>
-    <axis xyz="1 -9.911787733901893e-17 -3.508853016099267e-15"/>
-    <parent link="neck_2"/>
-    <child link="neck_3"/>
-    <limit lower="-0.3490658503988659" upper="0.3490658503988659" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
+  <joint name="SIM_ECUB_1-1_HEAD_NECK_2--SIM_ECUB_1-1_HEAD_NECK_3" type="continuous">
+    <origin xyz="2.83678257316353e-16 0.004861512347971555 0.009499999999999842" rpy="2.1824457611556613e-31 -6.353369076823475e-18 -2.0572736222891147e-18"/>
+    <axis xyz="1.4901274658640806e-15 1 -1.270579771067814e-31"/>
+    <parent link="SIM_ECUB_1-1_HEAD_NECK_2"/>
+    <child link="SIM_ECUB_1-1_HEAD_NECK_3"/>
   </joint>
-  <link name="neck_3">
+  <link name="SIM_ECUB_1-1_HEAD_NECK_3">
     <inertial>
       <mass value="0.17811376821431446"/>
-      <origin xyz="7.590511663558711e-4 -4.0916906938460536e-5 0.036035516549226765" rpy="0 -0 0"/>
-      <inertia ixx="9.70548692219775e-5" ixy="1.7629468835177367e-7" ixz="6.130672988864901e-6" iyy="1.0759851740143377e-4" iyz="-2.503969674072287e-7" izz="3.626415440724103e-5"/>
+      <origin xyz="-4.09169069382666e-5 -0.005620563514327284 0.03603551654922649" rpy="0 -0 0"/>
+      <inertia ixx="1.0759851740143467e-4" ixy="-1.762946883518242e-7" ixz="-2.503969674076844e-7" iyy="9.705486922197834e-5" iyz="-6.130672988865127e-6" izz="3.626415440724109e-5"/>
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <origin xyz="-1.49974717754192e-15 0 -0.29927000000000026" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="0.6 0.6 0.6 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <origin xyz="-1.49974717754192e-15 0 -0.29927000000000026" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head_neck_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
-        <color rgba="0.6 0.6 0.6 1"/>
+        <color rgba="0.5 0.5 0.5 1"/>
       </material>
     </collision>
   </link>
-  <joint name="neck_yaw" type="revolute">
-    <origin xyz="-1.3010426069826053e-17 3.765597982987134e-17 0.0691500000000001" rpy="1.9500353504997633e-16 -1.4141248935670295e-15 3.767470613092508e-16"/>
-    <axis xyz="1.4082090529075477e-15 5.709519748275242e-16 0.9999999999999998"/>
-    <parent link="neck_3"/>
+  <joint name="SIM_ECUB_1-1_HEAD_NECK_3--SIM_ECUB_1-1_HEAD" type="continuous">
+    <origin xyz="4.2173434983493643e-16 -0.004861512347971283 0.06914999999999982" rpy="-5.890991943503742e-15 -4.922977909666296e-15 -1.5707963267948977"/>
+    <axis xyz="1.408209052907529e-15 5.709519748275234e-16 0.9999999999999997"/>
+    <parent link="SIM_ECUB_1-1_HEAD_NECK_3"/>
     <child link="head"/>
-    <limit lower="-0.7853981633974483" upper="0.7853981633974483" effort="1e+9" velocity="1e+9"/>
-    <dynamics damping="2" friction="0"/>
   </joint>
   <link name="head">
     <inertial>
       <mass value="1.972127893184972"/>
       <origin xyz="-0.01620091412622722 -0.002268813231724542 0.03500744217497026" rpy="0 -0 0"/>
-      <inertia ixx="0.007991907355842523" ixy="0" ixz="0" iyy="0.009883124315185845" iyz="0" izz="0.00786000669468763"/>
+      <inertia ixx="0.0097840569" ixy="0" ixz="0" iyy="0.010869342" iyz="-2.710505431213761e-20" izz="0.0070099259"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1596,7 +1584,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_head.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1605,7 +1593,7 @@
   </link>
   <joint name="camera_tilt" type="revolute">
     <origin xyz="0.06251 -3.0000000001127547e-5 0.0763925000000007" rpy="9.055928654249867e-15 2.5958199361703294e-4 1.7122849027886369e-15"/>
-    <axis xyz="1.9074075506529947e-16 -1 -1.4146048262463281e-15"/>
+    <axis xyz="1.1750855152298039e-16 -1 -2.1665209362190277e-15"/>
     <parent link="head"/>
     <child link="realsense"/>
     <limit lower="-0.5235987755982988" upper="0.5235987755982988" effort="1e+9" velocity="1e+9"/>
@@ -1615,12 +1603,12 @@
     <inertial>
       <mass value="0.0973042045264468"/>
       <origin xyz="-0.01566548310600667 0.004519995218644514 0.002745610154123612" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="2.117582368135751e-22" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_realsense.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_realsense.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1629,7 +1617,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_realsense.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_realsense.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1638,7 +1626,7 @@
   </link>
   <joint name="r_hip_roll" type="revolute">
     <origin xyz="-0.047250000000000625 -0.033099999999999824 -0.009000000000000091" rpy="-2.73316156054826e-16 2.504641391024977e-16 -3.1036377681447894e-15"/>
-    <axis xyz="-1 -3.3813287685016297e-16 -7.120227705451219e-17"/>
+    <axis xyz="-1 -3.3813287685016258e-16 -7.12022770545114e-17"/>
     <parent link="r_hip_1"/>
     <child link="r_hip_2"/>
     <limit lower="-0.3490658503988659" upper="1.9373154697137058" effort="1e+9" velocity="1e+9"/>
@@ -1648,12 +1636,12 @@
     <inertial>
       <mass value="1.8425374083524118"/>
       <origin xyz="-0.004338858395569037 -4.276785411407025e-5 -0.03711583728304848" rpy="0 -0 0"/>
-      <inertia ixx="0.003120303249647105" ixy="2.3735315120274186e-6" ixz="0.0010124685247925123" iyy="0.005459166113270065" iyz="-1.8523984061140002e-6" izz="0.003419002844852166"/>
+      <inertia ixx="0.0031203032496471043" ixy="2.3735315120274186e-6" ixz="0.0010124685247925123" iyy="0.005459166113270065" iyz="-1.8523984061140002e-6" izz="0.003419002844852166"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1662,7 +1650,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1683,7 +1671,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1692,7 +1680,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_hip_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1701,7 +1689,7 @@
   </link>
   <joint name="r_hip_yaw" type="revolute">
     <origin xyz="-2.8449465006019636e-16 0.014999999999999764 -0.07269999999999871" rpy="-3.945141633795325e-15 7.430123072146325e-16 1.2193157749540274e-6"/>
-    <axis xyz="-2.395305022015389e-20 1.474932849181089e-15 -1"/>
+    <axis xyz="-2.3953050200826797e-20 1.474932849181089e-15 -1"/>
     <parent link="r_hip_3"/>
     <child link="r_upper_leg"/>
     <limit lower="-1.413716694115407" upper="1.413716694115407" effort="1e+9" velocity="1e+9"/>
@@ -1711,12 +1699,12 @@
     <inertial>
       <mass value="2.784923431729287"/>
       <origin xyz="0.008517474024287675 -0.014468465702474021 -0.12674960557185616" rpy="0 -0 0"/>
-      <inertia ixx="0.01186013252999811" ixy="5.455450241372543e-5" ixz="5.393573740676933e-4" iyy="0.01210913335208505" iyz="-4.0331041015476653e-4" izz="0.0022609706907693243"/>
+      <inertia ixx="0.01186013252999811" ixy="5.455450241372543e-5" ixz="5.393573740676938e-4" iyy="0.012109133352085057" iyz="-4.0331041015476653e-4" izz="0.0022609706907693243"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upper_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upper_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1725,7 +1713,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upper_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_upper_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1734,7 +1722,7 @@
   </link>
   <joint name="r_knee" type="revolute">
     <origin xyz="0.01060000963260985 0.00789998707525931 -0.17970000000000058" rpy="6.892643261935339e-14 -6.650159361880639e-14 -1.2193157700904423e-6"/>
-    <axis xyz="1.2193157766326317e-6 -0.9999999999992567 4.719551160658935e-15"/>
+    <axis xyz="1.219315776632632e-6 -0.9999999999992569 4.719551160658948e-15"/>
     <parent link="r_upper_leg"/>
     <child link="r_lower_leg"/>
     <limit lower="-1.8325957145940461" upper="0.12217304763960307" effort="1e+9" velocity="1e+9"/>
@@ -1744,12 +1732,12 @@
     <inertial>
       <mass value="3.7621532589747924"/>
       <origin xyz="0.0012157689164458522 -0.006184734585333342 -0.21372759879868175" rpy="0 -0 0"/>
-      <inertia ixx="0.04644215616821937" ixy="3.7269274872175814e-5" ixz="-8.519885904633137e-4" iyy="0.047738936736850285" iyz="-0.0018042981721195497" izz="0.004839671863500647"/>
+      <inertia ixx="0.046442156168219395" ixy="3.7269274872175814e-5" ixz="-8.519885904633139e-4" iyy="0.04773893673685031" iyz="-0.0018042981721195497" izz="0.004839671863500647"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_lower_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_lower_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1758,7 +1746,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_lower_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_lower_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1767,7 +1755,7 @@
   </link>
   <joint name="r_ankle_pitch" type="revolute">
     <origin xyz="-5.936223734792634e-15 -0.03190000000000005 -0.3210000000000002" rpy="-2.9932805576414174e-15 -2.0242047360524565e-14 8.880636788937802e-17"/>
-    <axis xyz="-3.505264366441263e-17 1 -1.331317022347139e-16"/>
+    <axis xyz="-3.505264366441327e-17 1 -1.3313170223472496e-16"/>
     <parent link="r_lower_leg"/>
     <child link="r_ankle_1"/>
     <limit lower="-0.7853981633974483" upper="0.7853981633974483" effort="1e+9" velocity="1e+9"/>
@@ -1777,12 +1765,12 @@
     <inertial>
       <mass value="0.3481278950635556"/>
       <origin xyz="-0.0013672309746954776 -6.60186959019704e-4 -0.014087432401547305" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="5.293955920339377e-23" ixz="0" iyy="0.01" iyz="4.235164736271502e-22" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1791,7 +1779,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1800,7 +1788,7 @@
   </link>
   <joint name="r_ankle_roll" type="revolute">
     <origin xyz="-0.052750000000001546 0.018200000000000008 -0.0349999999999977" rpy="-1.0176053241861382e-24 3.8838282931741325e-14 -9.278622199115707e-23"/>
-    <axis xyz="-1 -1.628246671334752e-16 2.560295622560413e-15"/>
+    <axis xyz="-1 -1.628246671334752e-16 2.5602956225604195e-15"/>
     <parent link="r_ankle_1"/>
     <child link="r_ankle_2"/>
     <limit lower="-0.4363323129985824" upper="0.4363323129985824" effort="1e+9" velocity="1e+9"/>
@@ -1810,12 +1798,12 @@
     <inertial>
       <mass value="1.5418216247038539"/>
       <origin xyz="0.04052646811695935 -8.642493098851012e-5 -0.023871143533700234" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.009999999999999998" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="0" ixz="2.168404344971009e-19" iyy="0.009999999999999998" iyz="-4.235164736271502e-22" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1824,7 +1812,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_ankle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1845,7 +1833,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_foot_front.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_foot_front.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 0.51 0 1"/>
@@ -1872,7 +1860,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_foot_rear.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_r_foot_rear.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 0.51 0 1"/>
@@ -1887,7 +1875,7 @@
   </link>
   <joint name="l_hip_roll" type="revolute">
     <origin xyz="-0.04725000000000078 0.033100000000000004 -0.009000000000000119" rpy="7.584245024416732e-16 1.5745686587446743e-30 1.1102230246251548e-16"/>
-    <axis xyz="1 -6.123233995736708e-17 6.3201403498236e-16"/>
+    <axis xyz="1 -6.123233995736708e-17 6.320140349823599e-16"/>
     <parent link="l_hip_1"/>
     <child link="l_hip_2"/>
     <limit lower="-0.3490658503988659" upper="1.9373154697137058" effort="1e+9" velocity="1e+9"/>
@@ -1897,12 +1885,12 @@
     <inertial>
       <mass value="1.8338392164825101"/>
       <origin xyz="-0.004125697068299468 3.917475804632309e-5 -0.03750964603556273" rpy="0 -0 0"/>
-      <inertia ixx="0.003159514595905926" ixy="-1.6542815235215681e-6" ixz="9.977368607484037e-4" iyy="0.005488243677251951" iyz="-2.1904093887368695e-6" izz="0.0033984945726571185"/>
+      <inertia ixx="0.003159514595905926" ixy="-1.6542815235215681e-6" ixz="9.977368607484037e-4" iyy="0.005488243677251951" iyz="-2.190409388736869e-6" izz="0.0033984945726571185"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1911,7 +1899,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1927,12 +1915,12 @@
     <inertial>
       <mass value="2.147524084050246"/>
       <origin xyz="0.005176125839593024 -0.01282881302682233 -0.05174852447453404" rpy="0 -0 0"/>
-      <inertia ixx="0.007242161971060034" ixy="-3.321392954197042e-5" ixz="2.505985505401264e-5" iyy="0.008197962692605146" iyz="1.2474874840596051e-4" izz="0.005727458772759987"/>
+      <inertia ixx="0.007242161971060036" ixy="-3.321392954197042e-5" ixz="2.505985505401264e-5" iyy="0.00819796269260515" iyz="1.2474874840596051e-4" izz="0.005727458772759987"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1941,7 +1929,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_3.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_hip_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -1950,7 +1938,7 @@
   </link>
   <joint name="l_hip_yaw" type="revolute">
     <origin xyz="-8.396061623727746e-16 -0.014999999999999944 -0.07269999999999993" rpy="3.0118838875648327e-16 1.1431429037212378e-14 -2.775557561562751e-16"/>
-    <axis xyz="-8.622588011769357e-16 1.5936665473077025e-16 1"/>
+    <axis xyz="-8.622588011769357e-16 1.5936665473077023e-16 1"/>
     <parent link="l_hip_3"/>
     <child link="l_upper_leg"/>
     <limit lower="-1.413716694115407" upper="1.413716694115407" effort="1e+9" velocity="1e+9"/>
@@ -1960,12 +1948,12 @@
     <inertial>
       <mass value="2.784923431765453"/>
       <origin xyz="0.008503494694160183 0.014484874736048647 -0.12674659802303312" rpy="0 -0 0"/>
-      <inertia ixx="0.011852293952284196" ixy="-4.907145319317264e-5" ixz="5.393933817879138e-4" iyy="0.012109807149567942" iyz="3.9208918647670385e-4" izz="0.002253627916731084"/>
+      <inertia ixx="0.011852293952284196" ixy="-4.907145319317264e-5" ixz="5.393933817879138e-4" iyy="0.012109807149567949" iyz="3.920891864767047e-4" izz="0.002253627916731084"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upper_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upper_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1974,7 +1962,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upper_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_upper_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -1983,7 +1971,7 @@
   </link>
   <joint name="l_knee" type="revolute">
     <origin xyz="0.010600000000000822 -0.007900000000000185 -0.17969999999999958" rpy="1.970486418692682e-16 -1.1419428146632273e-14 2.8602839935211434e-15"/>
-    <axis xyz="-2.608937546411318e-16 -1 5.166588955193111e-17"/>
+    <axis xyz="-2.60893754641131e-16 -1 5.166588955193113e-17"/>
     <parent link="l_upper_leg"/>
     <child link="l_lower_leg"/>
     <limit lower="-1.8325957145940461" upper="0.12217304763960307" effort="1e+9" velocity="1e+9"/>
@@ -1993,12 +1981,12 @@
     <inertial>
       <mass value="3.767581145212888"/>
       <origin xyz="0.0014201768088090358 0.006186333743956739 -0.21383298861124922" rpy="0 -0 0"/>
-      <inertia ixx="0.04647110900067475" ixy="-2.1189289797886653e-5" ixz="-8.110710215722959e-4" iyy="0.04776726641499918" iyz="0.0018123762001582078" izz="0.004840491251955261"/>
+      <inertia ixx="0.04647110900067469" ixy="-2.1189289797886653e-5" ixz="-8.110710215722962e-4" iyy="0.04776726641499915" iyz="0.0018123762001582078" izz="0.004840491251955261"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_lower_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_lower_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -2007,7 +1995,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_lower_leg.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_lower_leg.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -2016,7 +2004,7 @@
   </link>
   <joint name="l_ankle_pitch" type="revolute">
     <origin xyz="-4.468647674116255e-15 0.03189999999999981 -0.3209999999999995" rpy="-1.9704864186927032e-16 -8.673617379880112e-19 -1.8683953730959558e-16"/>
-    <axis xyz="-2.389602037081462e-16 1 1.4538275231733847e-16"/>
+    <axis xyz="-2.38960203708147e-16 1 1.4538275231733847e-16"/>
     <parent link="l_lower_leg"/>
     <child link="l_ankle_1"/>
     <limit lower="-0.7853981633974483" upper="0.7853981633974483" effort="1e+9" velocity="1e+9"/>
@@ -2026,12 +2014,12 @@
     <inertial>
       <mass value="0.3481278951519182"/>
       <origin xyz="-0.0013852125067176195 6.601869600093568e-4 -0.014087432474324535" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-5.293955920339377e-23" ixz="8.470329472543003e-22" iyy="0.01" iyz="0" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -2040,7 +2028,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_1.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.6 0.6 0.6 1"/>
@@ -2049,7 +2037,7 @@
   </link>
   <joint name="l_ankle_roll" type="revolute">
     <origin xyz="-0.052750000000000324 -0.01819999999999991 -0.03499999999999959" rpy="3.340196646750626e-19 1.1217589357404033e-14 -2.3665827156630354e-30"/>
-    <axis xyz="1 -4.05028482201375e-16 -1.2496691978128869e-15"/>
+    <axis xyz="1 -4.050284822013754e-16 -1.2496691978128869e-15"/>
     <parent link="l_ankle_1"/>
     <child link="l_ankle_2"/>
     <limit lower="-0.4363323129985824" upper="0.4363323129985824" effort="1e+9" velocity="1e+9"/>
@@ -2059,12 +2047,12 @@
     <inertial>
       <mass value="1.5418216247038539"/>
       <origin xyz="0.0405224005088543 -9.790751646740482e-5 -0.02387114353368558" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.010000000000000002" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="8.470329472543003e-22" ixz="0" iyy="0.010000000000000002" iyz="-4.235164736271502e-22" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -2073,7 +2061,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_2.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_ankle_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -2094,7 +2082,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_foot_front.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_foot_front.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 0.51 0 1"/>
@@ -2116,12 +2104,12 @@
     <inertial>
       <mass value="0.22110467939552797"/>
       <origin xyz="5.879202911244826e-4 -3.7479246789429155e-9 -0.020000616615901134" rpy="0 -0 0"/>
-      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+      <inertia ixx="0.01" ixy="-1.0097419586828951e-28" ixz="0" iyy="0.01" iyz="3.2311742677852644e-27" izz="0.01"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_foot_rear.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://ergoCub/meshes/simmechanics/sim_ecub_1-1_l_foot_rear.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="1 0.51 0 1"/>
@@ -2134,671 +2122,83 @@
       </geometry>
     </collision>
   </link>
-  <link name="head_imu_0"/>
-  <joint name="head_imu_0_fixed_joint" type="fixed">
-    <origin xyz="-0.004299999999999899 -0.005500000000001061 0.03823450000000106" rpy="-3.141592653589788 -9.688477917552238e-15 1.5707963267948986"/>
-    <parent link="head"/>
-    <child link="head_imu_0"/>
-  </joint>
-  <link name="realsense_imu_0"/>
-  <joint name="realsense_imu_0_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
-    <parent link="realsense"/>
-    <child link="realsense_imu_0"/>
-  </joint>
-  <link name="l_arm_ft"/>
-  <joint name="l_arm_ft_fixed_joint" type="fixed">
-    <origin xyz="-0.004349999999999996 -2.7755575615628914e-17 -0.054300000000000015" rpy="3.141592653589793 2.498001805406602e-16 -1.5707963267948952"/>
-    <parent link="l_shoulder_2"/>
-    <child link="l_arm_ft"/>
-  </joint>
-  <link name="l_foot_front_ft"/>
-  <joint name="l_foot_front_ft_fixed_joint" type="fixed">
-    <origin xyz="0.13525 -4.163336342344337e-17 -0.047899999999999054" rpy="-4.259189482954547e-17 -7.513330770412076e-17 -2.0943951023931966"/>
-    <parent link="l_ankle_2"/>
-    <child link="l_foot_front_ft"/>
-  </joint>
-  <link name="l_foot_rear_ft"/>
-  <joint name="l_foot_rear_ft_fixed_joint" type="fixed">
-    <origin xyz="0.015999999999999993 -2.7755575615628914e-17 -0.04789999999999983" rpy="-4.259189482954531e-17 -7.513330770412153e-17 -2.0943951023931957"/>
-    <parent link="l_ankle_2"/>
-    <child link="l_foot_rear_ft"/>
-  </joint>
-  <link name="l_leg_ft"/>
-  <joint name="l_leg_ft_fixed_joint" type="fixed">
-    <origin xyz="0.03669999999999986 -1.3877787807814457e-17 -0.08969999999999997" rpy="-3.1415926535897927 -1.4675346083959194e-15 2.617993877991494"/>
-    <parent link="l_hip_2"/>
-    <child link="l_leg_ft"/>
-  </joint>
   <link name="r_arm_ft"/>
   <joint name="r_arm_ft_fixed_joint" type="fixed">
     <origin xyz="-0.006849999999999986 -2.7755575615628914e-17 -0.05429999999999999" rpy="3.141592653589793 1.6653345369377348e-16 1.5707963267948981"/>
     <parent link="r_shoulder_2"/>
     <child link="r_arm_ft"/>
   </joint>
-  <link name="r_foot_front_ft"/>
-  <joint name="r_foot_front_ft_fixed_joint" type="fixed">
-    <origin xyz="0.13525 1.3877787807814457e-17 -0.04789999999999983" rpy="-4.2591894829555776e-17 -7.513330770412949e-17 -2.094395102393197"/>
-    <parent link="r_ankle_2"/>
-    <child link="r_foot_front_ft"/>
-  </joint>
-  <link name="r_foot_rear_ft"/>
-  <joint name="r_foot_rear_ft_fixed_joint" type="fixed">
-    <origin xyz="0.016 1.3877787807814457e-17 -0.04789999999999994" rpy="-4.2591894829543154e-17 -7.513330770412949e-17 -2.0943951023931966"/>
-    <parent link="r_ankle_2"/>
-    <child link="r_foot_rear_ft"/>
-  </joint>
-  <link name="r_leg_ft"/>
-  <joint name="r_leg_ft_fixed_joint" type="fixed">
-    <origin xyz="0.03669999999999999 0 -0.08969999999999997" rpy="-3.1415926535897927 -8.654368135774127e-16 -2.6179938779914935"/>
-    <parent link="r_hip_2"/>
-    <child link="r_leg_ft"/>
-  </joint>
-  <link name="realsense_depth_frame"/>
-  <joint name="realsense_depth_frame_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
-    <parent link="realsense"/>
-    <child link="realsense_depth_frame"/>
-  </joint>
-  <link name="imu_frame"/>
-  <joint name="imu_frame_fixed_joint" type="fixed">
-    <origin xyz="-0.004299999999999899 -0.005500000000001061 0.03823450000000106" rpy="-3.141592653589788 -9.688477917552238e-15 1.5707963267948986"/>
-    <parent link="head"/>
-    <child link="imu_frame"/>
-  </joint>
-  <link name="realsense_rgb_frame"/>
-  <joint name="realsense_rgb_frame_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 -0.011499999999999996 1.7352099701550827e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
-    <parent link="realsense"/>
-    <child link="realsense_rgb_frame"/>
-  </joint>
-  <link name="head_laser_frame"/>
-  <joint name="head_laser_frame_fixed_joint" type="fixed">
-    <origin xyz="5.000000000061726e-5 -1.938549701738834e-15 0.13480249990363524" rpy="9.721954681893984e-15 5.33156930061495e-15 3.167605067133685e-15"/>
-    <parent link="head"/>
-    <child link="head_laser_frame"/>
-  </joint>
-  <link name="l_hand_index_skin_0"/>
-  <joint name="l_hand_index_skin_0_fixed_joint" type="fixed">
-    <origin xyz="-2.0816681711721685e-17 -0.0024341972556574665 -0.02140622670084852" rpy="-1.0165154595159104e-16 1.2224883899444141 -1.5707963267948974"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_0"/>
-  </joint>
-  <link name="l_hand_index_skin_1"/>
-  <joint name="l_hand_index_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.0032999999999999696 -0.0031314255941774782 -0.023281177896674887" rpy="-1.0099028177691407e-16 1.2201097747080034 -1.5707963267948977"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_1"/>
-  </joint>
-  <link name="l_hand_index_skin_10"/>
-  <joint name="l_hand_index_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003300000000000018 -0.004081895179626538 -0.027767378161022094" rpy="-3.1415926535897927 1.5047763445693798 1.5707963267948952"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_10"/>
-  </joint>
-  <link name="l_hand_index_skin_11"/>
-  <joint name="l_hand_index_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.0033000000000000113 -0.0031314255941774782 -0.023281177896674887" rpy="-1.009902817769141e-16 1.220109774708004 -1.5707963267948977"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_11"/>
-  </joint>
-  <link name="l_hand_index_skin_2"/>
-  <joint name="l_hand_index_skin_2_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-17 -0.0037584484925220485 -0.025192811316913255" rpy="-1.3243978167925783e-16 1.3057395010009958 -1.5707963267948977"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_2"/>
-  </joint>
-  <link name="l_hand_index_skin_3"/>
-  <joint name="l_hand_index_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0033000000000000043 -0.004081895179626538 -0.02776737816102215" rpy="-3.1415926535897927 1.5047763445693798 1.5707963267948957"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_3"/>
-  </joint>
-  <link name="l_hand_index_skin_4"/>
-  <joint name="l_hand_index_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.005929525942276331 -0.001192320688661097 -0.02800000000000008" rpy="3.1415926535897922 1.2994442229713603 2.7771555423255894"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_4"/>
-  </joint>
-  <link name="l_hand_index_skin_5"/>
-  <joint name="l_hand_index_skin_5_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-17 -0.003476643653964384 -0.029835558531877193" rpy="-3.141592653589793 1.086225915041192 1.570796326794896"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_5"/>
-  </joint>
-  <link name="l_hand_index_skin_6"/>
-  <joint name="l_hand_index_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.0032999999999999696 -0.001824647872213786 -0.03177198000353959" rpy="3.141592653589793 0.7785358840004835 2.5323857033718307"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_6"/>
-  </joint>
-  <link name="l_hand_index_skin_7"/>
-  <joint name="l_hand_index_skin_7_fixed_joint" type="fixed">
-    <origin xyz="-2.7755575615628914e-17 -2.727226796668536e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454184 1.5713169902185733"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_7"/>
-  </joint>
-  <link name="l_hand_index_skin_8"/>
-  <joint name="l_hand_index_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.003300000000000032 -0.001824647872213786 -0.03177198000353959" rpy="-3.1415926535897927 0.7785358840004832 0.609206950217961"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_8"/>
-  </joint>
-  <link name="l_hand_index_skin_9"/>
-  <joint name="l_hand_index_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.00592952594227638 -0.001192320688661097 -0.02800000000000008" rpy="-3.1415926535897922 1.2994442229713599 0.3644371112642022"/>
-    <parent link="l_hand_index_3"/>
-    <child link="l_hand_index_skin_9"/>
-  </joint>
-  <link name="l_hand_middle_skin_0"/>
-  <joint name="l_hand_middle_skin_0_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-18 -0.002434197255657522 -0.021406226700848463" rpy="4.2693649299668224e-16 1.2224883899444143 -1.5707963267948966"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_0"/>
-  </joint>
-  <link name="l_hand_middle_skin_1"/>
-  <joint name="l_hand_middle_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.003299999999999987 -0.003131425594177506 -0.02328117789667483" rpy="4.2415918346303895e-16 1.2201097747080036 -1.5707963267948966"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_1"/>
-  </joint>
-  <link name="l_hand_middle_skin_10"/>
-  <joint name="l_hand_middle_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.0033000000000000147 -0.004081895179626538 -0.027767378161022038" rpy="3.141592653589791 1.5047763445693831 1.5707963267948952"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_10"/>
-  </joint>
-  <link name="l_hand_middle_skin_11"/>
-  <joint name="l_hand_middle_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.0032999999999999835 -0.0031314255941775337 -0.023281177896674776" rpy="4.241591834630392e-16 1.2201097747080036 -1.5707963267948966"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_11"/>
-  </joint>
-  <link name="l_hand_middle_skin_2"/>
-  <joint name="l_hand_middle_skin_2_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-18 -0.0037584484925220762 -0.0251928113169132" rpy="5.562470830528828e-16 1.3057395010009953 -1.5707963267948963"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_2"/>
-  </joint>
-  <link name="l_hand_middle_skin_3"/>
-  <joint name="l_hand_middle_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0032999999999999835 -0.004081895179626566 -0.027767378161022038" rpy="3.141592653589791 1.5047763445693831 1.5707963267948952"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_3"/>
-  </joint>
-  <link name="l_hand_middle_skin_4"/>
-  <joint name="l_hand_middle_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.0059295259422763626 -0.001192320688661208 -0.028000000000000025" rpy="3.141592653589792 1.2994442229713603 2.7771555423255903"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_4"/>
-  </joint>
-  <link name="l_hand_middle_skin_5"/>
-  <joint name="l_hand_middle_skin_5_fixed_joint" type="fixed">
-    <origin xyz="3.469446951953614e-18 -0.0034766436539644396 -0.029835558531877138" rpy="3.141592653589793 1.0862259150411924 1.5707963267948963"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_5"/>
-  </joint>
-  <link name="l_hand_middle_skin_6"/>
-  <joint name="l_hand_middle_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.003299999999999973 -0.0018246478722138137 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004836 2.532385703371831"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_6"/>
-  </joint>
-  <link name="l_hand_middle_skin_7"/>
-  <joint name="l_hand_middle_skin_7_fixed_joint" type="fixed">
-    <origin xyz="6.938893903907228e-18 -2.7272267966693686e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454184 1.5713169902185737"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_7"/>
-  </joint>
-  <link name="l_hand_middle_skin_8"/>
-  <joint name="l_hand_middle_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.0032999999999999974 -0.0018246478722138137 -0.03177198000353959" rpy="-3.141592653589793 0.7785358840004831 0.6092069502179615"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_8"/>
-  </joint>
-  <link name="l_hand_middle_skin_9"/>
-  <joint name="l_hand_middle_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.005929525942276366 -0.001192320688661208 -0.02799999999999997" rpy="-3.1415926535897922 1.2994442229713603 0.3644371112642026"/>
-    <parent link="l_hand_middle_2"/>
-    <child link="l_hand_middle_skin_9"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_0"/>
-  <joint name="l_hand_pinkie_skin_0_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-18 -0.0024341972556575775 -0.021406226700848463" rpy="1.0165154595159098e-16 1.2224883899444139 -1.5707963267948966"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_0"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_1"/>
-  <joint name="l_hand_pinkie_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.003299999999999994 -0.0031314255941774505 -0.023281177896674776" rpy="1.4138639448767963e-16 1.220109774708003 -1.5707963267948966"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_1"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_10"/>
-  <joint name="l_hand_pinkie_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003300000000000001 -0.004081895179626593 -0.027767378161021983" rpy="3.1415926535897927 1.5047763445693847 1.5707963267948963"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_10"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_11"/>
-  <joint name="l_hand_pinkie_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.003300000000000001 -0.0031314255941774505 -0.02328117789667472" rpy="1.0099028177691407e-16 1.2201097747080036 -1.5707963267948968"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_11"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_2"/>
-  <joint name="l_hand_pinkie_skin_2_fixed_joint" type="fixed">
-    <origin xyz="0 -0.0037584484925220485 -0.0251928113169132" rpy="1.324397816792578e-16 1.3057395010009953 -1.5707963267948966"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_2"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_3"/>
-  <joint name="l_hand_pinkie_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0033000000000000147 -0.004081895179626649 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693847 1.5707963267948966"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_3"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_4"/>
-  <joint name="l_hand_pinkie_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.005929525942276352 -0.001192320688661208 -0.02799999999999997" rpy="3.141592653589792 1.2994442229713603 2.7771555423255907"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_4"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_5"/>
-  <joint name="l_hand_pinkie_skin_5_fixed_joint" type="fixed">
-    <origin xyz="1.0408340855860843e-17 -0.003476643653964384 -0.029835558531877138" rpy="3.141592653589793 1.0862259150411921 1.5707963267948966"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_5"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_6"/>
-  <joint name="l_hand_pinkie_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.003300000000000018 -0.0018246478722138415 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004835 2.5323857033718316"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_6"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_7"/>
-  <joint name="l_hand_pinkie_skin_7_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-18 -2.7272267966693686e-4 -0.03327209888574856" rpy="3.141592653589793 0.6184188593454184 1.571316990218574"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_7"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_8"/>
-  <joint name="l_hand_pinkie_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.003299999999999994 -0.0018246478722138137 -0.031771980003539535" rpy="-3.1415926535897927 0.778535884000483 0.6092069502179613"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_8"/>
-  </joint>
-  <link name="l_hand_pinkie_skin_9"/>
-  <joint name="l_hand_pinkie_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.0059295259422763764 -0.0011923206886611248 -0.02799999999999997" rpy="-3.1415926535897922 1.299444222971361 0.3644371112642025"/>
-    <parent link="l_hand_pinkie_2"/>
-    <child link="l_hand_pinkie_skin_9"/>
-  </joint>
-  <link name="l_hand_ring_skin_0"/>
-  <joint name="l_hand_ring_skin_0_fixed_joint" type="fixed">
-    <origin xyz="-3.469446951953614e-18 -0.0024341972556575775 -0.02140622670084852" rpy="1.0165154595159097e-16 1.2224883899444141 -1.5707963267948963"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_0"/>
-  </joint>
-  <link name="l_hand_ring_skin_1"/>
-  <joint name="l_hand_ring_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.003300000000000001 -0.003131425594177506 -0.023281177896674887" rpy="1.0099028177691402e-16 1.220109774708004 -1.5707963267948963"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_1"/>
-  </joint>
-  <link name="l_hand_ring_skin_10"/>
-  <joint name="l_hand_ring_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003300000000000006 -0.0040818951796267045 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693865 1.5707963267948968"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_10"/>
-  </joint>
-  <link name="l_hand_ring_skin_11"/>
-  <joint name="l_hand_ring_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.0032999999999999974 -0.0031314255941775615 -0.023281177896674776" rpy="1.0099028177691407e-16 1.220109774708004 -1.5707963267948963"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_11"/>
-  </joint>
-  <link name="l_hand_ring_skin_2"/>
-  <joint name="l_hand_ring_skin_2_fixed_joint" type="fixed">
-    <origin xyz="0 -0.003758448492522104 -0.025192811316913144" rpy="7.946386900755465e-17 1.3057395010009964 -1.5707963267948966"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_2"/>
-  </joint>
-  <link name="l_hand_ring_skin_3"/>
-  <joint name="l_hand_ring_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0032999999999999974 -0.004081895179626621 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693865 1.5707963267948968"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_3"/>
-  </joint>
-  <link name="l_hand_ring_skin_4"/>
-  <joint name="l_hand_ring_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.005929525942276356 -0.0011923206886612359 -0.028000000000000025" rpy="3.1415926535897922 1.299444222971361 2.777155542325591"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_4"/>
-  </joint>
-  <link name="l_hand_ring_skin_5"/>
-  <joint name="l_hand_ring_skin_5_fixed_joint" type="fixed">
-    <origin xyz="-1.734723475976807e-17 -0.0034766436539644396 -0.029835558531877193" rpy="3.141592653589793 1.0862259150411924 1.5707963267948968"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_5"/>
-  </joint>
-  <link name="l_hand_ring_skin_6"/>
-  <joint name="l_hand_ring_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.003300000000000006 -0.001824647872213897 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004838 2.532385703371832"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_6"/>
-  </joint>
-  <link name="l_hand_ring_skin_7"/>
-  <joint name="l_hand_ring_skin_7_fixed_joint" type="fixed">
-    <origin xyz="-8.673617379884035e-18 -2.7272267966702013e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454183 1.5713169902185744"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_7"/>
-  </joint>
-  <link name="l_hand_ring_skin_8"/>
-  <joint name="l_hand_ring_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.0033000000000000113 -0.0018246478722139248 -0.031771980003539535" rpy="-3.1415926535897927 0.7785358840004832 0.6092069502179615"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_8"/>
-  </joint>
-  <link name="l_hand_ring_skin_9"/>
-  <joint name="l_hand_ring_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.0059295259422763695 -0.0011923206886612636 -0.02799999999999997" rpy="-3.1415926535897922 1.2994442229713619 0.36443711126420286"/>
-    <parent link="l_hand_ring_2"/>
-    <child link="l_hand_ring_skin_9"/>
-  </joint>
-  <link name="l_sole"/>
-  <joint name="l_sole_fixed_joint" type="fixed">
-    <origin xyz="0.059629999999999996 -1.3877787807814457e-17 -0.024299999999999877" rpy="0 1.5094274020956558e-31 0"/>
-    <parent link="l_foot_rear"/>
-    <child link="l_sole"/>
-  </joint>
-  <link name="l_hand_thumb_skin_0"/>
-  <joint name="l_hand_thumb_skin_0_fixed_joint" type="fixed">
-    <origin xyz="0.02030622670084857 -0.002434197255657522 0" rpy="1.570796326794896 -5.551115123125783e-16 -0.3483079368504827"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_0"/>
-  </joint>
-  <link name="l_hand_thumb_skin_1"/>
-  <joint name="l_hand_thumb_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.022181177896674883 -0.003131425594177506 0.0032999999999999696" rpy="1.570796326794896 -4.718447854656915e-16 -0.3506865520868932"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_1"/>
-  </joint>
-  <link name="l_hand_thumb_skin_10"/>
-  <joint name="l_hand_thumb_skin_10_fixed_joint" type="fixed">
-    <origin xyz="0.026667378161022146 -0.004081895179626566 -0.0032999999999999696" rpy="1.570796326794896 -2.220446049250313e-16 0.06601998222550998"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_10"/>
-  </joint>
-  <link name="l_hand_thumb_skin_11"/>
-  <joint name="l_hand_thumb_skin_11_fixed_joint" type="fixed">
-    <origin xyz="0.022181177896674883 -0.0031314255941775337 -0.0032999999999999696" rpy="1.570796326794896 -5.273559366969494e-16 -0.35068655208689314"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_11"/>
-  </joint>
-  <link name="l_hand_thumb_skin_2"/>
-  <joint name="l_hand_thumb_skin_2_fixed_joint" type="fixed">
-    <origin xyz="0.02409281131691325 -0.0037584484925220485 0" rpy="1.570796326794896 -4.440892098500626e-16 -0.26505682579390083"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_2"/>
-  </joint>
-  <link name="l_hand_thumb_skin_3"/>
-  <joint name="l_hand_thumb_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.026667378161022146 -0.004081895179626538 0.0032999999999999696" rpy="1.570796326794896 -1.6653345369377348e-16 0.06601998222550995"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_3"/>
-  </joint>
-  <link name="l_hand_thumb_skin_4"/>
-  <joint name="l_hand_thumb_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.026900000000000077 -0.0011923206886611526 0.005929525942276359" rpy="0.37702374862030114 0.25312544974771894 0.09883899272325501"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_4"/>
-  </joint>
-  <link name="l_hand_thumb_skin_5"/>
-  <joint name="l_hand_thumb_skin_5_fixed_joint" type="fixed">
-    <origin xyz="0.02873555853187719 -0.003476643653964384 0" rpy="1.570796326794896 1.1102230246251565e-16 0.48457041175370413"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_5"/>
-  </joint>
-  <link name="l_hand_thumb_skin_6"/>
-  <joint name="l_hand_thumb_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.03067198000353967 -0.0018246478722137582 0.0032999999999999974" rpy="0.7821847394655412 0.6234819116522309 0.5256773813619385"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_6"/>
-  </joint>
-  <link name="l_hand_thumb_skin_7"/>
-  <joint name="l_hand_thumb_skin_7_fixed_joint" type="fixed">
-    <origin xyz="0.032172098885748665 -2.7272267966693686e-4 -2.7755575615628914e-17" rpy="1.5704944734177164 4.2423453997464313e-4 0.9523774034211625"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_7"/>
-  </joint>
-  <link name="l_hand_thumb_skin_8"/>
-  <joint name="l_hand_thumb_skin_8_fixed_joint" type="fixed">
-    <origin xyz="0.030671980003539642 -0.001824647872213786 -0.0032999999999999974" rpy="2.35940791412425 -0.6234819116522303 0.5256773813619386"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_8"/>
-  </joint>
-  <link name="l_hand_thumb_skin_9"/>
-  <joint name="l_hand_thumb_skin_9_fixed_joint" type="fixed">
-    <origin xyz="0.02690000000000005 -0.0011923206886611526 -0.005929525942276387" rpy="2.7645689049694906 -0.25312544974771906 0.09883899272325536"/>
-    <parent link="l_hand_thumb_3"/>
-    <child link="l_hand_thumb_skin_9"/>
-  </joint>
-  <link name="r_hand_index_skin_0"/>
-  <joint name="r_hand_index_skin_0_fixed_joint" type="fixed">
-    <origin xyz="6.100023118155162e-7 -0.0024341972556575497 -0.021406226700848574" rpy="-2.6429401947413134e-16 1.2224883899444456 -1.5707963267948728"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_0"/>
-  </joint>
-  <link name="r_hand_index_skin_1"/>
-  <joint name="r_hand_index_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.0033006100023118545 -0.0031314255941775893 -0.023281177896674943" rpy="-2.6257473261997123e-16 1.2201097747080345 -1.5707963267948728"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_1"/>
-  </joint>
-  <link name="r_hand_index_skin_10"/>
-  <joint name="r_hand_index_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003299389997688175 -0.004081895179626482 -0.02776737816102215" rpy="-3.141592653589792 1.504776344569575 1.5707963267949228"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_10"/>
-  </joint>
-  <link name="r_hand_index_skin_11"/>
-  <joint name="r_hand_index_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.003299389997688168 -0.003131425594177367 -0.023281177896674943" rpy="-2.625747326199714e-16 1.2201097747080347 -1.5707963267948728"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_11"/>
-  </joint>
-  <link name="r_hand_index_skin_2"/>
-  <joint name="r_hand_index_skin_2_fixed_joint" type="fixed">
-    <origin xyz="6.100023118571496e-7 -0.0037584484925220762 -0.02519281131691331" rpy="-3.1785547603021135e-16 1.3057395010010375 -1.5707963267948728"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_2"/>
-  </joint>
-  <link name="r_hand_index_skin_3"/>
-  <joint name="r_hand_index_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0033006100023118892 -0.004081895179626621 -0.027767378161022205" rpy="-3.141592653589792 1.504776344569575 1.5707963267949228"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_3"/>
-  </joint>
-  <link name="r_hand_index_skin_4"/>
-  <joint name="r_hand_index_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.0059301359445881885 -0.0011923206886612636 -0.028000000000000136" rpy="-3.1415926535897847 1.2994442229714065 2.7771555423255645"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_4"/>
-  </joint>
-  <link name="r_hand_index_skin_5"/>
-  <joint name="r_hand_index_skin_5_fixed_joint" type="fixed">
-    <origin xyz="6.100023118363329e-7 -0.0034766436539643564 -0.02983555853187725" rpy="-3.141592653589793 1.086225915041219 1.5707963267949214"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_5"/>
-  </joint>
-  <link name="r_hand_index_skin_6"/>
-  <joint name="r_hand_index_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.003300610002311799 -0.001824647872213897 -0.03177198000353976" rpy="-3.1415926535897905 0.7785358840004972 2.532385703371822"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_6"/>
-  </joint>
-  <link name="r_hand_index_skin_7"/>
-  <joint name="r_hand_index_skin_7_fixed_joint" type="fixed">
-    <origin xyz="6.100023117600051e-7 -2.7272267966682584e-4 -0.03327209888574878" rpy="-3.141592653589793 0.6184188593454301 1.5713169902185988"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_7"/>
-  </joint>
-  <link name="r_hand_index_skin_8"/>
-  <joint name="r_hand_index_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.0032993899976882304 -0.001824647872213675 -0.03177198000353976" rpy="3.1415926535897905 0.7785358840004974 0.6092069502179559"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_8"/>
-  </joint>
-  <link name="r_hand_index_skin_9"/>
-  <joint name="r_hand_index_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.00592891593996462 -0.0011923206886609583 -0.028000000000000136" rpy="3.1415926535897847 1.2994442229714065 0.36443711126419487"/>
-    <parent link="r_hand_index_3"/>
-    <child link="r_hand_index_skin_9"/>
-  </joint>
-  <link name="r_hand_middle_skin_0"/>
-  <joint name="r_hand_middle_skin_0_fixed_joint" type="fixed">
-    <origin xyz="4.5102810375396984e-17 -0.0024341972556575497 -0.02140622670084863" rpy="2.642940194741327e-16 1.2224883899444492 -1.5707963267948724"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_0"/>
-  </joint>
-  <link name="r_hand_middle_skin_1"/>
-  <joint name="r_hand_middle_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.003300000000000112 -0.0031314255941775893 -0.023281177896675054" rpy="2.6257473261997256e-16 1.220109774708039 -1.5707963267948724"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_1"/>
-  </joint>
-  <link name="r_hand_middle_skin_10"/>
-  <joint name="r_hand_middle_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003299999999999921 -0.004081895179626455 -0.02776737816102226" rpy="3.141592653589792 1.5047763445695816 1.5707963267949185"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_10"/>
-  </joint>
-  <link name="r_hand_middle_skin_11"/>
-  <joint name="r_hand_middle_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.003299999999999935 -0.0031314255941774782 -0.023281177896674998" rpy="2.6257473261997276e-16 1.2201097747080385 -1.5707963267948724"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_11"/>
-  </joint>
-  <link name="r_hand_middle_skin_2"/>
-  <joint name="r_hand_middle_skin_2_fixed_joint" type="fixed">
-    <origin xyz="1.0061396160665481e-16 -0.0037584484925220485 -0.02519281131691342" rpy="3.443434323660649e-16 1.3057395010010426 -1.5707963267948721"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_2"/>
-  </joint>
-  <link name="r_hand_middle_skin_3"/>
-  <joint name="r_hand_middle_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0033000000000001084 -0.004081895179626621 -0.027767378161022316" rpy="3.141592653589792 1.5047763445695816 1.5707963267949185"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_3"/>
-  </joint>
-  <link name="r_hand_middle_skin_4"/>
-  <joint name="r_hand_middle_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.005929525942276456 -0.0011923206886612359 -0.02800000000000019" rpy="-3.1415926535897922 1.2994442229714078 2.7771555423255703"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_4"/>
-  </joint>
-  <link name="r_hand_middle_skin_5"/>
-  <joint name="r_hand_middle_skin_5_fixed_joint" type="fixed">
-    <origin xyz="1.1102230246251565e-16 -0.003476643653964412 -0.029835558531877415" rpy="3.141592653589793 1.0862259150412177 1.57079632679492"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_5"/>
-  </joint>
-  <link name="r_hand_middle_skin_6"/>
-  <joint name="r_hand_middle_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.0033000000000000702 -0.001824647872213897 -0.03177198000353981" rpy="-3.1415926535897927 0.7785358840004967 2.5323857033718227"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_6"/>
-  </joint>
-  <link name="r_hand_middle_skin_7"/>
-  <joint name="r_hand_middle_skin_7_fixed_joint" type="fixed">
-    <origin xyz="0 -2.727226796669091e-4 -0.033272098885748835" rpy="3.141592653589793 0.6184188593454285 1.5713169902185977"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_7"/>
-  </joint>
-  <link name="r_hand_middle_skin_8"/>
-  <joint name="r_hand_middle_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.003299999999999959 -0.001824647872213675 -0.03177198000353976" rpy="3.1415926535897927 0.7785358840004963 0.6092069502179533"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_8"/>
-  </joint>
-  <link name="r_hand_middle_skin_9"/>
-  <joint name="r_hand_middle_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.0059295259422763626 -0.0011923206886610138 -0.028000000000000247" rpy="3.141592653589792 1.299444222971407 0.3644371112641867"/>
-    <parent link="r_hand_middle_2"/>
-    <child link="r_hand_middle_skin_9"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_0"/>
-  <joint name="r_hand_pinkie_skin_0_fixed_joint" type="fixed">
-    <origin xyz="6.100023117877607e-7 -0.0024352966530424014 -0.02140613339524544" rpy="-7.318432278561446e-16 1.2224646222382454 -1.570796326794873"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_0"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_1"/>
-  <joint name="r_hand_pinkie_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.0033006100023118268 -0.0031325695546547128 -0.023281068019023854" rpy="-6.866892997389504e-16 1.220086007001834 -1.570796326794873"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_1"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_10"/>
-  <joint name="r_hand_pinkie_skin_10_fixed_joint" type="fixed">
-    <origin xyz="-0.003299389997688182 -0.00408314576652502 -0.027767245691622144" rpy="-3.1415926535897896 1.5048001122757868 1.570796326794921"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_10"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_11"/>
-  <joint name="r_hand_pinkie_skin_11_fixed_joint" type="fixed">
-    <origin xyz="-0.0032993899976882235 -0.003132569554654574 -0.02328106801902391" rpy="-6.866892997389507e-16 1.2200860070018347 -1.570796326794873"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_11"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_2"/>
-  <joint name="r_hand_pinkie_skin_2_fixed_joint" type="fixed">
-    <origin xyz="6.10002311829394e-7 -0.0037596378879635184 -0.025192686535826347" rpy="-9.534829410159e-16 1.305715733294839 -1.570796326794873"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_2"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_3"/>
-  <joint name="r_hand_pinkie_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.0033006100023118545 -0.004083145766525131 -0.027767245691622144" rpy="-3.1415926535897896 1.5048001122757886 1.5707963267949208"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_3"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_4"/>
-  <joint name="r_hand_pinkie_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.005930135944588161 -0.001193576805263552 -0.02799993620909197" rpy="-3.141509800662671 1.2994526934524957 2.777235363705706"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_4"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_5"/>
-  <joint name="r_hand_pinkie_skin_5_fixed_joint" type="fixed">
-    <origin xyz="6.100023118224551e-7 -0.0034779433969372997 -0.02983544044733355" rpy="-3.1415926535897927 1.0862496827474222 1.5707963267949205"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_5"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_6"/>
-  <joint name="r_hand_pinkie_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.003300610002311806 -0.0018259936399500076 -0.03177190118259943" rpy="-3.1415652746824487 0.7785494841047959 2.532404930008197"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_6"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_7"/>
-  <joint name="r_hand_pinkie_skin_7_fixed_joint" type="fixed">
-    <origin xyz="6.100023117461273e-7 -2.741041022262247e-4 -0.03327205695008678" rpy="-3.141592638401719 0.6184426270484112 1.5713169990239941"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_7"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_8"/>
-  <joint name="r_hand_pinkie_skin_8_fixed_joint" type="fixed">
-    <origin xyz="-0.0032993899976882374 -0.001825993639949841 -0.03177190118259943" rpy="3.141565274682449 0.7785494841047964 0.609187723581579"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_8"/>
-  </joint>
-  <link name="r_hand_pinkie_skin_9"/>
-  <joint name="r_hand_pinkie_skin_9_fixed_joint" type="fixed">
-    <origin xyz="-0.005928915939964634 -0.001193576805263219 -0.02799993620909197" rpy="3.1415098006626714 1.2994526934524961 0.36435728988405147"/>
-    <parent link="r_hand_pinkie_2"/>
-    <child link="r_hand_pinkie_skin_9"/>
+  <link name="r_hand_thumb_skin_0"/>
+  <joint name="r_hand_thumb_skin_0_fixed_joint" type="fixed">
+    <origin xyz="0.02030622670084796 -0.002434197255657966 1.6653345369377348e-15" rpy="1.5707963267949723 -6.547540287726861e-14 -0.34830793685051614"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_0"/>
+  </joint>
+  <link name="r_hand_thumb_skin_1"/>
+  <joint name="r_hand_thumb_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.022181177896674495 -0.003131425594177867 0.0033000000000021346" rpy="1.5707963267949725 -6.530886942357483e-14 -0.3506865520869266"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_1"/>
+  </joint>
+  <link name="r_hand_thumb_skin_10"/>
+  <joint name="r_hand_thumb_skin_10_fixed_joint" type="fixed">
+    <origin xyz="0.02666737816102109 -0.004081895179627371 -0.0032999999999981933" rpy="1.5707963267949394 -9.0427665355719e-14 0.06601998222549518"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_10"/>
+  </joint>
+  <link name="r_hand_thumb_skin_11"/>
+  <joint name="r_hand_thumb_skin_11_fixed_joint" type="fixed">
+    <origin xyz="0.02218117789667394 -0.003131425594178172 -0.0032999999999985263" rpy="1.5707963267949725 -6.533662499919046e-14 -0.35068655208692634"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_11"/>
+  </joint>
+  <link name="r_hand_thumb_skin_2"/>
+  <joint name="r_hand_thumb_skin_2_fixed_joint" type="fixed">
+    <origin xyz="0.024092811316912585 -0.0037584484925226314 1.970645868709653e-15" rpy="1.5707963267949665 -7.155387393709134e-14 -0.2650568257939321"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_2"/>
+  </joint>
+  <link name="r_hand_thumb_skin_3"/>
+  <joint name="r_hand_thumb_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.026667378161021674 -0.004081895179627065 0.0033000000000024676" rpy="1.5707963267949394 -9.037215420448774e-14 0.06601998222549521"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_3"/>
+  </joint>
+  <link name="r_hand_thumb_skin_4"/>
+  <joint name="r_hand_thumb_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.02689999999999977 -0.0011923206886614024 0.005929525942279246" rpy="0.37702374862034316 0.25312544974764667 0.09883899272323193"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_4"/>
+  </joint>
+  <link name="r_hand_thumb_skin_5"/>
+  <joint name="r_hand_thumb_skin_5_fixed_joint" type="fixed">
+    <origin xyz="0.028735558531876357 -0.0034766436539650503 2.3869795029440866e-15" rpy="1.570796326794899 -9.997558336749535e-14 0.48457041175371784"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_5"/>
+  </joint>
+  <link name="r_hand_thumb_skin_6"/>
+  <joint name="r_hand_thumb_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.030671980003538976 -0.0018246478722142856 0.0033000000000029672" rpy="0.7821847394655398 0.6234819116521846 0.5256773813619555"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_6"/>
+  </joint>
+  <link name="r_hand_thumb_skin_7"/>
+  <joint name="r_hand_thumb_skin_7_fixed_joint" type="fixed">
+    <origin xyz="0.032172098885747666 -2.7272267966757524e-4 2.8033131371785203e-15" rpy="1.570494473417674 4.2423453988371586e-4 0.9523774034211966"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_7"/>
+  </joint>
+  <link name="r_hand_thumb_skin_8"/>
+  <joint name="r_hand_thumb_skin_8_fixed_joint" type="fixed">
+    <origin xyz="0.03067198000353842 -0.0018246478722146187 -0.0032999999999976937" rpy="2.3594079141242488 -0.6234819116523849 0.5256773813619544"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_8"/>
+  </joint>
+  <link name="r_hand_thumb_skin_9"/>
+  <joint name="r_hand_thumb_skin_9_fixed_joint" type="fixed">
+    <origin xyz="0.02689999999999869 -0.0011923206886619853 -0.0059295259422746105" rpy="2.7645689049695323 -0.2531254497478303 0.098838992723253"/>
+    <parent link="r_hand_thumb_3"/>
+    <child link="r_hand_thumb_skin_9"/>
   </joint>
   <link name="r_hand_ring_skin_0"/>
   <joint name="r_hand_ring_skin_0_fixed_joint" type="fixed">
@@ -2872,83 +2272,671 @@
     <parent link="r_hand_ring_2"/>
     <child link="r_hand_ring_skin_9"/>
   </joint>
+  <link name="r_hand_pinkie_skin_0"/>
+  <joint name="r_hand_pinkie_skin_0_fixed_joint" type="fixed">
+    <origin xyz="6.100023117877607e-7 -0.0024352966530424014 -0.02140613339524544" rpy="-7.318432278561446e-16 1.2224646222382454 -1.570796326794873"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_0"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_1"/>
+  <joint name="r_hand_pinkie_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.0033006100023118268 -0.0031325695546547128 -0.023281068019023854" rpy="-6.866892997389504e-16 1.220086007001834 -1.570796326794873"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_1"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_10"/>
+  <joint name="r_hand_pinkie_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003299389997688182 -0.00408314576652502 -0.027767245691622144" rpy="-3.1415926535897896 1.5048001122757868 1.570796326794921"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_10"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_11"/>
+  <joint name="r_hand_pinkie_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.0032993899976882235 -0.003132569554654574 -0.02328106801902391" rpy="-6.866892997389507e-16 1.2200860070018347 -1.570796326794873"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_11"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_2"/>
+  <joint name="r_hand_pinkie_skin_2_fixed_joint" type="fixed">
+    <origin xyz="6.10002311829394e-7 -0.0037596378879635184 -0.025192686535826347" rpy="-9.534829410159e-16 1.305715733294839 -1.570796326794873"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_2"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_3"/>
+  <joint name="r_hand_pinkie_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0033006100023118545 -0.004083145766525131 -0.027767245691622144" rpy="-3.1415926535897896 1.5048001122757886 1.5707963267949208"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_3"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_4"/>
+  <joint name="r_hand_pinkie_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.005930135944588161 -0.001193576805263552 -0.02799993620909197" rpy="-3.141509800662671 1.2994526934524957 2.777235363705706"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_4"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_5"/>
+  <joint name="r_hand_pinkie_skin_5_fixed_joint" type="fixed">
+    <origin xyz="6.100023118224551e-7 -0.0034779433969372997 -0.02983544044733355" rpy="-3.1415926535897927 1.0862496827474222 1.5707963267949205"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_5"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_6"/>
+  <joint name="r_hand_pinkie_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.003300610002311806 -0.0018259936399500076 -0.03177190118259943" rpy="-3.1415652746824487 0.7785494841047959 2.532404930008197"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_6"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_7"/>
+  <joint name="r_hand_pinkie_skin_7_fixed_joint" type="fixed">
+    <origin xyz="6.100023117461273e-7 -2.741041022262247e-4 -0.03327205695008678" rpy="-3.141592638401719 0.6184426270484112 1.5713169990239941"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_7"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_8"/>
+  <joint name="r_hand_pinkie_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.0032993899976882374 -0.001825993639949841 -0.03177190118259943" rpy="3.141565274682449 0.7785494841047964 0.609187723581579"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_8"/>
+  </joint>
+  <link name="r_hand_pinkie_skin_9"/>
+  <joint name="r_hand_pinkie_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.005928915939964634 -0.001193576805263219 -0.02799993620909197" rpy="3.1415098006626714 1.2994526934524961 0.36435728988405147"/>
+    <parent link="r_hand_pinkie_2"/>
+    <child link="r_hand_pinkie_skin_9"/>
+  </joint>
+  <link name="r_hand_middle_skin_0"/>
+  <joint name="r_hand_middle_skin_0_fixed_joint" type="fixed">
+    <origin xyz="4.5102810375396984e-17 -0.0024341972556575497 -0.02140622670084863" rpy="2.642940194741327e-16 1.2224883899444492 -1.5707963267948724"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_0"/>
+  </joint>
+  <link name="r_hand_middle_skin_1"/>
+  <joint name="r_hand_middle_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.003300000000000112 -0.0031314255941775893 -0.023281177896675054" rpy="2.6257473261997256e-16 1.220109774708039 -1.5707963267948724"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_1"/>
+  </joint>
+  <link name="r_hand_middle_skin_10"/>
+  <joint name="r_hand_middle_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003299999999999921 -0.004081895179626455 -0.02776737816102226" rpy="3.141592653589792 1.5047763445695816 1.5707963267949185"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_10"/>
+  </joint>
+  <link name="r_hand_middle_skin_11"/>
+  <joint name="r_hand_middle_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.003299999999999935 -0.0031314255941774782 -0.023281177896674998" rpy="2.6257473261997276e-16 1.2201097747080385 -1.5707963267948724"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_11"/>
+  </joint>
+  <link name="r_hand_middle_skin_2"/>
+  <joint name="r_hand_middle_skin_2_fixed_joint" type="fixed">
+    <origin xyz="1.0061396160665481e-16 -0.0037584484925220485 -0.02519281131691342" rpy="3.443434323660649e-16 1.3057395010010426 -1.5707963267948721"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_2"/>
+  </joint>
+  <link name="r_hand_middle_skin_3"/>
+  <joint name="r_hand_middle_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0033000000000001084 -0.004081895179626621 -0.027767378161022316" rpy="3.141592653589792 1.5047763445695816 1.5707963267949185"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_3"/>
+  </joint>
+  <link name="r_hand_middle_skin_4"/>
+  <joint name="r_hand_middle_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.005929525942276456 -0.0011923206886612359 -0.02800000000000019" rpy="-3.1415926535897922 1.2994442229714078 2.7771555423255703"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_4"/>
+  </joint>
+  <link name="r_hand_middle_skin_5"/>
+  <joint name="r_hand_middle_skin_5_fixed_joint" type="fixed">
+    <origin xyz="1.1102230246251565e-16 -0.003476643653964412 -0.029835558531877415" rpy="3.141592653589793 1.0862259150412177 1.57079632679492"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_5"/>
+  </joint>
+  <link name="r_hand_middle_skin_6"/>
+  <joint name="r_hand_middle_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.0033000000000000702 -0.001824647872213897 -0.03177198000353981" rpy="-3.1415926535897927 0.7785358840004967 2.5323857033718227"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_6"/>
+  </joint>
+  <link name="r_hand_middle_skin_7"/>
+  <joint name="r_hand_middle_skin_7_fixed_joint" type="fixed">
+    <origin xyz="0 -2.727226796669091e-4 -0.033272098885748835" rpy="3.141592653589793 0.6184188593454285 1.5713169902185977"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_7"/>
+  </joint>
+  <link name="r_hand_middle_skin_8"/>
+  <joint name="r_hand_middle_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.003299999999999959 -0.001824647872213675 -0.03177198000353976" rpy="3.1415926535897927 0.7785358840004963 0.6092069502179533"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_8"/>
+  </joint>
+  <link name="r_hand_middle_skin_9"/>
+  <joint name="r_hand_middle_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.0059295259422763626 -0.0011923206886610138 -0.028000000000000247" rpy="3.141592653589792 1.299444222971407 0.3644371112641867"/>
+    <parent link="r_hand_middle_2"/>
+    <child link="r_hand_middle_skin_9"/>
+  </joint>
+  <link name="r_hand_index_skin_0"/>
+  <joint name="r_hand_index_skin_0_fixed_joint" type="fixed">
+    <origin xyz="6.100023118155162e-7 -0.0024341972556575497 -0.021406226700848574" rpy="-2.6429401947413134e-16 1.2224883899444456 -1.5707963267948728"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_0"/>
+  </joint>
+  <link name="r_hand_index_skin_1"/>
+  <joint name="r_hand_index_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.0033006100023118545 -0.0031314255941775893 -0.023281177896674943" rpy="-2.6257473261997123e-16 1.2201097747080345 -1.5707963267948728"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_1"/>
+  </joint>
+  <link name="r_hand_index_skin_10"/>
+  <joint name="r_hand_index_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003299389997688175 -0.004081895179626482 -0.02776737816102215" rpy="-3.141592653589792 1.504776344569575 1.5707963267949228"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_10"/>
+  </joint>
+  <link name="r_hand_index_skin_11"/>
+  <joint name="r_hand_index_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.003299389997688168 -0.003131425594177367 -0.023281177896674943" rpy="-2.625747326199714e-16 1.2201097747080347 -1.5707963267948728"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_11"/>
+  </joint>
+  <link name="r_hand_index_skin_2"/>
+  <joint name="r_hand_index_skin_2_fixed_joint" type="fixed">
+    <origin xyz="6.100023118571496e-7 -0.0037584484925220762 -0.02519281131691331" rpy="-3.1785547603021135e-16 1.3057395010010375 -1.5707963267948728"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_2"/>
+  </joint>
+  <link name="r_hand_index_skin_3"/>
+  <joint name="r_hand_index_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0033006100023118892 -0.004081895179626621 -0.027767378161022205" rpy="-3.141592653589792 1.504776344569575 1.5707963267949228"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_3"/>
+  </joint>
+  <link name="r_hand_index_skin_4"/>
+  <joint name="r_hand_index_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.0059301359445881885 -0.0011923206886612636 -0.028000000000000136" rpy="-3.1415926535897847 1.2994442229714065 2.7771555423255645"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_4"/>
+  </joint>
+  <link name="r_hand_index_skin_5"/>
+  <joint name="r_hand_index_skin_5_fixed_joint" type="fixed">
+    <origin xyz="6.100023118363329e-7 -0.0034766436539643564 -0.02983555853187725" rpy="-3.141592653589793 1.086225915041219 1.5707963267949214"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_5"/>
+  </joint>
+  <link name="r_hand_index_skin_6"/>
+  <joint name="r_hand_index_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.003300610002311799 -0.001824647872213897 -0.03177198000353976" rpy="-3.1415926535897905 0.7785358840004972 2.532385703371822"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_6"/>
+  </joint>
+  <link name="r_hand_index_skin_7"/>
+  <joint name="r_hand_index_skin_7_fixed_joint" type="fixed">
+    <origin xyz="6.100023117600051e-7 -2.7272267966682584e-4 -0.03327209888574878" rpy="-3.141592653589793 0.6184188593454301 1.5713169902185988"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_7"/>
+  </joint>
+  <link name="r_hand_index_skin_8"/>
+  <joint name="r_hand_index_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.0032993899976882304 -0.001824647872213675 -0.03177198000353976" rpy="3.1415926535897905 0.7785358840004974 0.6092069502179559"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_8"/>
+  </joint>
+  <link name="r_hand_index_skin_9"/>
+  <joint name="r_hand_index_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.00592891593996462 -0.0011923206886609583 -0.028000000000000136" rpy="3.1415926535897847 1.2994442229714065 0.36443711126419487"/>
+    <parent link="r_hand_index_3"/>
+    <child link="r_hand_index_skin_9"/>
+  </joint>
+  <link name="l_arm_ft"/>
+  <joint name="l_arm_ft_fixed_joint" type="fixed">
+    <origin xyz="-0.004349999999999996 -2.7755575615628914e-17 -0.054300000000000015" rpy="3.141592653589793 2.498001805406602e-16 -1.5707963267948952"/>
+    <parent link="l_shoulder_2"/>
+    <child link="l_arm_ft"/>
+  </joint>
+  <link name="l_hand_thumb_skin_0"/>
+  <joint name="l_hand_thumb_skin_0_fixed_joint" type="fixed">
+    <origin xyz="0.02030622670084857 -0.002434197255657522 0" rpy="1.570796326794896 -5.551115123125783e-16 -0.3483079368504827"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_0"/>
+  </joint>
+  <link name="l_hand_thumb_skin_1"/>
+  <joint name="l_hand_thumb_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.022181177896674883 -0.003131425594177506 0.0032999999999999696" rpy="1.570796326794896 -4.718447854656915e-16 -0.3506865520868932"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_1"/>
+  </joint>
+  <link name="l_hand_thumb_skin_10"/>
+  <joint name="l_hand_thumb_skin_10_fixed_joint" type="fixed">
+    <origin xyz="0.026667378161022146 -0.004081895179626566 -0.0032999999999999696" rpy="1.570796326794896 -2.220446049250313e-16 0.06601998222550998"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_10"/>
+  </joint>
+  <link name="l_hand_thumb_skin_11"/>
+  <joint name="l_hand_thumb_skin_11_fixed_joint" type="fixed">
+    <origin xyz="0.022181177896674883 -0.0031314255941775337 -0.0032999999999999696" rpy="1.570796326794896 -5.273559366969494e-16 -0.35068655208689314"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_11"/>
+  </joint>
+  <link name="l_hand_thumb_skin_2"/>
+  <joint name="l_hand_thumb_skin_2_fixed_joint" type="fixed">
+    <origin xyz="0.02409281131691325 -0.0037584484925220485 0" rpy="1.570796326794896 -4.440892098500626e-16 -0.26505682579390083"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_2"/>
+  </joint>
+  <link name="l_hand_thumb_skin_3"/>
+  <joint name="l_hand_thumb_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.026667378161022146 -0.004081895179626538 0.0032999999999999696" rpy="1.570796326794896 -1.6653345369377348e-16 0.06601998222550995"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_3"/>
+  </joint>
+  <link name="l_hand_thumb_skin_4"/>
+  <joint name="l_hand_thumb_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.026900000000000077 -0.0011923206886611526 0.005929525942276359" rpy="0.37702374862030114 0.25312544974771894 0.09883899272325501"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_4"/>
+  </joint>
+  <link name="l_hand_thumb_skin_5"/>
+  <joint name="l_hand_thumb_skin_5_fixed_joint" type="fixed">
+    <origin xyz="0.02873555853187719 -0.003476643653964384 0" rpy="1.570796326794896 1.1102230246251565e-16 0.48457041175370413"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_5"/>
+  </joint>
+  <link name="l_hand_thumb_skin_6"/>
+  <joint name="l_hand_thumb_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.03067198000353967 -0.0018246478722137582 0.0032999999999999974" rpy="0.7821847394655412 0.6234819116522309 0.5256773813619385"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_6"/>
+  </joint>
+  <link name="l_hand_thumb_skin_7"/>
+  <joint name="l_hand_thumb_skin_7_fixed_joint" type="fixed">
+    <origin xyz="0.032172098885748665 -2.7272267966693686e-4 -2.7755575615628914e-17" rpy="1.5704944734177164 4.2423453997464313e-4 0.9523774034211625"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_7"/>
+  </joint>
+  <link name="l_hand_thumb_skin_8"/>
+  <joint name="l_hand_thumb_skin_8_fixed_joint" type="fixed">
+    <origin xyz="0.030671980003539642 -0.001824647872213786 -0.0032999999999999974" rpy="2.35940791412425 -0.6234819116522303 0.5256773813619386"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_8"/>
+  </joint>
+  <link name="l_hand_thumb_skin_9"/>
+  <joint name="l_hand_thumb_skin_9_fixed_joint" type="fixed">
+    <origin xyz="0.02690000000000005 -0.0011923206886611526 -0.005929525942276387" rpy="2.7645689049694906 -0.25312544974771906 0.09883899272325536"/>
+    <parent link="l_hand_thumb_3"/>
+    <child link="l_hand_thumb_skin_9"/>
+  </joint>
+  <link name="l_hand_ring_skin_0"/>
+  <joint name="l_hand_ring_skin_0_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-18 -0.0024341972556575775 -0.02140622670084852" rpy="1.0165154595159097e-16 1.2224883899444141 -1.5707963267948963"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_0"/>
+  </joint>
+  <link name="l_hand_ring_skin_1"/>
+  <joint name="l_hand_ring_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.003300000000000001 -0.003131425594177506 -0.023281177896674887" rpy="1.0099028177691402e-16 1.220109774708004 -1.5707963267948963"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_1"/>
+  </joint>
+  <link name="l_hand_ring_skin_10"/>
+  <joint name="l_hand_ring_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003300000000000006 -0.0040818951796267045 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693865 1.5707963267948968"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_10"/>
+  </joint>
+  <link name="l_hand_ring_skin_11"/>
+  <joint name="l_hand_ring_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.0032999999999999974 -0.0031314255941775615 -0.023281177896674776" rpy="1.0099028177691407e-16 1.220109774708004 -1.5707963267948963"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_11"/>
+  </joint>
+  <link name="l_hand_ring_skin_2"/>
+  <joint name="l_hand_ring_skin_2_fixed_joint" type="fixed">
+    <origin xyz="0 -0.003758448492522104 -0.025192811316913144" rpy="7.946386900755465e-17 1.3057395010009964 -1.5707963267948966"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_2"/>
+  </joint>
+  <link name="l_hand_ring_skin_3"/>
+  <joint name="l_hand_ring_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0032999999999999974 -0.004081895179626621 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693865 1.5707963267948968"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_3"/>
+  </joint>
+  <link name="l_hand_ring_skin_4"/>
+  <joint name="l_hand_ring_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.005929525942276356 -0.0011923206886612359 -0.028000000000000025" rpy="3.1415926535897922 1.299444222971361 2.777155542325591"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_4"/>
+  </joint>
+  <link name="l_hand_ring_skin_5"/>
+  <joint name="l_hand_ring_skin_5_fixed_joint" type="fixed">
+    <origin xyz="-1.734723475976807e-17 -0.0034766436539644396 -0.029835558531877193" rpy="3.141592653589793 1.0862259150411924 1.5707963267948968"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_5"/>
+  </joint>
+  <link name="l_hand_ring_skin_6"/>
+  <joint name="l_hand_ring_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.003300000000000006 -0.001824647872213897 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004838 2.532385703371832"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_6"/>
+  </joint>
+  <link name="l_hand_ring_skin_7"/>
+  <joint name="l_hand_ring_skin_7_fixed_joint" type="fixed">
+    <origin xyz="-8.673617379884035e-18 -2.7272267966702013e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454183 1.5713169902185744"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_7"/>
+  </joint>
+  <link name="l_hand_ring_skin_8"/>
+  <joint name="l_hand_ring_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.0033000000000000113 -0.0018246478722139248 -0.031771980003539535" rpy="-3.1415926535897927 0.7785358840004832 0.6092069502179615"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_8"/>
+  </joint>
+  <link name="l_hand_ring_skin_9"/>
+  <joint name="l_hand_ring_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.0059295259422763695 -0.0011923206886612636 -0.02799999999999997" rpy="-3.1415926535897922 1.2994442229713619 0.36443711126420286"/>
+    <parent link="l_hand_ring_2"/>
+    <child link="l_hand_ring_skin_9"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_0"/>
+  <joint name="l_hand_pinkie_skin_0_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-18 -0.0024341972556575775 -0.021406226700848463" rpy="1.0165154595159098e-16 1.2224883899444139 -1.5707963267948966"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_0"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_1"/>
+  <joint name="l_hand_pinkie_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.003299999999999994 -0.0031314255941774505 -0.023281177896674776" rpy="1.4138639448767963e-16 1.220109774708003 -1.5707963267948966"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_1"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_10"/>
+  <joint name="l_hand_pinkie_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003300000000000001 -0.004081895179626593 -0.027767378161021983" rpy="3.1415926535897927 1.5047763445693847 1.5707963267948963"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_10"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_11"/>
+  <joint name="l_hand_pinkie_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.003300000000000001 -0.0031314255941774505 -0.02328117789667472" rpy="1.0099028177691407e-16 1.2201097747080036 -1.5707963267948968"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_11"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_2"/>
+  <joint name="l_hand_pinkie_skin_2_fixed_joint" type="fixed">
+    <origin xyz="0 -0.0037584484925220485 -0.0251928113169132" rpy="1.324397816792578e-16 1.3057395010009953 -1.5707963267948966"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_2"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_3"/>
+  <joint name="l_hand_pinkie_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0033000000000000147 -0.004081895179626649 -0.027767378161022038" rpy="3.1415926535897927 1.5047763445693847 1.5707963267948966"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_3"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_4"/>
+  <joint name="l_hand_pinkie_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.005929525942276352 -0.001192320688661208 -0.02799999999999997" rpy="3.141592653589792 1.2994442229713603 2.7771555423255907"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_4"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_5"/>
+  <joint name="l_hand_pinkie_skin_5_fixed_joint" type="fixed">
+    <origin xyz="1.0408340855860843e-17 -0.003476643653964384 -0.029835558531877138" rpy="3.141592653589793 1.0862259150411921 1.5707963267948966"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_5"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_6"/>
+  <joint name="l_hand_pinkie_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.003300000000000018 -0.0018246478722138415 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004835 2.5323857033718316"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_6"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_7"/>
+  <joint name="l_hand_pinkie_skin_7_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-18 -2.7272267966693686e-4 -0.03327209888574856" rpy="3.141592653589793 0.6184188593454184 1.571316990218574"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_7"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_8"/>
+  <joint name="l_hand_pinkie_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.003299999999999994 -0.0018246478722138137 -0.031771980003539535" rpy="-3.1415926535897927 0.778535884000483 0.6092069502179613"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_8"/>
+  </joint>
+  <link name="l_hand_pinkie_skin_9"/>
+  <joint name="l_hand_pinkie_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.0059295259422763764 -0.0011923206886611248 -0.02799999999999997" rpy="-3.1415926535897922 1.299444222971361 0.3644371112642025"/>
+    <parent link="l_hand_pinkie_2"/>
+    <child link="l_hand_pinkie_skin_9"/>
+  </joint>
+  <link name="l_hand_middle_skin_0"/>
+  <joint name="l_hand_middle_skin_0_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-18 -0.002434197255657522 -0.021406226700848463" rpy="4.2693649299668224e-16 1.2224883899444143 -1.5707963267948966"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_0"/>
+  </joint>
+  <link name="l_hand_middle_skin_1"/>
+  <joint name="l_hand_middle_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.003299999999999987 -0.003131425594177506 -0.02328117789667483" rpy="4.2415918346303895e-16 1.2201097747080036 -1.5707963267948966"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_1"/>
+  </joint>
+  <link name="l_hand_middle_skin_10"/>
+  <joint name="l_hand_middle_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.0033000000000000147 -0.004081895179626538 -0.027767378161022038" rpy="3.141592653589791 1.5047763445693831 1.5707963267948952"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_10"/>
+  </joint>
+  <link name="l_hand_middle_skin_11"/>
+  <joint name="l_hand_middle_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.0032999999999999835 -0.0031314255941775337 -0.023281177896674776" rpy="4.241591834630392e-16 1.2201097747080036 -1.5707963267948966"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_11"/>
+  </joint>
+  <link name="l_hand_middle_skin_2"/>
+  <joint name="l_hand_middle_skin_2_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-18 -0.0037584484925220762 -0.0251928113169132" rpy="5.562470830528828e-16 1.3057395010009953 -1.5707963267948963"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_2"/>
+  </joint>
+  <link name="l_hand_middle_skin_3"/>
+  <joint name="l_hand_middle_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0032999999999999835 -0.004081895179626566 -0.027767378161022038" rpy="3.141592653589791 1.5047763445693831 1.5707963267948952"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_3"/>
+  </joint>
+  <link name="l_hand_middle_skin_4"/>
+  <joint name="l_hand_middle_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.0059295259422763626 -0.001192320688661208 -0.028000000000000025" rpy="3.141592653589792 1.2994442229713603 2.7771555423255903"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_4"/>
+  </joint>
+  <link name="l_hand_middle_skin_5"/>
+  <joint name="l_hand_middle_skin_5_fixed_joint" type="fixed">
+    <origin xyz="3.469446951953614e-18 -0.0034766436539644396 -0.029835558531877138" rpy="3.141592653589793 1.0862259150411924 1.5707963267948963"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_5"/>
+  </joint>
+  <link name="l_hand_middle_skin_6"/>
+  <joint name="l_hand_middle_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.003299999999999973 -0.0018246478722138137 -0.031771980003539535" rpy="3.1415926535897927 0.7785358840004836 2.532385703371831"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_6"/>
+  </joint>
+  <link name="l_hand_middle_skin_7"/>
+  <joint name="l_hand_middle_skin_7_fixed_joint" type="fixed">
+    <origin xyz="6.938893903907228e-18 -2.7272267966693686e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454184 1.5713169902185737"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_7"/>
+  </joint>
+  <link name="l_hand_middle_skin_8"/>
+  <joint name="l_hand_middle_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.0032999999999999974 -0.0018246478722138137 -0.03177198000353959" rpy="-3.141592653589793 0.7785358840004831 0.6092069502179615"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_8"/>
+  </joint>
+  <link name="l_hand_middle_skin_9"/>
+  <joint name="l_hand_middle_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.005929525942276366 -0.001192320688661208 -0.02799999999999997" rpy="-3.1415926535897922 1.2994442229713603 0.3644371112642026"/>
+    <parent link="l_hand_middle_2"/>
+    <child link="l_hand_middle_skin_9"/>
+  </joint>
+  <link name="l_hand_index_skin_0"/>
+  <joint name="l_hand_index_skin_0_fixed_joint" type="fixed">
+    <origin xyz="-2.0816681711721685e-17 -0.0024341972556574665 -0.02140622670084852" rpy="-1.0165154595159104e-16 1.2224883899444141 -1.5707963267948974"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_0"/>
+  </joint>
+  <link name="l_hand_index_skin_1"/>
+  <joint name="l_hand_index_skin_1_fixed_joint" type="fixed">
+    <origin xyz="0.0032999999999999696 -0.0031314255941774782 -0.023281177896674887" rpy="-1.0099028177691407e-16 1.2201097747080034 -1.5707963267948977"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_1"/>
+  </joint>
+  <link name="l_hand_index_skin_10"/>
+  <joint name="l_hand_index_skin_10_fixed_joint" type="fixed">
+    <origin xyz="-0.003300000000000018 -0.004081895179626538 -0.027767378161022094" rpy="-3.1415926535897927 1.5047763445693798 1.5707963267948952"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_10"/>
+  </joint>
+  <link name="l_hand_index_skin_11"/>
+  <joint name="l_hand_index_skin_11_fixed_joint" type="fixed">
+    <origin xyz="-0.0033000000000000113 -0.0031314255941774782 -0.023281177896674887" rpy="-1.009902817769141e-16 1.220109774708004 -1.5707963267948977"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_11"/>
+  </joint>
+  <link name="l_hand_index_skin_2"/>
+  <joint name="l_hand_index_skin_2_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-17 -0.0037584484925220485 -0.025192811316913255" rpy="-1.3243978167925783e-16 1.3057395010009958 -1.5707963267948977"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_2"/>
+  </joint>
+  <link name="l_hand_index_skin_3"/>
+  <joint name="l_hand_index_skin_3_fixed_joint" type="fixed">
+    <origin xyz="0.0033000000000000043 -0.004081895179626538 -0.02776737816102215" rpy="-3.1415926535897927 1.5047763445693798 1.5707963267948957"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_3"/>
+  </joint>
+  <link name="l_hand_index_skin_4"/>
+  <joint name="l_hand_index_skin_4_fixed_joint" type="fixed">
+    <origin xyz="0.005929525942276331 -0.001192320688661097 -0.02800000000000008" rpy="3.1415926535897922 1.2994442229713603 2.7771555423255894"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_4"/>
+  </joint>
+  <link name="l_hand_index_skin_5"/>
+  <joint name="l_hand_index_skin_5_fixed_joint" type="fixed">
+    <origin xyz="-3.469446951953614e-17 -0.003476643653964384 -0.029835558531877193" rpy="-3.141592653589793 1.086225915041192 1.570796326794896"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_5"/>
+  </joint>
+  <link name="l_hand_index_skin_6"/>
+  <joint name="l_hand_index_skin_6_fixed_joint" type="fixed">
+    <origin xyz="0.0032999999999999696 -0.001824647872213786 -0.03177198000353959" rpy="3.141592653589793 0.7785358840004835 2.5323857033718307"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_6"/>
+  </joint>
+  <link name="l_hand_index_skin_7"/>
+  <joint name="l_hand_index_skin_7_fixed_joint" type="fixed">
+    <origin xyz="-2.7755575615628914e-17 -2.727226796668536e-4 -0.03327209888574861" rpy="3.141592653589793 0.6184188593454184 1.5713169902185733"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_7"/>
+  </joint>
+  <link name="l_hand_index_skin_8"/>
+  <joint name="l_hand_index_skin_8_fixed_joint" type="fixed">
+    <origin xyz="-0.003300000000000032 -0.001824647872213786 -0.03177198000353959" rpy="-3.1415926535897927 0.7785358840004832 0.609206950217961"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_8"/>
+  </joint>
+  <link name="l_hand_index_skin_9"/>
+  <joint name="l_hand_index_skin_9_fixed_joint" type="fixed">
+    <origin xyz="-0.00592952594227638 -0.001192320688661097 -0.02800000000000008" rpy="-3.1415926535897922 1.2994442229713599 0.3644371112642022"/>
+    <parent link="l_hand_index_3"/>
+    <child link="l_hand_index_skin_9"/>
+  </joint>
+  <link name="head_imu_0"/>
+  <joint name="head_imu_0_fixed_joint" type="fixed">
+    <origin xyz="-0.004299999999999899 -0.005500000000001061 0.03823450000000106" rpy="-3.141592653589788 -9.688477917552238e-15 1.5707963267948986"/>
+    <parent link="head"/>
+    <child link="head_imu_0"/>
+  </joint>
+  <link name="imu_frame"/>
+  <joint name="imu_frame_fixed_joint" type="fixed">
+    <origin xyz="-0.004299999999999899 -0.005500000000001061 0.03823450000000106" rpy="-3.141592653589788 -9.688477917552238e-15 1.5707963267948986"/>
+    <parent link="head"/>
+    <child link="imu_frame"/>
+  </joint>
+  <link name="head_laser_frame"/>
+  <joint name="head_laser_frame_fixed_joint" type="fixed">
+    <origin xyz="5.000000000061726e-5 -1.938549701738834e-15 0.13480249990363524" rpy="9.721954681893984e-15 5.33156930061495e-15 3.167605067133685e-15"/>
+    <parent link="head"/>
+    <child link="head_laser_frame"/>
+  </joint>
+  <link name="realsense_imu_0"/>
+  <joint name="realsense_imu_0_fixed_joint" type="fixed">
+    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <parent link="realsense"/>
+    <child link="realsense_imu_0"/>
+  </joint>
+  <link name="realsense_depth_frame"/>
+  <joint name="realsense_depth_frame_fixed_joint" type="fixed">
+    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <parent link="realsense"/>
+    <child link="realsense_depth_frame"/>
+  </joint>
+  <link name="realsense_rgb_frame"/>
+  <joint name="realsense_rgb_frame_fixed_joint" type="fixed">
+    <origin xyz="0.007515481871156526 -0.011499999999999996 1.7352099701550827e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <parent link="realsense"/>
+    <child link="realsense_rgb_frame"/>
+  </joint>
+  <link name="r_leg_ft"/>
+  <joint name="r_leg_ft_fixed_joint" type="fixed">
+    <origin xyz="0.03669999999999999 0 -0.08969999999999997" rpy="-3.1415926535897927 -8.654368135774127e-16 -2.6179938779914935"/>
+    <parent link="r_hip_2"/>
+    <child link="r_leg_ft"/>
+  </joint>
+  <link name="r_foot_front_ft"/>
+  <joint name="r_foot_front_ft_fixed_joint" type="fixed">
+    <origin xyz="0.13525 1.3877787807814457e-17 -0.04789999999999983" rpy="-4.2591894829555776e-17 -7.513330770412949e-17 -2.094395102393197"/>
+    <parent link="r_ankle_2"/>
+    <child link="r_foot_front_ft"/>
+  </joint>
+  <link name="r_foot_rear_ft"/>
+  <joint name="r_foot_rear_ft_fixed_joint" type="fixed">
+    <origin xyz="0.016 1.3877787807814457e-17 -0.04789999999999994" rpy="-4.2591894829543154e-17 -7.513330770412949e-17 -2.0943951023931966"/>
+    <parent link="r_ankle_2"/>
+    <child link="r_foot_rear_ft"/>
+  </joint>
   <link name="r_sole"/>
   <joint name="r_sole_fixed_joint" type="fixed">
     <origin xyz="0.05963 -1.3877787807814457e-17 -0.02429999999999999" rpy="0 3.1371750050201436e-30 0"/>
     <parent link="r_foot_rear"/>
     <child link="r_sole"/>
   </joint>
-  <link name="r_hand_thumb_skin_0"/>
-  <joint name="r_hand_thumb_skin_0_fixed_joint" type="fixed">
-    <origin xyz="0.02030622670084796 -0.002434197255657966 1.6653345369377348e-15" rpy="1.5707963267949723 -6.547540287726861e-14 -0.34830793685051614"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_0"/>
+  <link name="l_leg_ft"/>
+  <joint name="l_leg_ft_fixed_joint" type="fixed">
+    <origin xyz="0.03669999999999986 -1.3877787807814457e-17 -0.08969999999999997" rpy="-3.1415926535897927 -1.4675346083959194e-15 2.617993877991494"/>
+    <parent link="l_hip_2"/>
+    <child link="l_leg_ft"/>
   </joint>
-  <link name="r_hand_thumb_skin_1"/>
-  <joint name="r_hand_thumb_skin_1_fixed_joint" type="fixed">
-    <origin xyz="0.022181177896674495 -0.003131425594177867 0.0033000000000021346" rpy="1.5707963267949725 -6.530886942357483e-14 -0.3506865520869266"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_1"/>
+  <link name="l_foot_front_ft"/>
+  <joint name="l_foot_front_ft_fixed_joint" type="fixed">
+    <origin xyz="0.13525 -4.163336342344337e-17 -0.047899999999999054" rpy="-4.259189482954547e-17 -7.513330770412076e-17 -2.0943951023931966"/>
+    <parent link="l_ankle_2"/>
+    <child link="l_foot_front_ft"/>
   </joint>
-  <link name="r_hand_thumb_skin_10"/>
-  <joint name="r_hand_thumb_skin_10_fixed_joint" type="fixed">
-    <origin xyz="0.02666737816102109 -0.004081895179627371 -0.0032999999999981933" rpy="1.5707963267949394 -9.0427665355719e-14 0.06601998222549518"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_10"/>
+  <link name="l_foot_rear_ft"/>
+  <joint name="l_foot_rear_ft_fixed_joint" type="fixed">
+    <origin xyz="0.015999999999999993 -2.7755575615628914e-17 -0.04789999999999983" rpy="-4.259189482954531e-17 -7.513330770412153e-17 -2.0943951023931957"/>
+    <parent link="l_ankle_2"/>
+    <child link="l_foot_rear_ft"/>
   </joint>
-  <link name="r_hand_thumb_skin_11"/>
-  <joint name="r_hand_thumb_skin_11_fixed_joint" type="fixed">
-    <origin xyz="0.02218117789667394 -0.003131425594178172 -0.0032999999999985263" rpy="1.5707963267949725 -6.533662499919046e-14 -0.35068655208692634"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_11"/>
-  </joint>
-  <link name="r_hand_thumb_skin_2"/>
-  <joint name="r_hand_thumb_skin_2_fixed_joint" type="fixed">
-    <origin xyz="0.024092811316912585 -0.0037584484925226314 1.970645868709653e-15" rpy="1.5707963267949665 -7.155387393709134e-14 -0.2650568257939321"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_2"/>
-  </joint>
-  <link name="r_hand_thumb_skin_3"/>
-  <joint name="r_hand_thumb_skin_3_fixed_joint" type="fixed">
-    <origin xyz="0.026667378161021674 -0.004081895179627065 0.0033000000000024676" rpy="1.5707963267949394 -9.037215420448774e-14 0.06601998222549521"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_3"/>
-  </joint>
-  <link name="r_hand_thumb_skin_4"/>
-  <joint name="r_hand_thumb_skin_4_fixed_joint" type="fixed">
-    <origin xyz="0.02689999999999977 -0.0011923206886614024 0.005929525942279246" rpy="0.37702374862034316 0.25312544974764667 0.09883899272323193"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_4"/>
-  </joint>
-  <link name="r_hand_thumb_skin_5"/>
-  <joint name="r_hand_thumb_skin_5_fixed_joint" type="fixed">
-    <origin xyz="0.028735558531876357 -0.0034766436539650503 2.3869795029440866e-15" rpy="1.570796326794899 -9.997558336749535e-14 0.48457041175371784"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_5"/>
-  </joint>
-  <link name="r_hand_thumb_skin_6"/>
-  <joint name="r_hand_thumb_skin_6_fixed_joint" type="fixed">
-    <origin xyz="0.030671980003538976 -0.0018246478722142856 0.0033000000000029672" rpy="0.7821847394655398 0.6234819116521846 0.5256773813619555"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_6"/>
-  </joint>
-  <link name="r_hand_thumb_skin_7"/>
-  <joint name="r_hand_thumb_skin_7_fixed_joint" type="fixed">
-    <origin xyz="0.032172098885747666 -2.7272267966757524e-4 2.8033131371785203e-15" rpy="1.570494473417674 4.2423453988371586e-4 0.9523774034211966"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_7"/>
-  </joint>
-  <link name="r_hand_thumb_skin_8"/>
-  <joint name="r_hand_thumb_skin_8_fixed_joint" type="fixed">
-    <origin xyz="0.03067198000353842 -0.0018246478722146187 -0.0032999999999976937" rpy="2.3594079141242488 -0.6234819116523849 0.5256773813619544"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_8"/>
-  </joint>
-  <link name="r_hand_thumb_skin_9"/>
-  <joint name="r_hand_thumb_skin_9_fixed_joint" type="fixed">
-    <origin xyz="0.02689999999999869 -0.0011923206886619853 -0.0059295259422746105" rpy="2.7645689049695323 -0.2531254497478303 0.098838992723253"/>
-    <parent link="r_hand_thumb_3"/>
-    <child link="r_hand_thumb_skin_9"/>
+  <link name="l_sole"/>
+  <joint name="l_sole_fixed_joint" type="fixed">
+    <origin xyz="0.059629999999999996 -1.3877787807814457e-17 -0.024299999999999877" rpy="0 1.5094274020956558e-31 0"/>
+    <parent link="l_foot_rear"/>
+    <child link="l_sole"/>
   </joint>
   <gazebo reference="l_arm_ft_sensor">
     <sensor name="l_arm_ft" type="force_torque">
