@@ -65,7 +65,23 @@ rename:
     SIM_ECUB_1-0_R_HAND_RING_1--SIM_ECUB_1-0_R_HAND_RING_2: r_ring_dist
     SIM_ECUB_1-0_R_HAND_PALM--SIM_ECUB_1-0_R_HAND_PINKIE_1: r_pinkie_prox
     SIM_ECUB_1-0_R_HAND_PINKIE_1--SIM_ECUB_1-0_R_HAND_PINKIE_2: r_pinkie_dist
-
+    # upperbody
+    SIM_ECUB_1-1_CHEST: chest
+    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_L_SHOULDER_1: l_shoulder_pitch
+    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_R_SHOULDER_1: r_shoulder_pitch
+    SIM_ECUB_1-1_TORSO_2--SIM_ECUB_1-1_CHEST: torso_yaw
+    SIM_ECUB_1-1_CHEST--SIM_HEAD_NECK_1: neck_fixed_joint
+    # head
+    SIM_ECUB_1-1_HEAD_NECK_1: neck_1
+    SIM_ECUB_1-1_HEAD_NECK_2: neck_2
+    SIM_ECUB_1-1_HEAD_NECK_3: neck_3
+    SIM_ECUB_1-1_HEAD: head
+    SIM_ECUB_1-1_REALSENSE: realsense
+    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_HEAD_NECK_2: neck_pitch
+    SIM_ECUB_1-1_HEAD_NECK_2--SIM_ECUB_1-1_HEAD_NECK_3: neck_roll
+    SIM_ECUB_1-1_HEAD_NECK_3--SIM_ECUB_1-1_HEAD: neck_yaw
+    SIM_ECUB_1-1_HEAD--SIM_ECUB_1-1_REALSENSE: camera_tilt
+    # left forearm
 linkFrames:
   # left forearm
   - linkName: l_wrist_1
