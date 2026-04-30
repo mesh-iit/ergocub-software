@@ -6,18 +6,18 @@ originXYZ: [0.0,0.0,0.80]
 originRPY: [0.0,0.0,0.0]
 # Meshes options
 scale: [0.001,0.001,0.001]
-filenameformat: "package://ergoCub/meshes/simmechanics/%s.obj"
+filenameformat: "package://ergoCub/meshes/simmechanics/%s.stl"
 epsilon: 2e-4
-exportMeshes: No
+exportMeshes: Yes
 
 forcelowercase: Yes
 
 
 rename:
     # upperbody
-    SIM_ECUB_1-1_CHEST: chest
+    SIM_ECUB_1-1_CHEST_WO_NECK: chest
     SIM_ECUB_1-1_L_SHOULDER_1: l_shoulder_1
-    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_L_SHOULDER_1: l_shoulder_pitch
+    SIM_ECUB_1-1_CHEST_WO_NECK--SIM_ECUB_1-1_L_SHOULDER_1: l_shoulder_pitch
     SIM_ECUB_1-1_L_SHOULDER_2: l_shoulder_2
     SIM_ECUB_1-1_L_SHOULDER_1--SIM_ECUB_1-1_L_SHOULDER_2: l_shoulder_roll
     SIM_ECUB_1-1_L_SHOULDER_3: l_shoulder_3
@@ -25,7 +25,7 @@ rename:
     SIM_ECUB_1-1_L_UPPERARM: l_upper_arm
     SIM_ECUB_1-1_L_SHOULDER_3--SIM_ECUB_1-1_L_UPPERARM: l_shoulder_yaw
     SIM_ECUB_1-1_R_SHOULDER_1: r_shoulder_1
-    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_R_SHOULDER_1: r_shoulder_pitch
+    SIM_ECUB_1-1_CHEST_WO_NECK--SIM_ECUB_1-1_R_SHOULDER_1: r_shoulder_pitch
     SIM_ECUB_1-1_R_SHOULDER_2: r_shoulder_2
     SIM_ECUB_1-1_R_SHOULDER_1--SIM_ECUB_1-1_R_SHOULDER_2: r_shoulder_roll
     SIM_ECUB_1-1_R_SHOULDER_3: r_shoulder_3
@@ -33,12 +33,12 @@ rename:
     SIM_ECUB_1-1_R_UPPERARM: r_upper_arm
     SIM_ECUB_1-1_R_SHOULDER_3--SIM_ECUB_1-1_R_UPPERARM: r_shoulder_yaw
     SIM_ECUB_1-1_TORSO_2: torso_2
-    SIM_ECUB_1-1_TORSO_2--SIM_ECUB_1-1_CHEST: torso_yaw
+    SIM_ECUB_1-1_TORSO_2--SIM_ECUB_1-1_CHEST_WO_NECK: torso_yaw
     SIM_ECUB_1-1_TORSO_1: torso_1
     SIM_ECUB_1-1_TORSO_1--SIM_ECUB_1-1_TORSO_2:  torso_pitch
     SIM_ECUB_1-1_ROOT_LINK: root_link
     SIM_ECUB_1-1_ROOT_LINK--SIM_ECUB_1-1_TORSO_1: torso_roll
-    SIM_ECUB_1-1_CHEST--SIM_HEAD_NECK_1: neck_fixed_joint
+    SIM_ECUB_1-1_CHEST_WO_NECK--SIM_ECUB_1-3_HEAD_NECK_1: neck_fixed_joint
     # left leg
     SIM_ECUB_1-1_L_HIP_1: l_hip_1
     SIM_ECUB_1-1_L_HIP_2: l_hip_2
@@ -78,14 +78,14 @@ rename:
     SIM_ECUB_1-1_R_ANKLE_2--SIM_ECUB_1-1_R_FOOT_FRONT: r_foot_front_ft_sensor
     SIM_ECUB_1-1_R_ANKLE_2--SIM_ECUB_1-1_R_FOOT_REAR: r_foot_rear_ft_sensor
     # head
-    SIM_ECUB_1-1_HEAD_NECK_1: neck_1
-    SIM_ECUB_1-1_HEAD_NECK_2: neck_2
-    SIM_ECUB_1-1_HEAD_NECK_3: neck_3
+    SIM_ECUB_1-3_HEAD_NECK_1: neck_1
+    SIM_ECUB_1-3_HEAD_NECK_2: neck_2
+    SIM_ECUB_1-3_HEAD_NECK_3: neck_3
     SIM_ECUB_1-1_HEAD: head
     SIM_ECUB_1-1_REALSENSE: realsense
-    SIM_ECUB_1-1_CHEST--SIM_ECUB_1-1_HEAD_NECK_2: neck_pitch # It will be fixed
-    SIM_ECUB_1-1_HEAD_NECK_2--SIM_ECUB_1-1_HEAD_NECK_3: neck_roll
-    SIM_ECUB_1-1_HEAD_NECK_3--SIM_ECUB_1-1_HEAD: neck_yaw
+    SIM_ECUB_1-3_HEAD_NECK_1--SIM_ECUB_1-3_HEAD_NECK_2: neck_pitch
+    SIM_ECUB_1-3_HEAD_NECK_2--SIM_ECUB_1-3_HEAD_NECK_3: neck_roll
+    SIM_ECUB_1-3_HEAD_NECK_3--SIM_ECUB_1-1_HEAD: neck_yaw
     SIM_ECUB_1-1_HEAD--SIM_ECUB_1-1_REALSENSE: camera_tilt
     # left forearm
     SIM_ECUB_1-1_L_FOREARM: l_forearm
@@ -1045,6 +1045,7 @@ assignedCollisionGeometry:
 
 assignedMasses:
  torso_1   : 2.0645667
+ head      : 1.6902682
 
 assignedInertias:
   # This is due to https://github.com/robotology/icub-models/issues/33
@@ -1052,6 +1053,11 @@ assignedInertias:
     xx: 0.0074060860
     yy: 0.0059470733
     zz: 0.0031780111
+
+  - linkName: head
+    xx: 0.0097840569
+    yy: 0.010869342
+    zz: 0.0070099259
 
 assignedColors:
   root_link   : [0.6, 0.6, 0.6, 1]
@@ -1111,7 +1117,6 @@ reverseRotationAxis:
     l_hip_roll
     l_hip_yaw
     neck_pitch
-    neck_roll
     r_knee
     r_ankle_pitch
     l_wrist_roll
