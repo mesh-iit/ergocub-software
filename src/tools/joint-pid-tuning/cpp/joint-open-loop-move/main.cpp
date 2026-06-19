@@ -126,7 +126,11 @@ bool resetPosition(uint8_t j) {
   bool done = false;
 
   while (!done) {
+    #if YARP_VERSION_MAJOR >= 4
     iPos->checkMotionDone(j, done);
+    #else
+    iPos->checkMotionDone(j, &done);
+    #endif
     Time::yield();
   }
 
