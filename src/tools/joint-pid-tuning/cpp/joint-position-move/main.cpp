@@ -97,7 +97,7 @@ int main(int argc, char * argv[])
     auto cycle_done{ false };
 
     while (!done) {
-        iPos->checkMotionDone(joint_id, &done);
+        iPos->checkMotionDone(joint_id, done);
         Time::yield();
     }
 
@@ -134,7 +134,7 @@ int main(int argc, char * argv[])
                 iEnc->getEncoder(joint_id, &data.enc);
 
                 if (Time::now() - t1 >= 0.01) {
-                    iPos->checkMotionDone(joint_id, &done);
+                    iPos->checkMotionDone(joint_id, done);
                     t1 = Time::now();
 
                     if(done)
@@ -178,7 +178,7 @@ int main(int argc, char * argv[])
     #endif
     iPos->positionMove(joint_id, 0.);
     while (!done) {
-        iPos->checkMotionDone(joint_id, &done);
+        iPos->checkMotionDone(joint_id, done);
         Time::yield();
     }
 
