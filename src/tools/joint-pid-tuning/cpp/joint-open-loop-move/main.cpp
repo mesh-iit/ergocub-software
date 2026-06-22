@@ -52,7 +52,7 @@ private:
   bool done_l = false;
   DataExperiment data;
   uint8_t j = 0;
-  std::atomic<double> pwm_{0.0};  
+  std::atomic<double> pwm_{0.0};
   double thr_min = 0;
   double thr_max = 0;
   double t0 = 0;
@@ -126,7 +126,11 @@ bool resetPosition(uint8_t j) {
   bool done = false;
 
   while (!done) {
+    #if YARP_VERSION_MAJOR >= 4
+    iPos->checkMotionDone(j, done);
+    #else
     iPos->checkMotionDone(j, &done);
+    #endif
     Time::yield();
   }
 

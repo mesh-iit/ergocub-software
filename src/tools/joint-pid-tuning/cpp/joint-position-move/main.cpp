@@ -97,7 +97,11 @@ int main(int argc, char * argv[])
     auto cycle_done{ false };
 
     while (!done) {
+        #if YARP_VERSION_MAJOR >= 4
+        iPos->checkMotionDone(joint_id, done);
+        #else
         iPos->checkMotionDone(joint_id, &done);
+        #endif
         Time::yield();
     }
 
@@ -134,7 +138,11 @@ int main(int argc, char * argv[])
                 iEnc->getEncoder(joint_id, &data.enc);
 
                 if (Time::now() - t1 >= 0.01) {
+                    #if YARP_VERSION_MAJOR >= 4
+                    iPos->checkMotionDone(joint_id, done);
+                    #else
                     iPos->checkMotionDone(joint_id, &done);
+                    #endif
                     t1 = Time::now();
 
                     if(done)
@@ -178,7 +186,11 @@ int main(int argc, char * argv[])
     #endif
     iPos->positionMove(joint_id, 0.);
     while (!done) {
+        #if YARP_VERSION_MAJOR >= 4
+        iPos->checkMotionDone(joint_id, done);
+        #else
         iPos->checkMotionDone(joint_id, &done);
+        #endif
         Time::yield();
     }
 
