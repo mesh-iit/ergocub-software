@@ -321,7 +321,7 @@
   </link>
   <joint name="neck_roll" type="revolute">
     <origin xyz="-3.5561831257524545e-17 7.375606977361926e-16 0.010999999999997845" rpy="8.452269018635315e-14 7.050925500045285e-14 1.2263451870709675e-14"/>
-    <axis xyz="1 2.30576840860686e-16 -7.196923107658096e-17"/>
+    <axis xyz="1 2.3057684086068286e-16 -7.196923107658096e-17"/>
     <parent link="neck_2"/>
     <child link="neck_3"/>
     <limit lower="-0.5235987755982988" upper="0.5235987755982988" effort="1e+9" velocity="1e+9"/>
@@ -353,8 +353,8 @@
     </collision>
   </link>
   <joint name="neck_yaw" type="revolute">
-    <origin xyz="-1.734723475976807e-18 1.0057301276633031e-23 0.06914999999999993" rpy="2.1582026845669264e-16 -1.386477883657293e-15 -1.9981249037222812e-13"/>
-    <axis xyz="1.386477883657293e-15 2.1582026845669262e-16 0.9999999999999999"/>
+    <origin xyz="-5.0306980803327406e-17 2.0696535769897827e-17 0.06914999999999971" rpy="1.6030911723564583e-16 -1.3309667326328268e-15 -1.9976738756079363e-13"/>
+    <axis xyz="1.3309667326328268e-15 1.603091172356458e-16 0.9999999999999999"/>
     <parent link="neck_3"/>
     <child link="head"/>
     <limit lower="-0.7853981633974483" upper="0.7853981633974483" effort="1e+9" velocity="1e+9"/>
@@ -386,8 +386,8 @@
     </collision>
   </link>
   <joint name="camera_tilt" type="revolute">
-    <origin xyz="0.06250999999999991 -2.999999997621366e-5 0.07639249999999997" rpy="-7.545682259870277e-14 2.5958199361694967e-4 2.017046159162252e-13"/>
-    <axis xyz="-1.998015835203486e-13 -1 -8.597927048660853e-14"/>
+    <origin xyz="0.06250999999999987 -3.000000000113848e-5 0.07639250000000047" rpy="9.528820759122057e-15 2.5958199325913113e-4 2.6559516676797335e-15"/>
+    <axis xyz="-7.529259780358163e-16 -1 -5.660091301660221e-16"/>
     <parent link="head"/>
     <child link="realsense"/>
     <limit lower="-0.5235987755982988" upper="0.5235987755982988" effort="1e+9" velocity="1e+9"/>
@@ -395,9 +395,9 @@
   </joint>
   <link name="realsense">
     <inertial>
-      <mass value="0.0973042045264468"/>
-      <origin xyz="-0.01566548310600667 0.004519995218644514 0.002745610154123612" rpy="0 -0 0"/>
-      <inertia ixx="1.3363140922191058e-4" ixy="4.7877399688365374e-5" ixz="2.5482221369268495e-5" iyy="1.8708641575714753e-4" iyz="-7.171072206331662e-6" izz="2.963329027014652e-4"/>
+      <mass value="0.08233251527028056"/>
+      <origin xyz="0.002757312110436068 -4.942831990157318e-4 3.199624651573085e-5" rpy="0 -0 0"/>
+      <inertia ixx="1.1574711197088633e-4" ixy="-1.7492230739037293e-7" ixz="-2.5944440100815574e-8" iyy="8.421296719556895e-6" iyz="-1.0106462328987549e-7" izz="1.1038824885095133e-4"/>
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 -0 0"/>
@@ -1634,8 +1634,8 @@
     </collision>
   </link>
   <joint name="l_index_dist" type="revolute">
-    <origin xyz="-2.7755575615628914e-17 -0.0015000000000000013 -0.03999999999999987" rpy="-7.482326172536535e-8 1.8041124150158794e-16 -5.551115123125783e-16"/>
-    <axis xyz="-1 -2.9143356888525625e-16 9.714452192336961e-17"/>
+    <origin xyz="-2.7755575615628914e-17 -0.0014999999999999736 -0.039999999999999925" rpy="-7.482326169760975e-8 1.734723475976807e-16 -5.551115123125782e-16"/>
+    <axis xyz="-1.0000000000000002 -2.359224176539984e-16 1.457167792507203e-16"/>
     <parent link="l_hand_index_2"/>
     <child link="l_hand_index_3"/>
     <limit lower="0" upper="1.7165313193364231" effort="1e+9" velocity="1e+9"/>
@@ -2172,7 +2172,7 @@
   </joint>
   <link name="realsense_imu_0"/>
   <joint name="realsense_imu_0_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <origin xyz="0.007415481871156544 0.047499999999999994 1.735209986808428e-8" rpy="-1.5707963267948966 1.439727114483606e-19 -1.570796326794897"/>
     <parent link="realsense"/>
     <child link="realsense_imu_0"/>
   </joint>
@@ -2226,7 +2226,7 @@
   </joint>
   <link name="realsense_depth_frame"/>
   <joint name="realsense_depth_frame_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 0.010000000000000002 1.7352099479506222e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <origin xyz="0.007415481871156544 0.047499999999999994 1.735209986808428e-8" rpy="-1.5707963267948966 1.439727114483606e-19 -1.570796326794897"/>
     <parent link="realsense"/>
     <child link="realsense_depth_frame"/>
   </joint>
@@ -2238,7 +2238,7 @@
   </joint>
   <link name="realsense_rgb_frame"/>
   <joint name="realsense_rgb_frame_fixed_joint" type="fixed">
-    <origin xyz="0.007515481871156526 -0.011499999999999996 1.7352099701550827e-8" rpy="-1.5707963267948966 3.7596758519972983e-16 -1.5707963267948966"/>
+    <origin xyz="0.007415481871156544 -0.011499999999999993 1.735209981257313e-8" rpy="-1.5707963267948966 1.439727114483606e-19 -1.570796326794897"/>
     <parent link="realsense"/>
     <child link="realsense_rgb_frame"/>
   </joint>
@@ -3174,7 +3174,7 @@
     <sensor name="realsense_head_depth" type="depth">
       <always_on>1</always_on>
       <update_rate>30.000000</update_rate>
-      <pose>0.00751548 -0.0115 1.73521e-08 -1.5708 3.75968e-16 -1.5708 </pose>
+      <pose>0.00741548 -0.0115 1.73521e-08 -1.5708 1.43973e-19 -1.5708 </pose>
       <camera name="intel_realsense_depth_camera">
         <pose>0 0 0 -1.57079 -1.57079 3.14159</pose>
         <horizontal_fov>1.2217</horizontal_fov>
@@ -3204,13 +3204,13 @@
   </gazebo>
   <sensor name="realsense_head_depth" type="depth">
     <parent link="realsense"/>
-    <origin rpy="-1.5708 3.75968e-16 -1.5708 " xyz="0.00751548 -0.0115 1.73521e-08"/>
+    <origin rpy="-1.5708 1.43973e-19 -1.5708 " xyz="0.00741548 -0.0115 1.73521e-08"/>
   </sensor>
   <gazebo reference="realsense">
     <sensor name="realsense_head_rgb" type="camera">
       <always_on>1</always_on>
       <update_rate>30.000000</update_rate>
-      <pose>0.00751548 -0.0115 1.73521e-08 -1.5708 3.75968e-16 -1.5708 </pose>
+      <pose>0.00741548 -0.0115 1.73521e-08 -1.5708 1.43973e-19 -1.5708 </pose>
       <camera name="intel_realsense_rgb_camera">
         <pose>0 0 0 -1.57079 -1.57079 3.14159</pose>
         <horizontal_fov>1.2217</horizontal_fov>
@@ -3240,13 +3240,13 @@
   </gazebo>
   <sensor name="realsense_head_rgb" type="camera">
     <parent link="realsense"/>
-    <origin rpy="-1.5708 3.75968e-16 -1.5708 " xyz="0.00751548 -0.0115 1.73521e-08"/>
+    <origin rpy="-1.5708 1.43973e-19 -1.5708 " xyz="0.00741548 -0.0115 1.73521e-08"/>
   </sensor>
   <gazebo reference="realsense">
     <sensor name="realsense_imu_0" type="imu">
       <always_on>1</always_on>
       <update_rate>100.000000</update_rate>
-      <pose>0.00751548 0.01 1.73521e-08 -1.5708 3.75968e-16 -1.5708 </pose>
+      <pose>0.00741548 0.0475 1.73521e-08 -1.5708 1.43973e-19 -1.5708 </pose>
       <plugin name="ergocub_yarp_gazebo_plugin_IMU" filename="libgazebo_yarp_imu.so">
         <yarpConfigurationFile>model://ergoCub/conf/gazebo_ergocub_realsense_inertial.ini</yarpConfigurationFile>
       </plugin>
@@ -3254,7 +3254,7 @@
   </gazebo>
   <sensor name="realsense_imu_0" type="accelerometer">
     <parent link="realsense"/>
-    <origin rpy="-1.5708 3.75968e-16 -1.5708 " xyz="0.00751548 0.01 1.73521e-08"/>
+    <origin rpy="-1.5708 1.43973e-19 -1.5708 " xyz="0.00741548 0.0475 1.73521e-08"/>
   </sensor>
   <gazebo reference="head">
     <sensor name="lasersensor_head" type="gpu_lidar">
@@ -3267,15 +3267,15 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>720</samples>
-            <resolution>0.5</resolution>
+            <samples>360</samples>
+            <resolution>1</resolution>
             <min_angle>0</min_angle>
             <max_angle>6.28</max_angle>
           </horizontal>
         </scan>
         <range>
           <min>0.2</min>
-          <max>5</max>
+          <max>25</max>
           <resolution>0.01</resolution>
         </range>
         <noise>
@@ -3546,6 +3546,15 @@
           <p2>0</p2>
           <center>319.5 239.5</center>
         </distortion>
+        <lens>
+          <intrinsics>
+            <fx>457.022184</fx>
+            <fy>457.022184</fy>
+            <cx>319.5</cx>
+            <cy>239.5</cy>
+            <s>0</s>
+          </intrinsics>
+        </lens>
         <image>
           <width>640</width>
           <height>480</height>
