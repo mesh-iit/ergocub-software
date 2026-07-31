@@ -190,10 +190,17 @@ int main(int argc, char *argv[]) {
     return EXIT_FAILURE;
   }
 
+  #if YARP_VERSION_MAJOR >= 4
+  if (size_t N = 0; iPos->getAxes(N), (joint_id >= N)) {
+    yError("Invalid joint-id");
+    return EXIT_FAILURE;
+  }
+  #else
   if (int N = 0; iPos->getAxes(&N), (joint_id >= N)) {
     yError("Invalid joint-id");
     return EXIT_FAILURE;
   }
+  #endif
 
   Time::delay(0.05); // add small delay before reading values
 
