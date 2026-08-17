@@ -7,7 +7,11 @@
 project(ergoCubEmotions)
 cmake_minimum_required(VERSION 3.12)
 
-find_package(OpenCV 4.2.0 REQUIRED)
+find_package(OpenCV REQUIRED)
+
+if(OpenCV_VERSION VERSION_LESS 4.2.0)
+  message(FATAL_ERROR "OpenCV 4.2.0 or newer is required, found ${OpenCV_VERSION}")
+endif()
 
 set(doc_files ${PROJECT_NAME}.xml)
 yarp_add_idl(IDL_GEN_FILES idl.thrift)
