@@ -1,4 +1,5 @@
 import argparse
+import copy
 from pathlib import Path
 import time
 import xml.etree.ElementTree as ET
@@ -141,11 +142,54 @@ mesh_path = get_mesh_path(ET.parse(urdf_string).getroot())
 
 loader = URDFtoMuJoCoLoader.load_urdf(urdf_string, mesh_path, cfg)
 
+# Define separate defaults for the robot's appearance and physical contacts.
+# visual_mesh: display the robot in viewer group 1 without generating contacts
+# (contype=0, conaffinity=0). Mesh is the default shape.
+# collision_mesh: use boxes by default for physical contacts, with contype=1
+# and conaffinity=6 controlling which other geoms they can collide with.
+# Put collision geoms in viewer group 2 so they can be hidden independently
+# of the visual geoms. Hiding this group does not disable physical collisions.
+
+mjcf = ET.fromstring(loader.get_mjcf_string())
+defaults = mjcf.find("default")
+if defaults is None:
+    defaults = ET.Element("default")
+else:
+    mjcf.remove(defaults)
+mjcf.insert(0, defaults)
+for class_name, attributes in (
+    ("visual_mesh", dict(type="mesh", contype="0", conaffinity="0", group="1")),
+    ("collision_mesh", dict(type="box", group="2")),
+):
+    geom_defaults = ET.SubElement(defaults, "default", {"class": class_name})
+    ET.SubElement(geom_defaults, "geom", attributes)
+
+for body in mjcf.findall(".//worldbody") + mjcf.findall(".//body"):
+    for geom in list(body.findall("geom")):
+        is_box = geom.get("type") == "box" # Check if the geom is a box, it means that there's no primitive mesh for it, so we need to set the visual to be a box as well.
+        visual = copy.deepcopy(geom) if "mesh" in geom.attrib or is_box else None
+        geom.set("class", "collision_mesh")
+        if visual is not None:
+            geom.attrib.pop("type", None) # The "type" attribuite is already set in the default for visual_mesh.
+            visual.set("class", "visual_mesh")
+            for attribute in ("type", "contype", "conaffinity", "group"):
+                visual.attrib.pop(attribute, None) # Remove the attributes that are already set in the default for visual_mesh.
+            if is_box:
+                visual.set("type", "box") #If the geom is a box, set the visual to be a box as well.
+            if "name" in visual.attrib:
+                visual.set("name", f"{visual.get('name')}_visual")
+            visual.set("mass", "0") # Zero mass prevents it from adding mass or inertia if MuJoCo computes the body's inertial properties from its geoms.
+            body.insert(list(body).index(geom), visual)
+        else:
+            geom.set("type", geom.get("type", "sphere"))
+
+ET.indent(mjcf, space="  ")
+
 # save xml_str to a file
 path = Path(args.output).expanduser()
 
 with open(path, "w") as f:
-    f.write(loader.get_mjcf_string())
+    f.write(ET.tostring(mjcf, encoding="unicode"))
 
 # include the model in a simple world
 world_str = f"""
@@ -182,22 +226,23 @@ if args.contact_forces:
     model.vis.map.force = 0.02
     model.vis.scale.forcewidth = 0.03
 
-    with mujoco.viewer.launch_passive(model, data) as viewer:
-        with viewer.lock():
+with mujoco.viewer.launch_passive(model, data) as viewer:
+    with viewer.lock():
+        # Show visual meshes; collision boxes can be enabled using geom group 2.
+        viewer.opt.geomgroup[2] = 0
+        if args.contact_forces:
             viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_CONTACTPOINT] = 1
             viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_CONTACTFORCE] = 1
             viewer.opt.flags[mujoco.mjtVisFlag.mjVIS_CONTACTSPLIT] = 1
             viewer.opt.frame = mujoco.mjtFrame.mjFRAME_CONTACT
             viewer.opt.label = mujoco.mjtLabel.mjLABEL_CONTACTFORCE
 
-        while viewer.is_running():
-            step_start = time.time()
+    while viewer.is_running():
+        step_start = time.time()
 
-            mujoco.mj_step(model, data)
-            viewer.sync()
+        mujoco.mj_step(model, data)
+        viewer.sync()
 
-            dt = model.opt.timestep - (time.time() - step_start)
-            if dt > 0:
-                time.sleep(dt)
-else:
-    mujoco.viewer.launch(model=model, data=data)
+        dt = model.opt.timestep - (time.time() - step_start)
+        if dt > 0:
+            time.sleep(dt)
