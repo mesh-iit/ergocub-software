@@ -159,7 +159,7 @@ else:
 mjcf.insert(0, defaults)
 for class_name, attributes in (
     ("visual_mesh", dict(type="mesh", contype="0", conaffinity="0", group="1")),
-    ("collision_mesh", dict(type="box", contype="1", conaffinity="6", group="2")),
+    ("collision_mesh", dict(type="box", group="2")),
 ):
     geom_defaults = ET.SubElement(defaults, "default", {"class": class_name})
     ET.SubElement(geom_defaults, "geom", attributes)
@@ -169,8 +169,6 @@ for body in mjcf.findall(".//worldbody") + mjcf.findall(".//body"):
         is_box = geom.get("type") == "box" # Check if the geom is a box, it means that there's no primitive mesh for it, so we need to set the visual to be a box as well.
         visual = copy.deepcopy(geom) if "mesh" in geom.attrib or is_box else None
         geom.set("class", "collision_mesh")
-        for attribute in ("contype", "conaffinity", "group"):
-            geom.attrib.pop(attribute, None) # Remove the attributes that are already set in the default for collision_mesh.
         if visual is not None:
             geom.attrib.pop("type", None) # The "type" attribuite is already set in the default for visual_mesh.
             visual.set("class", "visual_mesh")
